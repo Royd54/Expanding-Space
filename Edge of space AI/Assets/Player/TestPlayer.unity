@@ -251,10 +251,30 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2143871891}
+    - target: {fileID: 7310861269549778450, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310861269549778450, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310861269549778450, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7310861271182847655, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: bulletVelocity
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310861271182847655, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: spread
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
