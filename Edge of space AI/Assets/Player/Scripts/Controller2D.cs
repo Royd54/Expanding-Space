@@ -17,8 +17,6 @@ public class Controller2D : MonoBehaviour
     private Transform gunPivotPoint;
     private Vector2 move;
     private Vector3 mousePosition;
-    private Vector3 previousPlayerPosition;
-    private Vector3 currentPlayerPosition;
     private float toolYScale;
     private bool turn = false;
     #endregion
@@ -27,13 +25,10 @@ public class Controller2D : MonoBehaviour
     {
         spawner = GameObject.FindWithTag("PlayerBulletSpawn");
         tool = GameObject.FindWithTag("tool");
-        cursor = GameObject.FindWithTag("Cursor");
         cam = GameObject.FindWithTag("MainCamera");
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         gunPivotPoint = transform.Find("GunPivotPoint");
-        previousPlayerPosition = this.transform.position;
-        currentPlayerPosition = this.transform.position;
         toolYScale = tool.transform.localScale.y;
     }
     
@@ -74,11 +69,8 @@ public class Controller2D : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             tool.SendMessage("SetPrimaryUse", false);
         #endregion
-        #region Camera Movement
-        
-        #endregion
         #region Animations
-        if (previousPlayerPosition != currentPlayerPosition)//checks if the player is moving
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)//checks if the player is moving
         {
             //if the player is moving it player the waking animation
             anim.SetBool("walking", true);
@@ -90,8 +82,6 @@ public class Controller2D : MonoBehaviour
             anim.SetBool("walking", false);
             //anim.SetBool("idle", true);
         }
-        previousPlayerPosition = currentPlayerPosition;
-        currentPlayerPosition = this.transform.position;
         #endregion
     }
 
