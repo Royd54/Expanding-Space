@@ -1,0 +1,4310 @@
+fileFormatVersion: 2
+guid: 65eba71286ae72f4f9e248d747c73280
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2620182286884069407
+    second: witch attack animation_0
+  - first:
+      213: -7026826337970205861
+    second: witch attack animation_1
+  - first:
+      213: -7347756564954483539
+    second: witch attack animation_2
+  - first:
+      213: -1652378183266652872
+    second: witch attack animation_3
+  - first:
+      213: -6631103620745966681
+    second: witch attack animation_4
+  - first:
+      213: 1881762594798184909
+    second: witch attack animation_5
+  - first:
+      213: 7371862239845944637
+    second: witch attack animation_6
+  - first:
+      213: 7411156320017158244
+    second: witch attack animation_7
+  - first:
+      213: 8577769930828326628
+    second: witch attack animation_8
+  - first:
+      213: -2686207218264811786
+    second: witch attack animation_9
+  - first:
+      213: -8651708042723445316
+    second: witch attack animation_10
+  - first:
+      213: 4139363289662409398
+    second: witch attack animation_11
+  - first:
+      213: 518701095606440691
+    second: witch attack animation_12
+  - first:
+      213: -9116084446736021355
+    second: witch attack animation_13
+  - first:
+      213: 8477794891813532236
+    second: witch attack animation_14
+  - first:
+      213: -5263690895174085494
+    second: witch attack animation_15
+  - first:
+      213: 6173062742166810317
+    second: witch attack animation_16
+  - first:
+      213: 1061915563060377979
+    second: witch attack animation_17
+  - first:
+      213: -1927102376491519996
+    second: witch attack animation_18
+  - first:
+      213: 6937962392928446309
+    second: witch attack animation_19
+  - first:
+      213: 1504778110398383971
+    second: witch attack animation_20
+  - first:
+      213: 1652668127689354688
+    second: witch attack animation_21
+  - first:
+      213: -797207898648658521
+    second: witch attack animation_22
+  - first:
+      213: 7486092869466982008
+    second: witch attack animation_23
+  - first:
+      213: -7272329210060470180
+    second: witch attack animation_24
+  - first:
+      213: 9188712829243415583
+    second: witch attack animation_25
+  - first:
+      213: 6553352402339809708
+    second: witch attack animation_26
+  - first:
+      213: -3653186538030110797
+    second: witch attack animation_27
+  - first:
+      213: 1322213254074460633
+    second: witch attack animation_28
+  - first:
+      213: -8920685639367818881
+    second: witch attack animation_29
+  - first:
+      213: -6378939470902665902
+    second: witch attack animation_30
+  - first:
+      213: -5148633968474428702
+    second: witch attack animation_31
+  - first:
+      213: -6401425871105443662
+    second: witch attack animation_32
+  - first:
+      213: 3369940853851082431
+    second: witch attack animation_33
+  - first:
+      213: -4870552430109599567
+    second: witch attack animation_34
+  - first:
+      213: 3391576784164910107
+    second: witch attack animation_35
+  - first:
+      213: -6102908453126690153
+    second: witch attack animation_36
+  - first:
+      213: -4094335216750057537
+    second: witch attack animation_37
+  - first:
+      213: -1807723862742703088
+    second: witch attack animation_38
+  - first:
+      213: -604161709158836755
+    second: witch attack animation_39
+  - first:
+      213: 1948410061154396472
+    second: witch attack animation_40
+  - first:
+      213: 5113450338691712885
+    second: witch attack animation_41
+  - first:
+      213: 2272455953824977865
+    second: witch attack animation_42
+  - first:
+      213: 3763877394141781697
+    second: witch attack animation_43
+  - first:
+      213: 8763589360677646612
+    second: witch attack animation_44
+  - first:
+      213: -8426999334827904448
+    second: witch attack animation_45
+  - first:
+      213: -7349866286591774505
+    second: witch attack animation_46
+  - first:
+      213: 3675308362780449138
+    second: witch attack animation_47
+  - first:
+      213: -2902352841604836659
+    second: witch attack animation_48
+  - first:
+      213: 7897736972041862510
+    second: witch attack animation_49
+  - first:
+      213: 7968279284111800223
+    second: witch attack animation_50
+  - first:
+      213: 2135910988485092032
+    second: witch attack animation_51
+  - first:
+      213: 3225950150395975703
+    second: witch attack animation_52
+  - first:
+      213: 4913359498638134823
+    second: witch attack animation_53
+  - first:
+      213: 9217285031202229484
+    second: witch attack animation_54
+  - first:
+      213: 2550265581027031852
+    second: witch attack animation_55
+  - first:
+      213: 428443918318771193
+    second: witch attack animation_56
+  - first:
+      213: -9072820845872766067
+    second: witch attack animation_57
+  - first:
+      213: 5874069105954293883
+    second: witch attack animation_58
+  - first:
+      213: -6360101241517901775
+    second: witch attack animation_59
+  - first:
+      213: -4913201074996237415
+    second: witch attack animation_60
+  - first:
+      213: 2231525623766754892
+    second: witch attack animation_61
+  - first:
+      213: -8667317176124390522
+    second: witch attack animation_62
+  - first:
+      213: 587829110039657426
+    second: witch attack animation_63
+  - first:
+      213: -7637470233467695016
+    second: witch attack animation_64
+  - first:
+      213: -2198235864206900968
+    second: witch attack animation_65
+  - first:
+      213: 9383610974228333
+    second: witch attack animation_66
+  - first:
+      213: -7565568096307793431
+    second: witch attack animation_67
+  - first:
+      213: -1874914163678152169
+    second: witch attack animation_68
+  - first:
+      213: -3798226834938291038
+    second: witch attack animation_69
+  - first:
+      213: -1943429740880451356
+    second: witch attack animation_70
+  - first:
+      213: 2520961019405986885
+    second: witch attack animation_71
+  - first:
+      213: -1459078573763545425
+    second: witch attack animation_72
+  - first:
+      213: 1363091915374205657
+    second: witch attack animation_73
+  - first:
+      213: -8177266624017365974
+    second: witch attack animation_74
+  - first:
+      213: 6569001265657697503
+    second: witch attack animation_75
+  - first:
+      213: 3296024717207138601
+    second: witch attack animation_76
+  - first:
+      213: 2883325159013924893
+    second: witch attack animation_77
+  - first:
+      213: -1389973307608957135
+    second: witch attack animation_78
+  - first:
+      213: -6884975804087463556
+    second: witch attack animation_79
+  - first:
+      213: -7047773397566150344
+    second: witch attack animation_80
+  - first:
+      213: -4240888896937455783
+    second: witch attack animation_81
+  - first:
+      213: -4150452763765270080
+    second: witch attack animation_82
+  - first:
+      213: 66727145038041584
+    second: witch attack animation_83
+  - first:
+      213: -2286380261522219485
+    second: witch attack animation_84
+  - first:
+      213: -8746516367400226793
+    second: witch attack animation_85
+  - first:
+      213: -3017835456908348966
+    second: witch attack animation_86
+  - first:
+      213: -8378987900356054567
+    second: witch attack animation_87
+  - first:
+      213: -5684719875424426015
+    second: witch attack animation_88
+  - first:
+      213: -3463189623018805929
+    second: witch attack animation_89
+  - first:
+      213: -6407466634542142138
+    second: witch attack animation_90
+  - first:
+      213: 1926203515228255411
+    second: witch attack animation_91
+  - first:
+      213: 2845064839719603899
+    second: witch attack animation_92
+  - first:
+      213: -6571030946209402275
+    second: witch attack animation_93
+  - first:
+      213: 1718350087329632094
+    second: witch attack animation_94
+  - first:
+      213: -1308500887487784832
+    second: witch attack animation_95
+  - first:
+      213: 5582772950110463604
+    second: witch attack animation_96
+  - first:
+      213: 1015569314315789915
+    second: witch attack animation_97
+  - first:
+      213: 7242686940437519125
+    second: witch attack animation_98
+  - first:
+      213: 2372013346152272490
+    second: witch attack animation_99
+  - first:
+      213: -8156656587204087027
+    second: witch attack animation_100
+  - first:
+      213: -3283114292663475182
+    second: witch attack animation_101
+  - first:
+      213: -4439411188950326115
+    second: witch attack animation_102
+  - first:
+      213: 713260245223112767
+    second: witch attack animation_103
+  - first:
+      213: 8504419139945893848
+    second: witch attack animation_104
+  - first:
+      213: 2726876114121785321
+    second: witch attack animation_105
+  - first:
+      213: -5284807910029243958
+    second: witch attack animation_106
+  - first:
+      213: -7234635454129140396
+    second: witch attack animation_107
+  - first:
+      213: -7416190368267289584
+    second: witch attack animation_108
+  - first:
+      213: -7034795750655613512
+    second: witch attack animation_109
+  - first:
+      213: 4816285506466529760
+    second: witch attack animation_110
+  - first:
+      213: 4270983508489024233
+    second: witch attack animation_111
+  - first:
+      213: -7282617034602504846
+    second: witch attack animation_112
+  - first:
+      213: 2687684365353909691
+    second: witch attack animation_113
+  - first:
+      213: 502967072649288991
+    second: witch attack animation_114
+  - first:
+      213: -8253346636497051631
+    second: witch attack animation_115
+  - first:
+      213: 5232037075742934803
+    second: witch attack animation_116
+  - first:
+      213: 2952015397246991329
+    second: witch attack animation_117
+  - first:
+      213: 6862182790387965067
+    second: witch attack animation_118
+  - first:
+      213: -3894556861047967210
+    second: witch attack animation_119
+  - first:
+      213: -1756775198172282432
+    second: witch attack animation_120
+  - first:
+      213: -5736201683957287417
+    second: witch attack animation_121
+  - first:
+      213: 447863159026317253
+    second: witch attack animation_122
+  - first:
+      213: -594748552697579157
+    second: witch attack animation_123
+  - first:
+      213: 1429539851415075247
+    second: witch attack animation_124
+  - first:
+      213: 1410325211141972338
+    second: witch attack animation_125
+  - first:
+      213: 4923583361168668517
+    second: witch attack animation_126
+  - first:
+      213: 3735498924738337189
+    second: witch attack animation_127
+  - first:
+      213: 6106201562292391766
+    second: witch attack animation_128
+  - first:
+      213: 6166330497051744031
+    second: witch attack animation_129
+  - first:
+      213: -6924232329100181162
+    second: witch attack animation_130
+  - first:
+      213: -3448498480808940630
+    second: witch attack animation_131
+  - first:
+      213: -5576855969497553539
+    second: witch attack animation_132
+  - first:
+      213: -2713793977065665388
+    second: witch attack animation_133
+  - first:
+      213: 7091968849360407175
+    second: witch attack animation_134
+  - first:
+      213: -767846806585102475
+    second: witch attack animation_135
+  - first:
+      213: -1008992672905445570
+    second: witch attack animation_136
+  - first:
+      213: -4593584182813849292
+    second: witch attack animation_137
+  - first:
+      213: -1302906729062764348
+    second: witch attack animation_138
+  - first:
+      213: 4598765370216007819
+    second: witch attack animation_139
+  - first:
+      213: 1153245440470325269
+    second: witch attack animation_140
+  - first:
+      213: -7274221034681225874
+    second: witch attack animation_141
+  - first:
+      213: 1155513713888273258
+    second: witch attack animation_142
+  - first:
+      213: -5035824307462175124
+    second: witch attack animation_143
+  - first:
+      213: 7190317622468367102
+    second: witch attack animation_144
+  - first:
+      213: -4009021640182463592
+    second: witch attack animation_145
+  - first:
+      213: -8751364646423463767
+    second: witch attack animation_146
+  - first:
+      213: 7572602421036376014
+    second: witch attack animation_147
+  - first:
+      213: -8481288320543867796
+    second: witch attack animation_148
+  - first:
+      213: -8199865521053062792
+    second: witch attack animation_149
+  - first:
+      213: 1085296656619521452
+    second: witch attack animation_150
+  - first:
+      213: -153225411661078097
+    second: witch attack animation_151
+  - first:
+      213: 5423690360592032084
+    second: witch attack animation_152
+  - first:
+      213: 3421108692339203662
+    second: witch attack animation_153
+  - first:
+      213: 3831222076555740529
+    second: witch attack animation_154
+  - first:
+      213: -2623999410395539814
+    second: witch attack animation_155
+  - first:
+      213: -2351501718197278305
+    second: witch attack animation_156
+  - first:
+      213: -8497718117855802863
+    second: witch attack animation_157
+  - first:
+      213: 9019618460422044692
+    second: witch attack animation_158
+  - first:
+      213: 7412265984467221149
+    second: witch attack animation_159
+  - first:
+      213: -5601896911443314978
+    second: witch attack animation_160
+  - first:
+      213: 3926951608050378127
+    second: witch attack animation_161
+  - first:
+      213: -4541144244360946661
+    second: witch attack animation_162
+  - first:
+      213: 2097850790161664211
+    second: witch attack animation_163
+  - first:
+      213: 3091657360654047135
+    second: witch attack animation_164
+  - first:
+      213: -892241724248748348
+    second: witch attack animation_165
+  - first:
+      213: -4327548731521082347
+    second: witch attack animation_166
+  - first:
+      213: 9001182723867461112
+    second: witch attack animation_167
+  - first:
+      213: -2510052998527041561
+    second: witch attack animation_168
+  - first:
+      213: 4071756245913917344
+    second: witch attack animation_169
+  - first:
+      213: 3140700125006246014
+    second: witch attack animation_170
+  - first:
+      213: 7899423731979424104
+    second: witch attack animation_171
+  - first:
+      213: 7655966986116572557
+    second: witch attack animation_172
+  - first:
+      213: 5098650536677748611
+    second: witch attack animation_173
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: witch attack animation_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826160498ca2a2f4a8e84c2fdee8fe6b
+      internalID: 2620182286884069407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b196df137e44e6d4f862a467b68fd375
+      internalID: -7026826337970205861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d318ad012e2e545895b9fb2119a32c
+      internalID: -7347756564954483539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_3
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b13196a553107745854dbde56dd91bc
+      internalID: -1652378183266652872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cdee4ba9d403344bf84477a0a8dfb2
+      internalID: -6631103620745966681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_5
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e9c29e8bdecb74ab78cba3c03e41dd
+      internalID: 1881762594798184909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2499eeed93cda144a40d349307bd54b
+      internalID: 7371862239845944637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d48145d27d80045898dd51a2029776
+      internalID: 7411156320017158244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_8
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3695aeb6a41f7054da90911bfe40a91a
+      internalID: 8577769930828326628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45fc9f3e8c7a3949a34148882c42bd9
+      internalID: -2686207218264811786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_10
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebe16b6ca756b34886048cf6bc667dd
+      internalID: -8651708042723445316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_11
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbc55f514905d24bb1a3c591041c4da
+      internalID: 4139363289662409398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_12
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a696b8f3e9c04796496361ea92c4a
+      internalID: 518701095606440691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_13
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1140
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ad9163b1be11a4498919fb254bdfee
+      internalID: -9116084446736021355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896f0e65c187dfd4aba507d7722570bd
+      internalID: 8477794891813532236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0a391fa474e944b93949e17643ea41
+      internalID: -5263690895174085494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_16
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b81164c6351a3438db3ca2d2367ebb
+      internalID: 6173062742166810317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_17
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d781143aa30b641b4882b423688a4b
+      internalID: 1061915563060377979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43d1b185a5d5d640a34717b68394b33
+      internalID: -1927102376491519996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_19
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115681d7712046749833ec3c9ae94de2
+      internalID: 6937962392928446309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_20
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3be9bebe247ccd48873c570615ed64a
+      internalID: 1504778110398383971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_21
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98189e504c5259f4cbfeb71f7fa0ddc3
+      internalID: 1652668127689354688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_22
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bc64972ad4f744182a21d5a88c47ad
+      internalID: -797207898648658521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_23
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b56524c89540646b7fa26ac290c1a2
+      internalID: 7486092869466982008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_24
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e07f5d8471d21f4e96af6b5a39772ce
+      internalID: -7272329210060470180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_25
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1085
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f1cd9fbcb82e445a2335b232fdb77e
+      internalID: 9188712829243415583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_26
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281ac84890d7ed143afe0a745edce63a
+      internalID: 6553352402339809708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a61ce9ba66752a41b81df0c22af147b
+      internalID: -3653186538030110797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_28
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65e2b058d2770e4aaa82442f91d146e
+      internalID: 1322213254074460633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_29
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22026faa9003aa444aba1e0471dcb8cf
+      internalID: -8920685639367818881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_30
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fa328945971d54eacf17ad2e4e5dbe
+      internalID: -6378939470902665902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_31
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d06950f60d8d9240bcd8c48fa5e2115
+      internalID: -5148633968474428702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_32
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1030
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d2cb44c4027f74cb1c510feecc345d
+      internalID: -6401425871105443662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_33
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c868f87e23a05409fab9ac06bfb833
+      internalID: 3369940853851082431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_34
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78311ebf3f5b3048826d235daed195c
+      internalID: -4870552430109599567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da18ee331036ba84989764af29ad5981
+      internalID: 3391576784164910107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_36
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9781686f4d5412d47ad3cb079c14591b
+      internalID: -6102908453126690153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_37
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a186895d1cc95ba499e0b667abe018ff
+      internalID: -4094335216750057537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_38
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a181839866490f448d2ad01e547e6db
+      internalID: -1807723862742703088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_39
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e3b4ab91c7d2241890209caf5d6f78
+      internalID: -604161709158836755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_40
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695f088d9fc974944a81f8df95dc2c61
+      internalID: 1948410061154396472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_41
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0c66fad03c2bf449edf78c18af39cc
+      internalID: 5113450338691712885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_42
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3cc45101624ac419e18e95e797ee67
+      internalID: 2272455953824977865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_43
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99479fd3424848f458d543323170dc1d
+      internalID: 3763877394141781697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_44
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7cb17a88c254243b0e4036d85318a7
+      internalID: 8763589360677646612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_45
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a5f596b442b644697c681131a8f85a
+      internalID: -8426999334827904448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_46
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2913beaf7f761c84cae7c0222cd68379
+      internalID: -7349866286591774505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_47
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 920
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde6edcb8fa99ca4e8716d31dc7352ac
+      internalID: 3675308362780449138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_48
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25685fe6b5e55534ab047f12d7d2024f
+      internalID: -2902352841604836659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_49
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40f7b48dd88b244fa81e73403115947
+      internalID: 7897736972041862510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_50
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1561e82836859684288c2b93397fd16f
+      internalID: 7968279284111800223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_51
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b12dfe95ff30d46b6e06ca25ad67eb
+      internalID: 2135910988485092032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_52
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0623083283bee054eb68e42a0f4350f4
+      internalID: 3225950150395975703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_53
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087cec5cd1aa813469e4bf595321fac3
+      internalID: 4913359498638134823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_54
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569c2348ced2a724885f7e08ed331079
+      internalID: 9217285031202229484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_55
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fbafa751c7f3049924c9baea404592
+      internalID: 2550265581027031852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_56
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e233aef2774b38c41bff5cbe3628a74e
+      internalID: 428443918318771193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_57
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2489daefea2dc14469b737d29ca6e131
+      internalID: -9072820845872766067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_58
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e235f19ec6a93184e81a44c52f41269a
+      internalID: 5874069105954293883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_59
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b2c65b25e0a414dbab786c8baaa0dd
+      internalID: -6360101241517901775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_60
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69a5bb6f401fec43821c5f0159c31c9
+      internalID: -4913201074996237415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_61
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d71ab562f065c542ae3664860722eff
+      internalID: 2231525623766754892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_62
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82978fb6db48ba4893f32793528c314
+      internalID: -8667317176124390522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_63
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2665213d3bc2c49985f300560bbda4
+      internalID: 587829110039657426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_64
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 865
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6073e2cdde96e249b2f6c59ac82da2c
+      internalID: -7637470233467695016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9354b90ebfbf9dd4fb865239c18960e9
+      internalID: -2198235864206900968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_66
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f78481f12da38646bbf4f33b82544f8
+      internalID: 9383610974228333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_67
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359bbe6013c900841b25b976140fdef4
+      internalID: -7565568096307793431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_68
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a76f34fd7d098c4bbd5c6d7b9357ed7
+      internalID: -1874914163678152169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_69
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e0a0e90a634d94287eadcb4573a42f
+      internalID: -3798226834938291038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_70
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab4c57db1f22904db47de4d6edfe71b
+      internalID: -1943429740880451356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_71
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 810
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd11adbae9437e842b55f76b580f4682
+      internalID: 2520961019405986885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_72
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa56bbfa54f1fd447943b6fe1305d062
+      internalID: -1459078573763545425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_73
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1a8e317bd5b1748a5d7aaf86970a07
+      internalID: 1363091915374205657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dfa602bdd01f444b2080a3afaff298
+      internalID: -8177266624017365974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_75
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3095bd1d98859e544968b97ffb241571
+      internalID: 6569001265657697503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_76
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32196d63d3f03e40adb4ab2ece7a4ba
+      internalID: 3296024717207138601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_77
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6f0218c0917c046836ecba662e5b97
+      internalID: 2883325159013924893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_78
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c095d57f472074fb06a0b8fac82d48
+      internalID: -1389973307608957135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_79
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040c0638a0263034ab9bd07dcdcffb2a
+      internalID: -6884975804087463556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_80
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e1104e038f2734b9d0e3b2c767434a
+      internalID: -7047773397566150344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_81
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dd5b0db0fe1f04ca149dddc6fd434a
+      internalID: -4240888896937455783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_82
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5b94264d412ac41912538c152c4e71
+      internalID: -4150452763765270080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_83
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b4c1ceb4db5d844be8c3c9b001170a
+      internalID: 66727145038041584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_84
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6264ad4c499f0654e9e6b2d1e3b32f34
+      internalID: -2286380261522219485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_85
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6572a1034b28754985c86ddd1aaa33e
+      internalID: -8746516367400226793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_86
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f868a0e52b24a4da17539374577df2
+      internalID: -3017835456908348966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_87
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecc3f92731c86a4eacc3a0295b0209e
+      internalID: -8378987900356054567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_88
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b075aa632215d96468f07663eadeba8e
+      internalID: -5684719875424426015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_89
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 645
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f6359573ec7f24dbcece72b033984c
+      internalID: -3463189623018805929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_90
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c82912ccf1650439fa348b13892b18
+      internalID: -6407466634542142138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_91
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2b8fcd626bc4843b08e5772a7f4f6d
+      internalID: 1926203515228255411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_92
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22974c20640406e4aaa96bdb129305fb
+      internalID: 2845064839719603899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_93
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedb8955e792bfa4aa3a03a3e05aa2c7
+      internalID: -6571030946209402275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_94
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9203e52ab6f124d9e6b052750bb1b5
+      internalID: 1718350087329632094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_95
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6ea842b173e274bbb3831d793b4443
+      internalID: -1308500887487784832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_96
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268869bebd51efd47a538d848bf80f55
+      internalID: 5582772950110463604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_97
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d1de41f3bdd6140bb061780eec6ed9
+      internalID: 1015569314315789915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_98
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4ba8afd719eea4585339fdc0c53adf
+      internalID: 7242686940437519125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_99
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93131497bbd02f74197912c7f4865e21
+      internalID: 2372013346152272490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_100
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15535aea565351a4bb86fbeab83d2ce3
+      internalID: -8156656587204087027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_101
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 590
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7db6fc79df286b439680d86c0745fa7
+      internalID: -3283114292663475182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_102
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede1f2ae70b8def44991f62f0bb219f4
+      internalID: -4439411188950326115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_103
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59b9a703c0036c4f97824c0698c829f
+      internalID: 713260245223112767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_104
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc582dd5d80775b4489039593572354b
+      internalID: 8504419139945893848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_105
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ff24cd82ff8f6449f098f5d84b22cf
+      internalID: 2726876114121785321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f867b88ac87ac24b8f301863ec52a8a
+      internalID: -5284807910029243958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_107
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19611b2a8c9c4b64d9270bd432ab5f1a
+      internalID: -7234635454129140396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_108
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 535
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a0cfa755d77274cbbba06eb33f1a60
+      internalID: -7416190368267289584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_109
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27b6a3eb64ba214b94635516795e9b8
+      internalID: -7034795750655613512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_110
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e8de0a12623044ab956fccb9da7cf4
+      internalID: 4816285506466529760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b9f41a048d4c940bc1f5bd5b8a3187
+      internalID: 4270983508489024233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_112
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702f7620e9dc8e64e8bc4602ddb0f854
+      internalID: -7282617034602504846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_113
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1538e66acd414b4e8f26cad262f8d01
+      internalID: 2687684365353909691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_114
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb17d4882accead45a878744d7d5f83f
+      internalID: 502967072649288991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_115
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd77ff19daa72e4289f7c58b620118c
+      internalID: -8253346636497051631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_116
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d39d56104df4b4c86706768e9dac2a
+      internalID: 5232037075742934803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_117
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac2321afcf5b041b9111676a34f1a9
+      internalID: 2952015397246991329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_118
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7abad8f05628241a3faee6ea5b4ac1
+      internalID: 6862182790387965067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_119
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42ac07ace059ce4693476513f1dc890
+      internalID: -3894556861047967210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_120
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aefec5f4731e9b49a74685fa72d7068
+      internalID: -1756775198172282432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_121
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e3703348ee4354d9a40e389d768c37
+      internalID: -5736201683957287417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_122
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 425
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cfd4a22ecbfd74bacc6b8b947e196d
+      internalID: 447863159026317253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_123
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c81859eac0e5864c98bfb3b20adc25a
+      internalID: -594748552697579157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_124
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3e8172851aa8045baeb721680bc91d
+      internalID: 1429539851415075247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_125
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78679d28e733fa4bab652756be8fe62
+      internalID: 1410325211141972338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_126
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc7316422dcc684faf95c868bf5176f
+      internalID: 4923583361168668517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_127
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d105029987935f94baf11fbc10b7e114
+      internalID: 3735498924738337189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_128
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0172d1f25cc6424e809b533d3526a99
+      internalID: 6106201562292391766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_129
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a67ac79019e9b344984a305fb4b8b7e
+      internalID: 6166330497051744031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_130
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2146f469d5ca7e4090cf334ae86eccd
+      internalID: -6924232329100181162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_131
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10576831d86647241a6f99e8cf92357e
+      internalID: -3448498480808940630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_132
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8726eb5a298800f4393ca2d268b2ac4a
+      internalID: -5576855969497553539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_133
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29b991b66e472a4c8611b5490cd0725
+      internalID: -2713793977065665388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_134
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd19da9c67955e346997012e87008c19
+      internalID: 7091968849360407175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_135
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441f70b70da779b428d2381c982219d7
+      internalID: -767846806585102475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_136
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61cedda6776c864dbb5495a3e42c086
+      internalID: -1008992672905445570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_137
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 370
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94f0d3863746214cacd8034967ce89e
+      internalID: -4593584182813849292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_138
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c41725b24a5bf42823b02bc6a24ba3
+      internalID: -1302906729062764348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_139
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e285b82d1f2ae4440b179493075ef3ee
+      internalID: 4598765370216007819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_140
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8528ea217c3e33146b47d1afce03dd5d
+      internalID: 1153245440470325269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_141
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821aed0c8337e2647b82297822a122d0
+      internalID: -7274221034681225874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_142
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34511def366b61d42876b0fda03a4f15
+      internalID: 1155513713888273258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_143
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d92ff510f54ee44a87a0dabade98e80
+      internalID: -5035824307462175124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_144
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d1fa1b93e4d134abdd6c62612a8a92
+      internalID: 7190317622468367102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_145
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cf1ee095c521c4f9274a4da7d2be71
+      internalID: -4009021640182463592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_146
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 315
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccf6307d40961340b26ec931651231a
+      internalID: -8751364646423463767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_147
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bf3a57a103d5044891b0029eaeb0f5
+      internalID: 7572602421036376014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_148
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0d7dfdc934532438146503dc84cd1d
+      internalID: -8481288320543867796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_149
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f219511c42b42c41ae39538c3cd559b
+      internalID: -8199865521053062792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_150
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a8d96fb37d7f94499c87cca9f587fb
+      internalID: 1085296656619521452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_151
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2ebcece5111b040a433abe62946ca7
+      internalID: -153225411661078097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_152
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694dd93948bcff94a961aa43aa656f36
+      internalID: 5423690360592032084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_153
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9131ffefed07c6a42b372980946f949f
+      internalID: 3421108692339203662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_154
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 150
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183ce5365966ffe48b13651920bcb368
+      internalID: 3831222076555740529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_155
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8c6484f28c15a48b8e5d9802ab3835
+      internalID: -2623999410395539814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_156
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdec96ba0100a74795bc79b676a60e8
+      internalID: -2351501718197278305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_157
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54897faa2cd3ce0479c84b7a7ea6dc06
+      internalID: -8497718117855802863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_158
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7004839c84a72ab48ab57b690b2de85d
+      internalID: 9019618460422044692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_159
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c233e51de775746a92a7d73dacda34
+      internalID: 7412265984467221149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_160
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbfd48935f04e94aa0ac4804b4b727d
+      internalID: -5601896911443314978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_161
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a261238799a3c8c41a3a8951d68adcad
+      internalID: 3926951608050378127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_162
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f245dc0f60f554344ba177a4ce8ddd31
+      internalID: -4541144244360946661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_163
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a7ab5f12b2c0e43a9891d8e696b039
+      internalID: 2097850790161664211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_164
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dd011fc7c3a0c46b97b4af85cdd776
+      internalID: 3091657360654047135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_165
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35da02c20941224f8c18ae6ea579fe2
+      internalID: -892241724248748348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_166
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d7013bee4c4cd4a9b6c54983a4106f
+      internalID: -4327548731521082347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_167
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 95
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f03962f7d720041b5fa3e90e0f0d61
+      internalID: 9001182723867461112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_168
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df3f7aab20208b43a266e9b10b7155c
+      internalID: -2510052998527041561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_169
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b6e3258ec145a4b8ae912a0dd8e238
+      internalID: 4071756245913917344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_170
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e66458bbfa9e9c4f806562df17dfa42
+      internalID: 3140700125006246014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_171
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fd44a5a3dc4464185f3ce9f381463d
+      internalID: 7899423731979424104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_172
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2076440bbc60b46991b55517038ad5
+      internalID: 7655966986116572557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch attack animation_173
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 40
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816bd19252e92164fa0334357fd468b3
+      internalID: 5098650536677748611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b31e4f6f1bf255641b262cf8066783c7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

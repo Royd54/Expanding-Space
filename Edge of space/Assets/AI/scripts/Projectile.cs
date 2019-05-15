@@ -46,6 +46,8 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             whiteFlash();
+            Vector3 moveDirection = player.position - player.transform.position;
+            player.GetComponent<Rigidbody2D>().AddForce(player.right * 100f);
             player.SendMessage("TakeDamage", damage);
             DestroyProjectile();
         }

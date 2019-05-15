@@ -343,7 +343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -133.99997, y: 30.000015}
+  m_AnchoredPosition: {x: -134, y: 30}
   m_SizeDelta: {x: 114.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1871632235
@@ -511,9 +511,11 @@ GameObject:
   - component: {fileID: 7993191044550678085}
   - component: {fileID: 8847152603064017653}
   - component: {fileID: 1304634035906184340}
-  - component: {fileID: 2056005815}
-  - component: {fileID: 2056005814}
   - component: {fileID: 2165127092541525812}
+  - component: {fileID: 614776590}
+  - component: {fileID: 614776591}
+  - component: {fileID: 614776589}
+  - component: {fileID: 614776592}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -529,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857438428896450798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.67, y: 0.13, z: 0}
   m_LocalScale: {x: 3.391, y: 3.391, z: 3.391}
   m_Children:
   - {fileID: 7310861271331599659}
@@ -598,7 +600,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!50 &2056005815
+--- !u!114 &2165127092541525812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857438428896450798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef834775e250c34ba0bcf11b5cb751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  food: 100
+  water: 100
+  healthBar: {fileID: 79017501}
+  healthText: {fileID: 2094462943}
+  foodBar: {fileID: 1203991256}
+  foodText: {fileID: 1373385934}
+  waterBar: {fileID: 1871632237}
+  waterText: {fileID: 4771853}
+--- !u!50 &614776590
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -619,7 +642,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &2056005814
+--- !u!61 &614776591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857438428896450798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000007450581, y: 0.011599064}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.55, y: 0.55}
+    newSize: {x: 0.55, y: 0.55}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2715006, y: 0.5268018}
+  m_EdgeRadius: 0
+--- !u!95 &614776589
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -629,7 +678,7 @@ Animator:
   m_GameObject: {fileID: 857438428896450798}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6fcc915640fff0e4d815d2eea47c84a8, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -638,7 +687,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2165127092541525812
+--- !u!114 &614776592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -651,8 +700,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  food: 100
-  water: 100
+  food: 63.59753
+  water: 27.207413
   healthBar: {fileID: 79017501}
   healthText: {fileID: 2094462943}
   foodBar: {fileID: 1203991256}
@@ -1029,7 +1078,7 @@ MonoBehaviour:
   firingType: 0
   ammoType: 2
   bulletVelocity: 30
-  damage: 10
+  damage: 35
   fireRate: 0
   spread: 10
   bullet: {fileID: 5051717714612977659, guid: 656b93a066eeb164dad364044ec8cf56, type: 3}
