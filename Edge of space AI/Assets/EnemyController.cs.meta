@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ccd3a691898dbf74fb0c4af0c19cdd96
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - projectitle: {fileID: 4885095953614669587, guid: 2811a2a4199bd2f4faba1b6d0b5f98c8,
+      type: 3}
+  - minion: {fileID: 7151323092616962518, guid: 2fbe8eb9b8fb3c8439fbd5884e46152b,
+      type: 3}
+  - player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
