@@ -15,9 +15,9 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        transform.position += transform.right * speed * Time.deltaTime;
+        transform.position += transform.right * speed * Time.deltaTime;//moves the bullet to the right
         if (Vector3.Distance(this.transform.position, player.transform.position) > 50.0f)
-            Destroy(this.gameObject);
+            Destroy(this.gameObject);//if the bullet is more than 50 units away it will be destroyed
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,8 +25,10 @@ public class Bullet : MonoBehaviour
         Destroy(this.gameObject);
         if (collision.gameObject.tag == "enemy")
             collision.gameObject.SendMessage("TakeDamage", damage);
+            //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
     }
 
+    //sets the damage and speed of the pulled this is called by the gun that fired it
     private void SetDamage(int damage)
     {
         this.damage = damage;

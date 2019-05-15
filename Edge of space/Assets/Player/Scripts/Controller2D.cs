@@ -34,17 +34,19 @@ public class Controller2D : MonoBehaviour
     
     private void Update()
     {
+        //turns the gunPivotPoint to where the cursor is
         var diraction = Input.mousePosition - Camera.main.WorldToScreenPoint(gunPivotPoint.position);
         var angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
         gunPivotPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         #region Player and tool turn
+        //moves the gun behind the player when it gets to a certain degree
         if (gunPivotPoint.eulerAngles.z >= 10 && gunPivotPoint.eulerAngles.z <= 150)
             tool.GetComponent<SpriteRenderer>().sortingOrder = 0;
         else
             tool.GetComponent<SpriteRenderer>().sortingOrder = 1;
-        
-        if(gunPivotPoint.eulerAngles.z >= 90 && gunPivotPoint.eulerAngles.z <= 270)
+        //turns the gun and the player around when it gets to a certain degree
+        if (gunPivotPoint.eulerAngles.z >= 90 && gunPivotPoint.eulerAngles.z <= 270)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
             if (!turn)
@@ -64,29 +66,31 @@ public class Controller2D : MonoBehaviour
         }
         #endregion
         #region Tool Input
+        //sets the using bool in the tool to true so it can be used
         if (Input.GetMouseButtonDown(0))
-            tool.SendMessage("SetPrimaryUse", true);
+            tool.SendMessage("Use", true);
         if (Input.GetMouseButtonUp(0))
-            tool.SendMessage("SetPrimaryUse", false);
+            tool.SendMessage("Use", false);
         #endregion
         #region Animations
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)//checks if the player is moving
         {
             //if the player is moving it player the waking animation
             anim.SetBool("walking", true);
-            //anim.SetBool("idle", false);
+            anim.SetBool("idle", false);
         }
         else
         {
             //if the player is standing still it player the idle animation
             anim.SetBool("walking", false);
-            //anim.SetBool("idle", true);
+            anim.SetBool("idle", true);
         }
         #endregion
     }
 
     private void FixedUpdate()
     {
+        //moves the player
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         move = input.normalized * moveSpeed;
         rb.MovePosition(rb.position + move * Time.fixedDeltaTime);

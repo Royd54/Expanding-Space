@@ -34,7 +34,7 @@ public class Gun : MonoBehaviour
     #region Private Variables
     private GameObject bulletIns;
     private Transform spawner;
-    private bool primaryUse = false;
+    private bool _using = false;
     private bool secondaryUse = false;
     private NuclearThroneLikeCamera cam;
     private float fireRateRestet;
@@ -50,7 +50,7 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
-        if (primaryUse)
+        if (_using)
         {
             if (firingType == GunEnum.singleShot)
             {
@@ -60,7 +60,7 @@ public class Gun : MonoBehaviour
                 spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
                 bulletIns.SendMessage("SetDamage", damage);
                 bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                primaryUse = false;
+                _using = false;
             }
             if (firingType == GunEnum.semiAutomatic)
             {
@@ -84,17 +84,13 @@ public class Gun : MonoBehaviour
                 bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                 bulletIns.SendMessage("SetDamage", damage);
                 bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                primaryUse = false;
+                _using = false;
             }
         }
     }
 
-    private void SetPrimaryUse(bool primaryUse)
+    private void Use(bool _using)
     {
-        this.primaryUse = primaryUse;
-    }
-    private void SetSecondaryUse(bool secondaryUse)
-    {
-        this.secondaryUse = secondaryUse;
+        this._using = _using;
     }
 }
