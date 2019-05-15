@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //if the player is in range the enemy chases him
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)

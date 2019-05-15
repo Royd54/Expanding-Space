@@ -17,11 +17,12 @@ public class EnemyControllerBasic : MonoBehaviour
     private GameObject player;
     private Animator anim;
 
-    public int damage = 35;
+    public float damage = 35;
     public float fireRate = 1F;
     private float nextFire = 0.0F;
 
-    private Color matDefault;
+    private Material matDefault;
+    public Material matWhite;
     SpriteRenderer sr;
 
     // Start is called before the first frame update
@@ -35,23 +36,13 @@ public class EnemyControllerBasic : MonoBehaviour
 
         speed = 2;
         //sets the basic color to the color it is on (on run)
-        sr = GetComponent<SpriteRenderer>();
-        matDefault = sr.color;
+        sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
+        matDefault = sr.material;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            whiteFlash();
-        }
-        else
-        {
-            Invoke("ResetMaterial", 1f);
-        }
-
         //checks if the player is in range of the anemy
         if (Vector3.Distance(transform.position, player.transform.position) > 30)
         {
@@ -104,6 +95,7 @@ public class EnemyControllerBasic : MonoBehaviour
                 //does damage if the timer is 0
                 nextFire = Time.time + fireRate;
                 player.SendMessage("TakeDamage", damage);
+                whiteFlash();
             }
         
             // transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
@@ -113,7 +105,6 @@ public class EnemyControllerBasic : MonoBehaviour
         {
             Debug.Log(Vector3.Distance(transform.position, player.transform.position));
             anim.SetBool("isFollowing", true);
-            speed *= 2;
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 
         }
@@ -123,13 +114,14 @@ public class EnemyControllerBasic : MonoBehaviour
     //sets the object its color to white
     void whiteFlash()
     {
-            sr.color = Color.white;
+        sr.material = matWhite;
+        Invoke("ResetMaterial", 0.2f);
     }
 
     //resets the material to the default color
     void ResetMaterial()
     {
-        sr.color = matDefault;
+        sr.material = matDefault;
     }
 
 }
