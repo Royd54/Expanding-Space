@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 96%
+  m_Text: 100%
 --- !u!1 &79017499
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.9800455
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 98%
+  m_Text: 100%
 --- !u!1 &1631377293
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +317,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1631377294}
-  - component: {fileID: 1631377295}
   m_Layer: 0
   m_Name: Stats
   m_TagString: Untagged
@@ -344,30 +343,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -134, y: 30}
+  m_AnchoredPosition: {x: -133.99997, y: 30.000015}
   m_SizeDelta: {x: 114.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1631377295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631377293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eef834775e250c34ba0bcf11b5cb751f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  food: 98.00455
-  water: 96.04903
-  healthBar: {fileID: 79017501}
-  healthText: {fileID: 2094462943}
-  foodBar: {fileID: 1203991256}
-  foodText: {fileID: 1373385934}
-  waterBar: {fileID: 1871632237}
-  waterText: {fileID: 4771853}
 --- !u!1 &1871632235
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +417,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.9604903
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -533,6 +511,9 @@ GameObject:
   - component: {fileID: 7993191044550678085}
   - component: {fileID: 8847152603064017653}
   - component: {fileID: 1304634035906184340}
+  - component: {fileID: 2056005815}
+  - component: {fileID: 2056005814}
+  - component: {fileID: 2165127092541525812}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -616,7 +597,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014e5ea82f79bcf41816d424d608ed1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 10
+--- !u!50 &2056005815
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857438428896450798}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &2056005814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857438428896450798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fcc915640fff0e4d815d2eea47c84a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2165127092541525812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857438428896450798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef834775e250c34ba0bcf11b5cb751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  food: 100
+  water: 100
+  healthBar: {fileID: 79017501}
+  healthText: {fileID: 2094462943}
+  foodBar: {fileID: 1203991256}
+  foodText: {fileID: 1373385934}
+  waterBar: {fileID: 1871632237}
+  waterText: {fileID: 4771853}
 --- !u!1 &1120341999539087254
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf1336aa0a25594cb3c0f81b33a011e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 7993191044550678085}
   cameraDistance: 3.5
   smoothTime: 0.25
 --- !u!1 &7310861271182847653
@@ -986,10 +1028,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firingType: 0
   ammoType: 2
-  bulletVelocity: 0
+  bulletVelocity: 30
   damage: 10
   fireRate: 0
-  spread: 2.29
+  spread: 10
   bullet: {fileID: 5051717714612977659, guid: 656b93a066eeb164dad364044ec8cf56, type: 3}
 --- !u!1 &7310861271331599656
 GameObject:
