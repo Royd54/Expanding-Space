@@ -5,11 +5,17 @@ using UnityEngine;
 public class witchHealthController : MonoBehaviour
 {
     [SerializeField] private float health;
+    private Material matDefault;
+    public Material matWhite;
+    SpriteRenderer sr;
 
     private void Start()
     {
         //sets the hp to 100
         health = 100f;
+
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
+        matDefault = sr.material;
     }
 
     //this function can be called to cause damage to the object it is on
@@ -23,5 +29,19 @@ public class witchHealthController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    //sets the object its color to white
+    public void whiteFlash()
+    {
+        sr.material = matWhite;
+        Invoke("ResetMaterial", 0.2f);
+    }
+
+    //resets the material to the default color
+    public void ResetMaterial()
+    {
+        sr.material = matDefault;
+    }
+
 
 }

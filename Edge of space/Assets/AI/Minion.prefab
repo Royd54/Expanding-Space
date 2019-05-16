@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 8154173513392885450}
   - component: {fileID: 95801839619665774}
   - component: {fileID: 4703161226778046987}
+  - component: {fileID: 9218699130096224669}
   - component: {fileID: 59438931348259983}
   m_Layer: 0
   m_Name: Minion
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +98,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &9218699130096224669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7151323092616962518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf5baac115e2c2419161b8f334c0142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
 --- !u!114 &59438931348259983
 MonoBehaviour:
   m_ObjectHideFlags: 0

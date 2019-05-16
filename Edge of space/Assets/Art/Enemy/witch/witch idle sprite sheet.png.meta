@@ -1,7 +1,226 @@
 fileFormatVersion: 2
 guid: 6a5ada0c7fe3b3640ac74ca45b70b006
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2033779807511404232
+    second: witch idle sprite sheet_0
+  - first:
+      213: 948993628113002239
+    second: witch idle sprite sheet_1
+  - first:
+      213: 7738389621702515989
+    second: witch idle sprite sheet_2
+  - first:
+      213: 5580843690407253593
+    second: witch idle sprite sheet_3
+  - first:
+      213: 1474334145418060995
+    second: witch idle sprite sheet_4
+  - first:
+      213: -3302572271644129933
+    second: witch idle sprite sheet_5
+  - first:
+      213: -4198582297019010815
+    second: witch idle sprite sheet_6
+  - first:
+      213: 4447920943200925467
+    second: witch idle sprite sheet_7
+  - first:
+      213: 7763916060517274159
+    second: witch idle sprite sheet_8
+  - first:
+      213: 7837200527883208327
+    second: witch idle sprite sheet_9
+  - first:
+      213: -4704530496509709810
+    second: witch idle sprite sheet_10
+  - first:
+      213: 1443710555428748807
+    second: witch idle sprite sheet_11
+  - first:
+      213: 1290266226611100320
+    second: witch idle sprite sheet_12
+  - first:
+      213: 2822358312962739862
+    second: witch idle sprite sheet_13
+  - first:
+      213: 1780313141304417084
+    second: witch idle sprite sheet_14
+  - first:
+      213: -2271187290988374587
+    second: witch idle sprite sheet_15
+  - first:
+      213: 5239247738275881281
+    second: witch idle sprite sheet_16
+  - first:
+      213: 1531453086835402758
+    second: witch idle sprite sheet_17
+  - first:
+      213: 5344840708296132694
+    second: witch idle sprite sheet_18
+  - first:
+      213: 2585871165289456784
+    second: witch idle sprite sheet_19
+  - first:
+      213: 3199777620288321064
+    second: witch idle sprite sheet_20
+  - first:
+      213: 5563547079848067855
+    second: witch idle sprite sheet_21
+  - first:
+      213: 4866076758150933212
+    second: witch idle sprite sheet_22
+  - first:
+      213: -5795836594696269832
+    second: witch idle sprite sheet_23
+  - first:
+      213: 2709860590782961702
+    second: witch idle sprite sheet_24
+  - first:
+      213: 1954932132328324740
+    second: witch idle sprite sheet_25
+  - first:
+      213: -8485341104993392285
+    second: witch idle sprite sheet_26
+  - first:
+      213: 8797397848874879929
+    second: witch idle sprite sheet_27
+  - first:
+      213: 8125918347105683848
+    second: witch idle sprite sheet_28
+  - first:
+      213: 3956471298865159966
+    second: witch idle sprite sheet_29
+  - first:
+      213: -8474682150309723481
+    second: witch idle sprite sheet_30
+  - first:
+      213: 107662733816298648
+    second: witch idle sprite sheet_31
+  - first:
+      213: -5755338801231492385
+    second: witch idle sprite sheet_32
+  - first:
+      213: 3552237990617859562
+    second: witch idle sprite sheet_33
+  - first:
+      213: 7423800373489985323
+    second: witch idle sprite sheet_34
+  - first:
+      213: 8641515274625442996
+    second: witch idle sprite sheet_35
+  - first:
+      213: -3780520363791754860
+    second: witch idle sprite sheet_36
+  - first:
+      213: -1389516342180356676
+    second: witch idle sprite sheet_37
+  - first:
+      213: 1785289853976702783
+    second: witch idle sprite sheet_38
+  - first:
+      213: -625071943959452153
+    second: witch idle sprite sheet_39
+  - first:
+      213: 2474214869063881725
+    second: witch idle sprite sheet_40
+  - first:
+      213: 5628654289586047786
+    second: witch idle sprite sheet_41
+  - first:
+      213: 608974670413620128
+    second: witch idle sprite sheet_42
+  - first:
+      213: -4357032714876231366
+    second: witch idle sprite sheet_43
+  - first:
+      213: 7179146433282182794
+    second: witch idle sprite sheet_44
+  - first:
+      213: -2985870107766503784
+    second: witch idle sprite sheet_45
+  - first:
+      213: 877290269046856563
+    second: witch idle sprite sheet_46
+  - first:
+      213: 3808585131194562967
+    second: witch idle sprite sheet_47
+  - first:
+      213: -6490878690218445253
+    second: witch idle sprite sheet_48
+  - first:
+      213: 6381725970504279046
+    second: witch idle sprite sheet_49
+  - first:
+      213: 225510684214693094
+    second: witch idle sprite sheet_50
+  - first:
+      213: 3279349986234973547
+    second: witch idle sprite sheet_51
+  - first:
+      213: -4896222241250894754
+    second: witch idle sprite sheet_52
+  - first:
+      213: 8492989368135288029
+    second: witch idle sprite sheet_53
+  - first:
+      213: -2534781664352583273
+    second: witch idle sprite sheet_54
+  - first:
+      213: -4712994184588672851
+    second: witch idle sprite sheet_55
+  - first:
+      213: 499728145929388608
+    second: witch idle sprite sheet_56
+  - first:
+      213: -5888277944195657041
+    second: witch idle sprite sheet_57
+  - first:
+      213: 9005561121187845261
+    second: witch idle sprite sheet_58
+  - first:
+      213: -1528199528820636480
+    second: witch idle sprite sheet_59
+  - first:
+      213: 7836356326376279775
+    second: witch idle sprite sheet_60
+  - first:
+      213: -8841279948362545169
+    second: witch idle sprite sheet_61
+  - first:
+      213: 9184468491434204021
+    second: witch idle sprite sheet_62
+  - first:
+      213: 6243962124138467929
+    second: witch idle sprite sheet_63
+  - first:
+      213: 7240635187985755817
+    second: witch idle sprite sheet_64
+  - first:
+      213: -6593065461095533639
+    second: witch idle sprite sheet_65
+  - first:
+      213: -7419226576502778477
+    second: witch idle sprite sheet_66
+  - first:
+      213: -702916805249766984
+    second: witch idle sprite sheet_67
+  - first:
+      213: -2268758314405463110
+    second: witch idle sprite sheet_68
+  - first:
+      213: -111357927147027264
+    second: witch idle sprite sheet_69
+  - first:
+      213: -3887479766952210651
+    second: witch idle sprite sheet_70
+  - first:
+      213: -5936348967551147415
+    second: witch idle sprite sheet_71
+  - first:
+      213: -7159909640149678886
+    second: witch idle sprite sheet_72
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +259,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +288,304 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: witch idle sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3a52ce58f7bc142ad74688f9b02bf7
+      internalID: -2033779807511404232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5cf04037d752d419a4f01f2676b6e6
+      internalID: 948993628113002239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1811741a68a91fa45a3cf25541a101bd
+      internalID: 7738389621702515989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c103c73ebca086408a3aa38e18c44bb
+      internalID: 5580843690407253593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17957283d80190a4ba976f60e492a441
+      internalID: 1474334145418060995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212960be157b28e4f8802c15d087003d
+      internalID: -3302572271644129933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fcbcbb852439a4c88211a029d2d5d2
+      internalID: -4198582297019010815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133d0b19a0f3ec64e9947cd2c44d90e7
+      internalID: 4447920943200925467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87da49626cbbbce4bac4aeeb9c6bfbd5
+      internalID: 7763916060517274159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421725adbaa6eb746be3fd159477cfb3
+      internalID: 7837200527883208327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b002b1bab1eadd041bb620b08f1b33af
+      internalID: -4704530496509709810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2db9bd039eaac42ad51923d395bf35
+      internalID: 1443710555428748807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witch idle sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba34f49ea26e1e4990391034226ce96
+      internalID: 1290266226611100320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

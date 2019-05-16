@@ -23,9 +23,11 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(this.gameObject);
-        if (collision.gameObject.tag == "enemy")
+        //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
+        if (collision.gameObject.tag == "enemy") { 
             collision.gameObject.SendMessage("TakeDamage", damage);
-            //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
+            collision.gameObject.SendMessage("whiteFlash");
+        }
     }
 
     //sets the damage and speed of the pulled this is called by the gun that fired it
