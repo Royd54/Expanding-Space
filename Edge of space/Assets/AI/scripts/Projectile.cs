@@ -36,15 +36,12 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
     }
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if the projectile collides with the player it deals damage and destroys itself
         if (collision.gameObject.name == "Player")
         {
             whiteFlash();
-            Vector3 moveDirection = player.position - player.transform.position;
-            player.GetComponent<Rigidbody2D>().AddForce(player.right * 100f);
             player.SendMessage("TakeDamage", damage);
             DestroyProjectile();
         }
@@ -53,7 +50,7 @@ public class Projectile : MonoBehaviour
     //destroys the gameobject
     void DestroyProjectile()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     //sets the object its color to white

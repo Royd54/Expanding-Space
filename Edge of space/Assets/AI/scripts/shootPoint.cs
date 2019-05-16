@@ -19,6 +19,8 @@ public class shootPoint : MonoBehaviour
     public float reloadTimer = 2f;
     private float startReloadTimer;
 
+    private Animator anim;
+
     public bool minionReloading = false;
     public float minionReloadTimer = 4f;
     private float minionStartReloadTimer;
@@ -46,7 +48,7 @@ public class shootPoint : MonoBehaviour
 
         target = GameObject.Find("Player").GetComponent<Transform>();
 
-
+        anim = GameObject.Find("witch").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -60,6 +62,8 @@ public class shootPoint : MonoBehaviour
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, q, Random.RandomRange(0f, 90f)  * Time.deltaTime);
+            anim.SetBool("isFollowing", false);
+            anim.SetBool("isAttacking", true);
         }
 
         //spawns the minions

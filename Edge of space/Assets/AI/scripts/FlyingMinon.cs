@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FlyingMinon : MonoBehaviour
 {
-
     public float speed;
     public float stoppingDistance;
 
@@ -67,5 +66,4 @@ public class FlyingMinon : MonoBehaviour
     {
         sr.material = matDefault;
     }
-
 }

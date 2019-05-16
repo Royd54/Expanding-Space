@@ -12,16 +12,19 @@ public class EnemyController : MonoBehaviour
     public GameObject projectitle;
     public GameObject minion;
     public Transform player;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").transform;
+        anim = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        anim.SetBool("isFollowing", true);
         //if the player is in range the enemy chases him
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
         {
