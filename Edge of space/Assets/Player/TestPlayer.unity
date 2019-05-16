@@ -187,6 +187,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7993191044550678085, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993191044550678085, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993191044550678085, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_Color.g
@@ -212,5 +227,14 @@ PrefabInstance:
       propertyPath: m_DrawMode
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1631377294, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631377294, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2165127092541525812, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}

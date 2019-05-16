@@ -36,10 +36,7 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
     }
-
-
-
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if the projectile collides with the player it deals damage and destroys itself
