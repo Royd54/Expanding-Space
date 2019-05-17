@@ -127,11 +127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2330114530547513535, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerHolder
-      objectReference: {fileID: 0}
     - target: {fileID: 7964085825880707080, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,30 +182,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
+    - target: {fileID: 2330114530547513535, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
-      propertyPath: m_Color.g
-      value: 1
+      propertyPath: m_Name
+      value: PlayerHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
+    - target: {fileID: 1631377294, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -134.00003
       objectReference: {fileID: 0}
-    - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847152603064017653, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_DrawMode
-      value: 0
+    - target: {fileID: 1631377294, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 29.99997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
