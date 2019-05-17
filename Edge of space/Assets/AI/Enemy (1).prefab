@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1629343293097995704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.026, y: 4.026, z: 4.026}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 7213149641471891365}
   m_Father: {fileID: 0}
@@ -130,13 +130,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd3a691898dbf74fb0c4af0c19cdd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   stoppingDistance: 20
   retreatDistance: 10
   projectitle: {fileID: 5883066652056736328, guid: 755f3c85285dfae4db05d7c118e749db,
     type: 3}
   minion: {fileID: 7151323092616962518, guid: 2fbe8eb9b8fb3c8439fbd5884e46152b, type: 3}
-  player: {fileID: 7964085825880707080, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+  player: {fileID: 0}
 --- !u!61 &1926946605149807698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
   reloadTimer: 2
   minionReloading: 0
   minionReloadTimer: 4
-  target: {fileID: 7964085825880707080, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+  target: {fileID: 0}
   projectitle: {fileID: 5883066652056736328, guid: 755f3c85285dfae4db05d7c118e749db,
     type: 3}
   minion: {fileID: 7151323092616962518, guid: 2fbe8eb9b8fb3c8439fbd5884e46152b, type: 3}
