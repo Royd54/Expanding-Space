@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4712625586705306406}
   - component: {fileID: 3297653079950504343}
   - component: {fileID: 1080614797329212099}
-  - component: {fileID: -3080955945636899132}
   m_Layer: 0
   m_Name: Circle 1
   m_TagString: Untagged
@@ -29,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5883066652056736328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8a55cf8e0023aa14db5802cb43fc719c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 109eb9879148abe46bb324b1d3b690f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,18 +111,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &-3080955945636899132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5883066652056736328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adf5baac115e2c2419161b8f334c0142, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  matWhite: {fileID: 0}
+  m_Radius: 0.04

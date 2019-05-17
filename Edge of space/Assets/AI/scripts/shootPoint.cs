@@ -61,7 +61,7 @@ public class shootPoint : MonoBehaviour
             Vector3 targetDir = target.position - transform.position;
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, q, Random.RandomRange(0f, 90f)  * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, q, Random.Range(0f, 90f)  * Time.deltaTime);
             anim.SetBool("isFollowing", false);
             anim.SetBool("isAttacking", true);
         }

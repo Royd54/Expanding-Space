@@ -11,19 +11,12 @@ public class Projectile : MonoBehaviour
     private Vector2 target;
     public float damage = 50;
 
-    private Material matDefault;
-    public Material matWhite;
-    SpriteRenderer sr;
-
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").transform;
 
         target = new Vector2(player.position.x, player.position.y);
-
-        sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
-        matDefault = sr.material;
     }
 
     // Update is called once per frame
@@ -42,7 +35,6 @@ public class Projectile : MonoBehaviour
         //if the projectile collides with the player it deals damage and destroys itself
         if (collision.gameObject.name == "Player")
         {
-            whiteFlash();
             player.SendMessage("TakeDamage", damage);
             DestroyProjectile();
         }
@@ -54,17 +46,5 @@ public class Projectile : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    //sets the object its color to white
-    void whiteFlash()
-    {
-        sr.material = matWhite;
-        Invoke("ResetMaterial", 0.2f);
-    }
-
-    //resets the material to the default color
-    void ResetMaterial()
-    {
-        sr.material = matDefault;
-    }
 
 }

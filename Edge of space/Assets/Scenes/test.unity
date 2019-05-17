@@ -195,11 +195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2330114530547513535, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerHolder
-      objectReference: {fileID: 0}
     - target: {fileID: 7964085825880707080, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -255,6 +250,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2330114530547513535, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerHolder
+      objectReference: {fileID: 0}
     - target: {fileID: 614776590, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
       propertyPath: m_BodyType
       value: 1
@@ -263,7 +263,13 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 0.0001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2165127092541525812, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: matWhite
+      value: 
+      objectReference: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
+    m_RemovedComponents:
+    - {fileID: 614776592, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
 --- !u!1 &1765495971 stripped
 GameObject:

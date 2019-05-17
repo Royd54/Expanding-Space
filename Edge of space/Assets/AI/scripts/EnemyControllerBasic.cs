@@ -21,10 +21,6 @@ public class EnemyControllerBasic : MonoBehaviour
     public float fireRate = 1F;
     private float nextFire = 0.0F;
 
-    private Material matDefault;
-    public Material matWhite;
-    SpriteRenderer sr;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +31,6 @@ public class EnemyControllerBasic : MonoBehaviour
         moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
         speed = 2;
-        //sets the basic color to the color it is on (on run)
-        sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
-        matDefault = sr.material;
     }
 
     // Update is called once per frame
@@ -95,7 +88,6 @@ public class EnemyControllerBasic : MonoBehaviour
                 //does damage if the timer is 0
                 nextFire = Time.time + fireRate;
                 player.SendMessage("TakeDamage", damage);
-                whiteFlash();
             }
         
             // transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
@@ -110,18 +102,4 @@ public class EnemyControllerBasic : MonoBehaviour
         }
 
     }
-
-    //sets the object its color to white
-    void whiteFlash()
-    {
-        sr.material = matWhite;
-        Invoke("ResetMaterial", 0.2f);
-    }
-
-    //resets the material to the default color
-    void ResetMaterial()
-    {
-        sr.material = matDefault;
-    }
-
 }
