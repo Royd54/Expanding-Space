@@ -14,11 +14,8 @@ public class PlayerStats : MonoBehaviour
     public float water;
     [Header("bars/text")]
     public Image healthBar;
-    public Text healthText;
     public Image foodBar;
-    public Text foodText;
     public Image waterBar;
-    public Text waterText;
 
     private Material matDefault;
     public Material matWhite;
@@ -70,11 +67,8 @@ public class PlayerStats : MonoBehaviour
     private void MoveBars()
     {
         healthBar.fillAmount = health / 100;
-        healthText.text = Mathf.RoundToInt(health) + "%";
         foodBar.fillAmount = food / 100;
-        foodText.text = Mathf.RoundToInt(food) + "%";
         waterBar.fillAmount = water / 100;
-        waterText.text = Mathf.RoundToInt(water) + "%";
     }
 
     //sets the object its color to white
