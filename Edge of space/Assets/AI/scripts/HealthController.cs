@@ -28,6 +28,7 @@ public class HealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
+            GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
             Destroy(gameObject);
         }
     }

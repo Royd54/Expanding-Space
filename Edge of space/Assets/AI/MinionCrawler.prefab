@@ -191,6 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  stoppingDistance: 1.5
+  stoppingDistance: 2
   damage: 1
   fireRate: 1

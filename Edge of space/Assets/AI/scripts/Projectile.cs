@@ -48,7 +48,7 @@ public class Projectile : MonoBehaviour
     //destroys the gameobject
     void DestroyProjectile()
     {
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
 

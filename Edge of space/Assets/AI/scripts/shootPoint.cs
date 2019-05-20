@@ -19,7 +19,7 @@ public class shootPoint : MonoBehaviour
     public float reloadTimer = 2f;
     private float startReloadTimer;
 
-    private Animator anim;
+    public Animator anim;
 
     public bool minionReloading = false;
     public float minionReloadTimer = 4f;
@@ -27,7 +27,7 @@ public class shootPoint : MonoBehaviour
 
     private float rotationSpeed = 10f;
 
-    public Transform target;
+    public GameObject target;
 
     public GameObject projectitle;
     public GameObject minion;
@@ -46,19 +46,17 @@ public class shootPoint : MonoBehaviour
 
         timeBetweenShots = startTimeBetweenShots;
 
-        target = GameObject.Find("Player").GetComponent<Transform>();
-
-        anim = GameObject.Find("Witch").GetComponent<Animator>();
+        target = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
         //If the player is in range it rotates towards the player
-        float distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        float distanceToPlayer = Vector3.Distance(transform.position, target.transform.position);
         if (distanceToPlayer < attackRange)
         {
-            Vector3 targetDir = target.position - transform.position;
+            Vector3 targetDir = target.transform.position - transform.position;
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, q, Random.Range(0f, 90f)  * Time.deltaTime);
