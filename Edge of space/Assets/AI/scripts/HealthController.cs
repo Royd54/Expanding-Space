@@ -13,7 +13,7 @@ public class HealthController : MonoBehaviour
     private void Start()
     {
         //sets the hp to a random value between 10 and 40
-        randomHP = Random.Range(10f, 40f);
+        randomHP = Random.Range(40f, 100f);
         health = randomHP;
 
         sr = this.gameObject.GetComponent<SpriteRenderer>();

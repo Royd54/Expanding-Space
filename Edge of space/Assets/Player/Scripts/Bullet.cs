@@ -24,7 +24,9 @@ public class Bullet : MonoBehaviour
     {
         Destroy(this.gameObject);
         //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
-        if (collision.gameObject.tag == "enemy") { 
+        if (collision.gameObject.tag == "enemy")
+        {
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.right * (damage * 10));
             collision.gameObject.SendMessage("TakeDamage", damage);
             collision.gameObject.SendMessage("whiteFlash");
         }

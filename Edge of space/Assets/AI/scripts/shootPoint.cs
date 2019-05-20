@@ -48,7 +48,7 @@ public class shootPoint : MonoBehaviour
 
         target = GameObject.Find("Player").GetComponent<Transform>();
 
-        anim = GameObject.Find("witch").GetComponent<Animator>();
+        anim = GameObject.Find("Witch").GetComponent<Animator>();
     }
 
     // Update is called once per frame

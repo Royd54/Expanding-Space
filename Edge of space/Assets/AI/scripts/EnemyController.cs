@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;

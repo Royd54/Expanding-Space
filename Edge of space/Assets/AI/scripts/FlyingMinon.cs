@@ -35,6 +35,7 @@ public class FlyingMinon : MonoBehaviour
             {
                 //Damage per a couple seconds
                 nextFire = Time.time + fireRate;
+                player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
                 player.SendMessage("TakeDamage", damage);
             }
         }

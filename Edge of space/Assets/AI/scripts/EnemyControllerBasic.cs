@@ -24,7 +24,7 @@ public class EnemyControllerBasic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GameObject.Find("Enemy").GetComponent<Animator>();
+        anim = GameObject.Find("Crawler").GetComponent<Animator>();
         player = GameObject.Find("Player");
         waitTime = startWaitTime;
         //sets a random moveposition between the x and the y values
@@ -87,6 +87,7 @@ public class EnemyControllerBasic : MonoBehaviour
             {
                 //does damage if the timer is 0
                 nextFire = Time.time + fireRate;
+                player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
                 player.SendMessage("TakeDamage", damage);
             }
         
