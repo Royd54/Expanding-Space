@@ -9,6 +9,7 @@ public class FlyingMinon : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    private Rigidbody2D prb;
 
     public float damage = 15;
     public float fireRate = 1F;
@@ -18,7 +19,7 @@ public class FlyingMinon : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
-
+        prb = player.GetComponent<Rigidbody2D>();
         target = new Vector2(player.position.x, player.position.y);
 
     }
@@ -35,7 +36,7 @@ public class FlyingMinon : MonoBehaviour
             {
                 //Damage per a couple seconds
                 nextFire = Time.time + fireRate;
-                player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
+                GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
                 player.SendMessage("TakeDamage", damage);
             }
         }
