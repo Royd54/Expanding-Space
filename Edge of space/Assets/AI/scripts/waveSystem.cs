@@ -15,6 +15,7 @@ public class waveSystem : MonoBehaviour
     private float scinameticTimer = 1f;
     private bool witchSpawned = false;
     public Camera camera;
+    public Camera camera3;
     private Camera camera2;
     private float speed = 5f;
     public Transform witchTrans;

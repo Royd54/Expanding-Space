@@ -17,6 +17,9 @@ public class PlayerStats : MonoBehaviour
     public Image foodBar;
     public Image waterBar;
 
+    public GameObject playerUI;
+    public GameObject GameOver;
+
     private Material matDefault;
     public Material matWhite;
     SpriteRenderer sr;
@@ -60,6 +63,8 @@ public class PlayerStats : MonoBehaviour
         if (health <= 0)
         {
             Destroy(GameObject.FindWithTag("Player"));
+            playerUI.SetActive(false);
+            GameOver.SetActive(true);
         }
     }
     
