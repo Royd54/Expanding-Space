@@ -8,7 +8,6 @@ TagManager:
   - tool
   - PlayerBulletSpawn
   - enemy
-  - bullet
   layers:
   - Default
   - TransparentFX

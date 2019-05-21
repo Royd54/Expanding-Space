@@ -14,7 +14,7 @@ public class Controller2D : MonoBehaviour
     private GameObject cam;
     private Animator anim;
     private Rigidbody2D rb;
-    private Transform gunPivotPoint;
+    private Transform pivotPoint;
     private Vector2 move;
     private Vector3 mousePosition;
     private float toolYScale;
@@ -28,25 +28,25 @@ public class Controller2D : MonoBehaviour
         cam = GameObject.FindWithTag("MainCamera");
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
-        gunPivotPoint = transform.Find("GunPivotPoint");
+        pivotPoint = transform.Find("PivotPoint");
         toolYScale = tool.transform.localScale.y;
     }
     
     private void Update()
     {
-        //turns the gunPivotPoint to where the cursor is
-        var diraction = Input.mousePosition - Camera.main.WorldToScreenPoint(gunPivotPoint.position);
+        //turns the pivotPoint to where the cursor is
+        var diraction = Input.mousePosition - Camera.main.WorldToScreenPoint(pivotPoint.position);
         var angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
-        gunPivotPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        pivotPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         #region Player and tool turn
         //moves the gun behind the player when it gets to a certain degree
-        if (gunPivotPoint.eulerAngles.z >= 10 && gunPivotPoint.eulerAngles.z <= 150)
+        if (pivotPoint.eulerAngles.z >= 10 && pivotPoint.eulerAngles.z <= 150)
             tool.GetComponent<SpriteRenderer>().sortingOrder = 0;
         else
             tool.GetComponent<SpriteRenderer>().sortingOrder = 1;
         //turns the gun and the player around when it gets to a certain degree
-        if (gunPivotPoint.eulerAngles.z >= 90 && gunPivotPoint.eulerAngles.z <= 270)
+        if (pivotPoint.eulerAngles.z >= 90 && pivotPoint.eulerAngles.z <= 270)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
             if (!turn)
