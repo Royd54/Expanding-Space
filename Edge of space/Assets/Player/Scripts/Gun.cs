@@ -27,14 +27,19 @@ public class Gun : MonoBehaviour
     public int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
     public float fireRate;
-    [Range(0,10)][Tooltip("does not work, rotation is gay")]
+    [Range(0,10)]
     public float spread = 0;
     public GameObject bullet;
+
+    [Header("Harvester Specs")]
+    public bool canHarvest = false;
+    [Range(1,30)][Tooltip("the amount of items the player gets when using the harvester")]
+    public int amountsHarvest = 1;
     #endregion
     #region Private Variables
     private GameObject bulletIns;
     private Transform spawner;
-    private bool _using = false;
+    private bool primaryUse = false;
     private bool secondaryUse = false;
     private NuclearThroneLikeCamera cam;
     private float fireRateRestet;
@@ -50,7 +55,7 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
-        if (_using)
+        if (primaryUse)
         {
             if (firingType == GunEnum.singleShot)
             {
@@ -60,13 +65,12 @@ public class Gun : MonoBehaviour
                 spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
                 bulletIns.SendMessage("SetDamage", damage);
                 bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                _using = false;
+                primaryUse = false;
             }
             if (firingType == GunEnum.semiAutomatic)
             {
                 if(fireRate <= 0)
                 {
-                        
                     cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
                     bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                     bulletIns.SendMessage("SetDamage", damage);
@@ -84,13 +88,26 @@ public class Gun : MonoBehaviour
                 bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                 bulletIns.SendMessage("SetDamage", damage);
                 bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                _using = false;
+                primaryUse = false;
             }
+        }
+
+        if(secondaryUse && canHarvest)
+        {
+            Debug.Log("harvest");
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+                if (hit.transform.tag == "tree")
+                    Debug.Log("hit");
         }
     }
 
-    private void Use(bool _using)
+    private void SetPrimaryUse(bool primaryUse)
     {
-        this._using = _using;
+        this.primaryUse = primaryUse;
+    }
+    private void SetSecondaryUse(bool secondaryUse)
+    {
+        this.secondaryUse = secondaryUse;
     }
 }

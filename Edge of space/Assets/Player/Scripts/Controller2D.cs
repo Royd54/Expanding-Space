@@ -68,9 +68,14 @@ public class Controller2D : MonoBehaviour
         #region Tool Input
         //sets the using bool in the tool to true so it can be used
         if (Input.GetMouseButtonDown(0))
-            tool.SendMessage("Use", true);
+            tool.SendMessage("SetPrimaryUse", true);
         if (Input.GetMouseButtonUp(0))
-            tool.SendMessage("Use", false);
+            tool.SendMessage("SetPrimaryUse", false);
+
+        if (Input.GetMouseButtonDown(1))
+            tool.SendMessage("SetSecondaryUse", true);
+        if (Input.GetMouseButtonUp(1))
+            tool.SendMessage("SetSecondaryUse", false);
         #endregion
         #region Animations
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)//checks if the player is moving
