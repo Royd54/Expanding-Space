@@ -17,17 +17,16 @@ public class Harvester : MonoBehaviour
     public int elementAmount = 100;
     #endregion
     #region Private Variables
-    private GameObject harvester;
+    private Gun harvester;
     #endregion
     // Start is called before the first frame update
     void Start()
     {
-        harvester = GameObject.FindWithTag("tool");
+        harvester = GameObject.FindWithTag("tool").GetComponent<Gun>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseOver()
     {
-        
+        Debug.Log("hit");
     }
 }

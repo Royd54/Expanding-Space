@@ -508,14 +508,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &614776591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1139,6 +1139,8 @@ MonoBehaviour:
   fireRate: 0
   spread: 4.55
   bullet: {fileID: 6831882324380131956, guid: 656b93a066eeb164dad364044ec8cf56, type: 3}
+  canHarvest: 1
+  amountsHarvest: 1
 --- !u!1 &5239716962681030502
 GameObject:
   m_ObjectHideFlags: 0
