@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Controller2D : MonoBehaviour
 {
-    #region Public Variables
-    public float moveSpeed;
-    #endregion
     #region Private Variables
+    [SerializeField]
+    private float moveSpeed = 10f;
     private GameObject spawner;
     private GameObject tool;
     private GameObject cursor;

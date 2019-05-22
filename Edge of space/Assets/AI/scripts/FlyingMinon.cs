@@ -24,8 +24,7 @@ public class FlyingMinon : MonoBehaviour
         target = new Vector2(player.transform.position.x, player.transform.position.y);
         KnockBackPoint = transform.Find("KnockBackPointer");
     }
-
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         //checks the distance between the player and the minion

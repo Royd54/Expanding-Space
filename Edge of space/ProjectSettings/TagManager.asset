@@ -8,7 +8,7 @@ TagManager:
   - tool
   - PlayerBulletSpawn
   - enemy
-  - tree
+  - harvertable
   layers:
   - Default
   - TransparentFX

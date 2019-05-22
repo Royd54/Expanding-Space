@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if(collision.gameObject.tag != "Player")
+        if(collision.gameObject.tag != "Player")
             Destroy(this.gameObject);
         //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
         if (collision.gameObject.tag == "enemy")

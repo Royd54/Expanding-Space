@@ -607,6 +607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1096bdaf244515949aece174f84f97ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wood: 0
+  stone: 0
+  metal: 0
   selectedWindows:
   - {fileID: 9190630762956941477}
   - {fileID: 1080946562843961242}
@@ -1141,6 +1144,7 @@ MonoBehaviour:
   bullet: {fileID: 6831882324380131956, guid: 656b93a066eeb164dad364044ec8cf56, type: 3}
   canHarvest: 1
   amountsHarvest: 1
+  range: 10
 --- !u!1 &5239716962681030502
 GameObject:
   m_ObjectHideFlags: 0

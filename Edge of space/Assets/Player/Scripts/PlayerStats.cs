@@ -22,7 +22,7 @@ public class PlayerStats : MonoBehaviour
 
     private Material matDefault;
     public Material matWhite;
-    SpriteRenderer sr;
+    private SpriteRenderer sr;
 
     private void Start()
     {
@@ -35,7 +35,7 @@ public class PlayerStats : MonoBehaviour
     {
         food -= (0.05f * Time.deltaTime);
         water -= (0.1f * Time.deltaTime);
-        //
+        
         if (food <= 0)
         {
             health -= (1 * Time.deltaTime);
@@ -59,7 +59,6 @@ public class PlayerStats : MonoBehaviour
     {
         health -= damage;
         whiteFlash();
-        Debug.Log(health);
         if (health <= 0)
         {
             Destroy(GameObject.FindWithTag("Player"));

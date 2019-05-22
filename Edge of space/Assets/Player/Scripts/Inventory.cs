@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public int wood = 0;
+    public int stone;
+    public int metal;
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
 
@@ -37,5 +40,31 @@ public class Inventory : MonoBehaviour
         foreach (GameObject toolSlot in selectedWindows)
             toolSlot.SetActive(false);
         selectedWindows[toolSlotIndex].SetActive(true);
+    }
+
+    public void AddWood(int wood)
+    {
+        this.wood = wood;
+    }
+    public void AddStone(int stone)
+    {
+        this.stone = stone;
+    }
+    public void AddMetal(int metal)
+    {
+        this.metal = metal;
+    }
+
+    public int GetWood()
+    {
+        return wood;
+    }
+    public int GetStone()
+    {
+        return stone;
+    }
+    public int GetMetal()
+    {
+        return metal;
     }
 }

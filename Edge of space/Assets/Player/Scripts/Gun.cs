@@ -32,9 +32,10 @@ public class Gun : MonoBehaviour
     public GameObject bullet;
 
     [Header("Harvester Specs")]
-    public bool canHarvest = false;
-    [Range(1,30)][Tooltip("the amount of items the player gets when using the harvester")]
+    public bool canHarvest;
+    [Range(1,30)][Tooltip("the amount of items the player gets every second using the harvester")]
     public int amountsHarvest = 1;
+    public float range = 10;
     #endregion
     #region Private Variables
     private GameObject bulletIns;
@@ -94,11 +95,15 @@ public class Gun : MonoBehaviour
 
         if(secondaryUse && canHarvest)
         {
-            Debug.Log("harvest");
-            RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
-                if (hit.transform.tag == "tree")
-                    Debug.Log("hit");
+            //if()
+            RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right);
+            if (hit.collider != null && hit.collider.tag != "player")
+            {
+                if (hit.collider.tag == "harvertable")
+                {
+                    hit.transform.SendMessage("Harvest", amountsHarvest);
+                }
+            }
         }
     }
 
