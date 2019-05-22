@@ -17,8 +17,13 @@ public class PlayerStats : MonoBehaviour
     public Image foodBar;
     public Image waterBar;
 
+    private AudioSource audioS;
+
     public GameObject playerUI;
     public GameObject GameOver;
+    public GameObject Victory;
+
+    private GameObject witch;
 
     private Material matDefault;
     public Material matWhite;
@@ -28,6 +33,8 @@ public class PlayerStats : MonoBehaviour
     {
         sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
         matDefault = sr.material;
+
+        audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,10 +60,21 @@ public class PlayerStats : MonoBehaviour
             }
         }
         MoveBars();
+        if(GameObject.Find("SpawnPoints").GetComponent<waveSystem>().witchSpawned == true)
+        {
+            if (GameObject.Find("Witch(Clone)").GetComponent<witchHealthController>().health <= 0)
+            {
+                playerUI.SetActive(false);
+                Victory.SetActive(true);
+                GameObject.Find("Witch(Clone)").SetActive(false);
+                audioS.Stop();
+            }
+        }
     }
 
     private void TakeDamage(float damage)
     {
+        audioS.Play();
         health -= damage;
         whiteFlash();
         if (health <= 0)

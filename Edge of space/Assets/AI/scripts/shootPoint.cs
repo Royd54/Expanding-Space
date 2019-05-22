@@ -22,10 +22,10 @@ public class shootPoint : MonoBehaviour
     public Animator anim;
 
     public bool minionReloading = false;
-    public float minionReloadTimer = 4f;
+    public float minionReloadTimer = 1f;
     private float minionStartReloadTimer;
 
-    private float rotationSpeed = 10f;
+    private float rotationSpeed = 90f;
 
     public GameObject target;
 
@@ -59,7 +59,7 @@ public class shootPoint : MonoBehaviour
             Vector3 targetDir = target.transform.position - transform.position;
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, q, Random.Range(0f, 90f)  * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, q, rotationSpeed  * Time.deltaTime);
             anim.SetBool("isFollowing", false);
             anim.SetBool("isAttacking", true);
         }

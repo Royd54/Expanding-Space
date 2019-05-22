@@ -52,10 +52,6 @@ public class IntroAI : MonoBehaviour
             anim.SetBool("isPatrolling", false);
             Chase();
         }
-        else
-        {
-            speed = 2;
-        }
     }
 
     public void Chase()

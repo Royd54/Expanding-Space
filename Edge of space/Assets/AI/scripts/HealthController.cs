@@ -9,6 +9,7 @@ public class HealthController : MonoBehaviour
     private Material matDefault;
     public Material matWhite;
     SpriteRenderer sr;
+    private AudioSource audioS;
 
     private void Start()
     {
@@ -18,13 +19,15 @@ public class HealthController : MonoBehaviour
 
         sr = this.gameObject.GetComponent<SpriteRenderer>();
         matDefault = sr.material;
+
+        audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
     }
 
     //this function can be called to cause damage to the object it is on
     public void TakeDamage(float damage)
     {
         health -= damage;
-
+        audioS.Play();
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
