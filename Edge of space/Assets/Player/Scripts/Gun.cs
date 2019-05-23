@@ -38,6 +38,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private int amountsHarvest = 1;
     [SerializeField] private float range = 10;
 
+    private AudioSource audio;
     private GameObject bulletIns;
     private Transform spawner;
     private bool primaryUse = false;
@@ -52,6 +53,7 @@ public class Gun : MonoBehaviour
         fireRate = 0;
         spawner = transform.Find("Spawner");
         cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
+        audio = this.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -67,6 +69,7 @@ public class Gun : MonoBehaviour
                 spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
                 bulletIns.SendMessage("SetDamage", damage);
                 bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                audio.Play(0);
                 primaryUse = false;
             }
             if (firingType == GunEnum.semiAutomatic)
