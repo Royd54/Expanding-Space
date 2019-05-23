@@ -13,7 +13,7 @@ public class waveSystem : MonoBehaviour
     public int enemyCount = 0;
     public float bossTimer = 1f;
     private float scinameticTimer = 1f;
-    private bool witchSpawned = false;
+    public bool witchSpawned = false;
     public Camera camera;
     public Camera camera3;
     private Camera camera2;
@@ -54,6 +54,7 @@ public class waveSystem : MonoBehaviour
             spawnCap = 0;
             if (enemyCount <= 0 && witchSpawned == false)
             {
+                enemyCount += 10;
                 int SpawnPointIndex = Random.Range(0, spawnpoints.Length);
 
                 Instantiate(witch, spawnpoints[SpawnPointIndex].position, spawnpoints[SpawnPointIndex].rotation);

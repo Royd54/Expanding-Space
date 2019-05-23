@@ -5,6 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
+    private AudioSource audioS;
+    [SerializeField]private AudioClip hoverFX;
+
+    private void Start()
+    {
+        audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
+    }
+
+    public void playSound()
+    {
+        audioS.PlayOneShot(hoverFX);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("test");

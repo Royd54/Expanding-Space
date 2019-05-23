@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class witchHealthController : MonoBehaviour
 {
-    [SerializeField] private float health;
+    [SerializeField] public float health;
     private Material matDefault;
     public Material matWhite;
     SpriteRenderer sr;
+    private AudioSource audioS;
+
 
     private void Start()
     {
@@ -16,17 +18,20 @@ public class witchHealthController : MonoBehaviour
 
         sr = this.gameObject.GetComponent<SpriteRenderer>();
         matDefault = sr.material;
+
+        audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
     }
 
     //this function can be called to cause damage to the object it is on
     public void TakeDamage(float damage)
     {
+        audioS.Play();
         health -= damage;
 
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
-            Destroy(gameObject);
+            health = 0;
         }
     }
 
