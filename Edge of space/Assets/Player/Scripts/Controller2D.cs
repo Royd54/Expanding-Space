@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Controller2D : MonoBehaviour
 {
-    #region Private Variables
-    [SerializeField]
-    private float moveSpeed = 10f;
+    #region Variables
+    [SerializeField] private float moveSpeed = 10f;
     private GameObject spawner;
     private GameObject tool;
     private GameObject cursor;
@@ -27,7 +26,7 @@ public class Controller2D : MonoBehaviour
         cam = GameObject.FindWithTag("MainCamera");
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
-        pivotPoint = transform.Find("PivotPoint");
+        pivotPoint = transform.Find("PivotPoint");//the point which the tool pivots
         toolYScale = tool.transform.localScale.y;
     }
     
@@ -48,8 +47,9 @@ public class Controller2D : MonoBehaviour
         if (pivotPoint.eulerAngles.z >= 90 && pivotPoint.eulerAngles.z <= 270)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
-            if (!turn)
+            if (!turn)//this if makes sure the gun does not keep turning
             {
+                //the tool gets turned around with the transform so that the spawner of the tool turns with it
                 tool.transform.transform.localScale = new Vector3(tool.transform.localScale.x, -tool.transform.localScale.y, tool.transform.localScale.z);
                 turn = true;
             }
@@ -57,20 +57,22 @@ public class Controller2D : MonoBehaviour
         else
         {
             this.GetComponent<SpriteRenderer>().flipX = false;
-            if (turn)
+            if (turn)//this if makes sure the gun does not keep turning
             {
+                //the tool gets turned around with the transform so that the spawner of the tool turns with it
                 tool.transform.transform.localScale = new Vector3(tool.transform.localScale.x, -tool.transform.localScale.y, tool.transform.localScale.z);
                 turn = false;
             }
         }
         #endregion
         #region Tool Input
-        //sets the using bool in the tool to true so it can be used
+        //activates the primary use for the tool the player is holding
         if (Input.GetMouseButtonDown(0))
             tool.SendMessage("SetPrimaryUse", true);
         if (Input.GetMouseButtonUp(0))
             tool.SendMessage("SetPrimaryUse", false);
 
+        //activates the secondary use for the tool the player is holding
         if (Input.GetMouseButtonDown(1))
             tool.SendMessage("SetSecondaryUse", true);
         if (Input.GetMouseButtonUp(1))
@@ -79,13 +81,13 @@ public class Controller2D : MonoBehaviour
         #region Animations
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)//checks if the player is moving
         {
-            //if the player is moving it player the waking animation
+            //if there is any Horizontal or Vertical input the walking animation player
             anim.SetBool("walking", true);
             anim.SetBool("idle", false);
         }
         else
         {
-            //if the player is standing still it player the idle animation
+            //if there is no input the idle animation will play
             anim.SetBool("walking", false);
             anim.SetBool("idle", true);
         }

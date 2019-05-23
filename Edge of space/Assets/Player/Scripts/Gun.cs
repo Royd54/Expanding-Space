@@ -19,25 +19,25 @@ public class Gun : MonoBehaviour
         granade,
         lazerCartridge
     }
-    #region Public Variables
+    #region Variables
     [Header("Gun Specs")]
-    public GunEnum firingType = GunEnum.singleShot;
-    public AmmoEnum ammoType = AmmoEnum.arrow;
-    public float bulletVelocity;
-    public int damage;
+    [SerializeField] private GunEnum firingType = GunEnum.singleShot;
+    [SerializeField] private AmmoEnum ammoType = AmmoEnum.arrow;
+    [SerializeField] private float bulletVelocity;
+    [SerializeField] private int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
-    public float fireRate;
-    [Range(0,10)]
-    public float spread = 0;
-    public GameObject bullet;
+    [SerializeField] private float fireRate;
+    [Range(0, 10)]
+    [SerializeField] private float spread = 0;
+    [SerializeField] private GameObject bullet;
 
     [Header("Harvester Specs")]
-    public bool canHarvest;
-    [Range(1,30)][Tooltip("the amount of items the player gets every second using the harvester")]
-    public int amountsHarvest = 1;
-    public float range = 10;
-    #endregion
-    #region Private Variables
+    [SerializeField] private bool canHarvest;
+    [Range(1, 30)]
+    [Tooltip("the amount of items the player gets every second using the harvester")]
+    [SerializeField] private int amountsHarvest = 1;
+    [SerializeField] private float range = 10;
+
     private GameObject bulletIns;
     private Transform spawner;
     private bool primaryUse = false;
@@ -60,6 +60,7 @@ public class Gun : MonoBehaviour
         {
             if (firingType == GunEnum.singleShot)
             {
+                //when the gunenum is set to singleshot 
                 cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
                 spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                 bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
@@ -95,7 +96,6 @@ public class Gun : MonoBehaviour
 
         if(secondaryUse && canHarvest)
         {
-            //if()
             RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right);
             if (hit.collider != null && hit.collider.tag != "player")
             {
