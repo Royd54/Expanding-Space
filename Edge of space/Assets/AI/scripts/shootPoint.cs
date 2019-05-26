@@ -7,7 +7,7 @@ public class shootPoint : MonoBehaviour
     private float attackRange = 100f;
 
     private float timeBetweenShots;
-    public float startTimeBetweenShots;
+    [SerializeField] private float startTimeBetweenShots;
 
     private int minionShootAmount;
     private int minionStartShootAmount;
@@ -15,22 +15,21 @@ public class shootPoint : MonoBehaviour
     private int shootAmount;
     private int startShootAmount;
 
-    public bool reloading = false;
-    public float reloadTimer = 2f;
+    [SerializeField] private bool reloading = false;
+    [SerializeField] private float reloadTimer = 2f;
     private float startReloadTimer;
 
     public Animator anim;
 
-    public bool minionReloading = false;
-    public float minionReloadTimer = 1f;
+    [SerializeField] private bool minionReloading = false;
+    [SerializeField] private float minionReloadTimer = 1f;
     private float minionStartReloadTimer;
 
     private float rotationSpeed = 90f;
 
-    public GameObject target;
-
-    public GameObject projectitle;
-    public GameObject minion;
+    [SerializeField] private GameObject target;
+    [SerializeField] private GameObject projectitle;
+    [SerializeField] private GameObject minion;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +55,7 @@ public class shootPoint : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, target.transform.position);
         if (distanceToPlayer < attackRange)
         {
+            //Here it calculates the angle and it moves towards the target with the rotationspeed
             Vector3 targetDir = target.transform.position - transform.position;
             float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -68,6 +68,7 @@ public class shootPoint : MonoBehaviour
         MinionSpawn();
 
         //checks if its not reloading or if the time is right to shoot
+        //if it is time to shoot it spawns a projectile and starts the timebetweenshots countdown
         if (timeBetweenShots <= 0 && reloading == false && distanceToPlayer < attackRange)
         {
             Instantiate(projectitle, transform.position, transform.rotation);
@@ -88,6 +89,7 @@ public class shootPoint : MonoBehaviour
         if (reloading == true)
         {
             reloadTimer -= Time.deltaTime;
+            //after the timer is done it stops reloading 
             if (reloadTimer <= 0)
             {
                 reloading = false;
@@ -97,7 +99,7 @@ public class shootPoint : MonoBehaviour
         }
     }
 
-    //this fucntion is made the exact same as above
+    //this function is made the exact same as above
     void MinionSpawn()
     {
         if (timeBetweenShots <= 0 && minionReloading == false)

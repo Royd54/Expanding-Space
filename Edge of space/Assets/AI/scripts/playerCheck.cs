@@ -5,14 +5,13 @@ using UnityEngine;
 public class playerCheck : MonoBehaviour
 {
 
-    public GameObject enemy;
+    [SerializeField] private GameObject enemy;
     private Transform player;
     public bool trigger = false;
 
     private void Start()
     {
         player = GameObject.Find("Player").GetComponent<Transform>();
-        //speed = enemy.GetComponent<EnemyController>().speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

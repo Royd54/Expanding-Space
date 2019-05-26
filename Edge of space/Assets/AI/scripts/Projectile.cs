@@ -5,15 +5,16 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
 
-    public float speed;
+    [SerializeField] private float speed;
 
     private Transform player;
     private Vector2 target;
-    public float damage = 50;
+    [SerializeField] private float damage = 50;
 
     // Start is called before the first frame update
     void Start()
     {
+        //attaches the player and target variable to the player info
         player = GameObject.Find("Player").transform;
 
         target = new Vector2(player.position.x, player.position.y);
@@ -22,8 +23,10 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //travels straight ahead after instatiation of the object
         transform.position += transform.right * speed * Time.deltaTime;
 
+        //if the porjectile is to far away from the player it destroys itself to safe memory
         if (Vector2.Distance(transform.position, player.position) > 30)
         {
             DestroyProjectile();

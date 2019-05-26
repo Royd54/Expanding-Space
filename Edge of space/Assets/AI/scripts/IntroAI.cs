@@ -5,27 +5,27 @@ using UnityEngine;
 public class IntroAI : MonoBehaviour
 {
 
-    public float speed;
+    [SerializeField] private float speed;
     private float waitTime;
-    public float startWaitTime;
+    [SerializeField] private float startWaitTime;
 
     private Transform moveSpot;
-    public float minX;
-    public float minY;
-    public float maxX;
-    public float maxY;
+    [SerializeField] private float minX;
+    [SerializeField] private float minY;
+    [SerializeField] private float maxX;
+    [SerializeField] private float maxY;
+
     private GameObject player;
     private Animator anim;
 
-    public float damage = 35;
-    public float fireRate = 1F;
+    [SerializeField] private float damage = 35;
+    [SerializeField] private float fireRate = 1F;
     private float nextFire = 0.0F;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = this.gameObject.GetComponent<Animator>();
-        //anim = GameObject.Find("Crawler").GetComponent<Animator>();
         player = GameObject.Find("Player");
         waitTime = startWaitTime;
         //sets a random moveposition between the x and the y values

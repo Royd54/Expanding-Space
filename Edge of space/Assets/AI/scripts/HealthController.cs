@@ -6,9 +6,11 @@ public class HealthController : MonoBehaviour
 {
     [SerializeField] private float health;
     private float randomHP;
+
     private Material matDefault;
-    public Material matWhite;
+    [SerializeField] private Material matWhite;
     SpriteRenderer sr;
+
     private AudioSource audioS;
 
     private void Start()
@@ -17,6 +19,7 @@ public class HealthController : MonoBehaviour
         randomHP = Random.Range(40f, 100f);
         health = randomHP;
 
+        //attaches the variable sr and sets the default material
         sr = this.gameObject.GetComponent<SpriteRenderer>();
         matDefault = sr.material;
 
@@ -40,6 +43,7 @@ public class HealthController : MonoBehaviour
     public void whiteFlash()
     {
         sr.material = matWhite;
+        //makes the code wait before it executes the finction(in the string)
         Invoke("ResetMaterial", 0.2f);
     }
 

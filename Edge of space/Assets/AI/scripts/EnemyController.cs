@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public float speed;
-    public float stoppingDistance;
-    public float retreatDistance;
+    [SerializeField] private float speed;
+    [SerializeField] private float stoppingDistance;
+    [SerializeField] private float retreatDistance;
 
-    public GameObject projectitle;
-    public GameObject minion;
-    public Transform player;
+    [SerializeField] private GameObject projectitle;
+    [SerializeField] private GameObject minion;
+    [SerializeField] private Transform player;
     private Animator anim;
 
     // Start is called before the first frame update

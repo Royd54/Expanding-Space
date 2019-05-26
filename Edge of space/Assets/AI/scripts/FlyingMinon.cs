@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FlyingMinon : MonoBehaviour
 {
-    public float speed;
-    public float stoppingDistance;
+    [SerializeField] private float speed;
+    [SerializeField] private float stoppingDistance;
 
     private GameObject player;
     private Vector2 target;
@@ -13,15 +13,18 @@ public class FlyingMinon : MonoBehaviour
     private Transform KnockBackPoint;
     private Animator anim;
 
-    public float damage = 15;
-    public float fireRate = 1F;
+    [SerializeField] private float damage = 15;
+    [SerializeField] private float fireRate = 1F;
     private float nextFire = 0.0F;
 
     // Start is called before the first frame update
     void Start()
     {
+        //attaches the tings needed for this script
         player = GameObject.Find("Player");
         prb = player.GetComponent<Rigidbody2D>();
+
+        //calculates the posisiton of the target
         target = new Vector2(player.transform.position.x, player.transform.position.y);
         KnockBackPoint = transform.Find("KnockBackPointer");
         anim = this.gameObject.GetComponent<Animator>();
