@@ -1,14 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public int wood = 0;
-    public int stone;
-    public int metal;
+    public int woodAmount = 60;
+    public int stoneAmount = 20;
+    public int metalAmount = 70;
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
+
+
+    [SerializeField] private GameObject playerUI;
+    [SerializeField] private GameObject inventoryUI;
+
+    [SerializeField] private Text woodText;
+    [SerializeField] private Text stoneText;
+    [SerializeField] private Text metalText;
+
+    [SerializeField] private bool inInventory = false;
 
     private void Start()
     {
@@ -33,6 +44,25 @@ public class Inventory : MonoBehaviour
                 ChangeTool();
             }
         }
+
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            woodText.text = "Wood: " + woodAmount;
+            stoneText.text = "Stone: " + stoneAmount;
+            metalText.text = "Metal: " + metalAmount;
+            playerUI.SetActive(false);
+            inventoryUI.SetActive(true);
+            inInventory = true;
+
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            inventoryUI.SetActive(false);
+            playerUI.SetActive(true);
+            inInventory = false;
+        }
+
     }
 
     private void ChangeTool()
@@ -44,27 +74,27 @@ public class Inventory : MonoBehaviour
 
     public void AddWood(int wood)
     {
-        this.wood = wood;
+        this.woodAmount = wood;
     }
     public void AddStone(int stone)
     {
-        this.stone = stone;
+        this.stoneAmount = stone;
     }
     public void AddMetal(int metal)
     {
-        this.metal = metal;
+        this.metalAmount = metal;
     }
 
     public int GetWood()
     {
-        return wood;
+        return woodAmount;
     }
     public int GetStone()
     {
-        return stone;
+        return stoneAmount;
     }
     public int GetMetal()
     {
-        return metal;
+        return metalAmount;
     }
 }
