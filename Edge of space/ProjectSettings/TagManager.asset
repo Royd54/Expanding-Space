@@ -9,6 +9,7 @@ TagManager:
   - PlayerBulletSpawn
   - enemy
   - harvertable
+  - RoomSpawner
   layers:
   - Default
   - TransparentFX
