@@ -11,6 +11,9 @@ public class Inventory : MonoBehaviour
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
 
+    [SerializeField] private int woodNeeded;
+    [SerializeField] private int stoneNeeded;
+    [SerializeField] private int metalNeeded;
 
     [SerializeField] private GameObject playerUI;
     [SerializeField] private GameObject inventoryUI;
@@ -18,6 +21,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject spaceShip;
     [SerializeField] private GameObject InteractKey;
 
+    [SerializeField] private Text RecipeText;
+    [SerializeField] private GameObject infoRecipe1;
+    [SerializeField] private GameObject infoRecipe2;
 
     [SerializeField] private Text woodText;
     [SerializeField] private Text stoneText;
@@ -32,7 +38,11 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetAxis("Mouse ScrollWheel") > 0f)
+        woodText.text = "Wood: " + woodAmount;
+        stoneText.text = "Stone: " + stoneAmount;
+        metalText.text = "Metal: " + metalAmount;
+
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             if(toolSlotIndex != 3)
             {
@@ -54,9 +64,6 @@ public class Inventory : MonoBehaviour
             InteractKey.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
-                woodText.text = "Wood: " + woodAmount;
-                stoneText.text = "Stone: " + stoneAmount;
-                metalText.text = "Metal: " + metalAmount;
                 playerUI.SetActive(false);
                 inventoryUI.SetActive(true);
                 inInventory = true;
@@ -69,6 +76,12 @@ public class Inventory : MonoBehaviour
                 playerUI.SetActive(true);
                 inInventory = false;
                 InteractKey.SetActive(false);
+                metalNeeded = 0;
+                stoneNeeded = 0;
+                woodNeeded = 0;
+                infoRecipe1.SetActive(false);
+                infoRecipe2.SetActive(false);
+                RecipeText.text = "";
             }
         }
 
@@ -78,6 +91,12 @@ public class Inventory : MonoBehaviour
             playerUI.SetActive(true);
             inInventory = false;
             InteractKey.SetActive(false);
+            metalNeeded = 0;
+            stoneNeeded = 0;
+            woodNeeded = 0;
+            infoRecipe1.SetActive(false);
+            infoRecipe2.SetActive(false);
+            RecipeText.text = "";
         }
 
     }
@@ -87,6 +106,36 @@ public class Inventory : MonoBehaviour
         foreach (GameObject toolSlot in selectedWindows)
             toolSlot.SetActive(false);
         selectedWindows[toolSlotIndex].SetActive(true);
+    }
+
+    public void Recipe1()
+    {
+        metalNeeded = 70;
+        stoneNeeded = 20;
+        woodNeeded = 0;
+        RecipeText.text = "Items Needed: " + metalNeeded + " metal/" + stoneNeeded + "stone";
+        infoRecipe1.SetActive(true);
+        infoRecipe2.SetActive(false);
+    }
+
+    public void Recipe2()
+    {
+        metalNeeded = 0;
+        stoneNeeded = 0;
+        woodNeeded = 0;
+        RecipeText.text = "";
+        infoRecipe1.SetActive(false);
+        infoRecipe2.SetActive(true);
+    }
+
+    public void Craft()
+    {
+        if (metalAmount >= metalNeeded && stoneAmount >= stoneNeeded && woodAmount >= woodNeeded)
+        {
+            metalAmount -= metalNeeded;
+            stoneAmount -= stoneNeeded;
+            woodAmount -= woodNeeded;
+        }
     }
 
     public void AddWood(int wood)
