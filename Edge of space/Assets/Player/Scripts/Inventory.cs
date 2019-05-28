@@ -15,6 +15,10 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject playerUI;
     [SerializeField] private GameObject inventoryUI;
 
+    [SerializeField] private GameObject spaceShip;
+    [SerializeField] private GameObject InteractKey;
+
+
     [SerializeField] private Text woodText;
     [SerializeField] private Text stoneText;
     [SerializeField] private Text metalText;
@@ -45,22 +49,35 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Tab))
+        if (Vector2.Distance(transform.position, spaceShip.transform.position) < 10)
         {
-            woodText.text = "Wood: " + woodAmount;
-            stoneText.text = "Stone: " + stoneAmount;
-            metalText.text = "Metal: " + metalAmount;
-            playerUI.SetActive(false);
-            inventoryUI.SetActive(true);
-            inInventory = true;
+            InteractKey.SetActive(true);
+            if (Input.GetKey(KeyCode.E))
+            {
+                woodText.text = "Wood: " + woodAmount;
+                stoneText.text = "Stone: " + stoneAmount;
+                metalText.text = "Metal: " + metalAmount;
+                playerUI.SetActive(false);
+                inventoryUI.SetActive(true);
+                inInventory = true;
 
+            }
+
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                inventoryUI.SetActive(false);
+                playerUI.SetActive(true);
+                inInventory = false;
+                InteractKey.SetActive(false);
+            }
         }
 
-        if (Input.GetKey(KeyCode.Escape))
+        if (Vector2.Distance(transform.position, spaceShip.transform.position) > 10)
         {
             inventoryUI.SetActive(false);
             playerUI.SetActive(true);
             inInventory = false;
+            InteractKey.SetActive(false);
         }
 
     }
@@ -74,13 +91,26 @@ public class Inventory : MonoBehaviour
 
     public void AddWood(int wood)
     {
-        this.woodAmount = wood;
+        this.woodAmount += wood;
     }
     public void AddStone(int stone)
     {
-        this.stoneAmount = stone;
+        this.stoneAmount += stone;
     }
     public void AddMetal(int metal)
+    {
+        this.metalAmount += metal;
+    }
+
+    public void SetWood(int wood)
+    {
+        this.woodAmount = wood;
+    }
+    public void SetStone(int stone)
+    {
+        this.stoneAmount = stone;
+    }
+    public void SetMetal(int metal)
     {
         this.metalAmount = metal;
     }
