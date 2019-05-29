@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf5baac115e2c2419161b8f334c0142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 10
   matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
 --- !u!114 &59438931348259983
 MonoBehaviour:
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   stoppingDistance: 2
-  damage: 1
+  damage: 10
   fireRate: 1
 --- !u!95 &8221590501140879941
 Animator:

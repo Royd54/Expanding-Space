@@ -80,7 +80,7 @@ public class PlayerStats : MonoBehaviour
         whiteFlash();
         if (health <= 0)
         {
-            Destroy(GameObject.FindWithTag("Player"));
+            Destroy(GameObject.Find("Player"));
             playerUI.SetActive(false);
             GameOver.SetActive(true);
         }

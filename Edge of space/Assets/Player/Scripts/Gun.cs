@@ -135,4 +135,9 @@ public class Gun : MonoBehaviour
     {
         damage += 10;
     }
+
+    public void setVelocity()
+    {
+        bulletVelocity = 80;
+    }
 }
