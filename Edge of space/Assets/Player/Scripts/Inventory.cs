@@ -11,6 +11,14 @@ public class Inventory : MonoBehaviour
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
 
+    private bool crafted = false;
+    private bool craftedRecipe1 = false;
+    private bool craftedRecipe2 = false;
+    private bool craftedRecipe3 = false;
+    private bool craftedRecipe4 = false;
+    private bool craftedRecipe5 = false;
+    private bool craftedRecipe6 = false;
+
     [SerializeField] private int woodNeeded;
     [SerializeField] private int stoneNeeded;
     [SerializeField] private int metalNeeded;
@@ -67,7 +75,7 @@ public class Inventory : MonoBehaviour
                 playerUI.SetActive(false);
                 inventoryUI.SetActive(true);
                 inInventory = true;
-
+                GameObject.Find("gun").GetComponent<Gun>().ableToFire = false;
             }
 
             if (Input.GetKey(KeyCode.Escape))
@@ -82,6 +90,9 @@ public class Inventory : MonoBehaviour
                 infoRecipe1.SetActive(false);
                 infoRecipe2.SetActive(false);
                 RecipeText.text = "";
+                craftedRecipe1 = false;
+                craftedRecipe2 = false;
+                GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
             }
         }
 
@@ -97,6 +108,9 @@ public class Inventory : MonoBehaviour
             infoRecipe1.SetActive(false);
             infoRecipe2.SetActive(false);
             RecipeText.text = "";
+            craftedRecipe1 = false;
+            craftedRecipe2 = false;
+            GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
         }
 
     }
@@ -116,6 +130,8 @@ public class Inventory : MonoBehaviour
         RecipeText.text = "Items Needed: " + metalNeeded + " metal/" + stoneNeeded + "stone";
         infoRecipe1.SetActive(true);
         infoRecipe2.SetActive(false);
+        craftedRecipe1 = true;
+        craftedRecipe2 = false;
     }
 
     public void Recipe2()
@@ -126,6 +142,12 @@ public class Inventory : MonoBehaviour
         RecipeText.text = "";
         infoRecipe1.SetActive(false);
         infoRecipe2.SetActive(true);
+        craftedRecipe1 = false;
+        craftedRecipe2 = false;
+        craftedRecipe3 = false;
+        craftedRecipe4 = true;
+        craftedRecipe5 = false;
+        craftedRecipe6 = false;
     }
 
     public void Craft()
@@ -136,6 +158,32 @@ public class Inventory : MonoBehaviour
             stoneAmount -= stoneNeeded;
             woodAmount -= woodNeeded;
         }
+        if (craftedRecipe1 == true)
+        {
+            GameObject.Find("gun").GetComponent<Gun>().automaticFire();
+        }
+        if (craftedRecipe2 == true)
+        {
+            GameObject.Find("Player").GetComponent<PlayerStats>().health += 35;
+        }
+        if (craftedRecipe3 == true)
+        {
+            GameObject.Find("gun").GetComponent<Gun>().setDamage();
+        }
+        if (craftedRecipe4 == true)
+        {
+            GameObject.Find("gun").GetComponent<Gun>().SetShotgun();
+        }
+        if (craftedRecipe5 == true)
+        {
+            GameObject.Find("gun").GetComponent<Gun>().setDamage();
+        }
+        if (craftedRecipe6 == true)
+        {
+            GameObject.Find("gun").GetComponent<Gun>().setDamage();
+        }
+
+
     }
 
     public void AddWood(int wood)

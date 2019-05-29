@@ -26,7 +26,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
-    [SerializeField] private float fireRate;
+    [SerializeField] public float fireRate;
     [Range(0, 10)]
     [SerializeField] private float spread = 0;
     [SerializeField] private GameObject bullet;
@@ -45,6 +45,7 @@ public class Gun : MonoBehaviour
     private bool secondaryUse = false;
     private NuclearThroneLikeCamera cam;
     private float fireRateRestet;
+    public bool ableToFire = true;
     #endregion
 
     private void Start()
@@ -58,7 +59,7 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
-        if (primaryUse)
+        if (primaryUse && ableToFire == true)
         {
             if (firingType == GunEnum.singleShot)
             {
@@ -117,5 +118,21 @@ public class Gun : MonoBehaviour
     private void SetSecondaryUse(bool secondaryUse)
     {
         this.secondaryUse = secondaryUse;
+    }
+
+    public void automaticFire()
+    {
+        this.firingType = GunEnum.semiAutomatic;
+        fireRateRestet = 0.2f;
+    }
+
+    public void SetShotgun()
+    {
+        this.firingType = GunEnum.Shotgun;
+    }
+
+    public void setDamage()
+    {
+        damage += 10;
     }
 }

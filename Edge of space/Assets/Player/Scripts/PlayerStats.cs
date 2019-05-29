@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
 {
     [Header("PlayerStats")]
     [Range(0,100)]
-    public float health;
+    public float health = 33;
     [Range(0, 100)]
     public float food;
     [Range(0, 100)]
