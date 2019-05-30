@@ -81,7 +81,7 @@ public class shootPoint : MonoBehaviour
             timeBetweenShots -= Time.deltaTime;
         }
         //checks if the maximum shots before reloading
-        if (shootAmount >= 20)
+        if (shootAmount >= 35)
         {
             reloading = true;
         }

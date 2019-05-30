@@ -35,16 +35,19 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if the projectile collides with the player it deals damage and destroys itself
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject != GameObject.FindGameObjectWithTag("enemy"))
         {
-            player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
-            player.SendMessage("TakeDamage", damage);
-            DestroyProjectile();
-        }
-        else if(collision.gameObject.tag == "bullet")
-        {
-            DestroyProjectile();
+            //if the projectile collides with the player it deals damage and destroys itself
+            if (collision.gameObject.name == "Player")
+            {
+                player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
+                player.SendMessage("TakeDamage", damage);
+                DestroyProjectile();
+            }
+            else
+            {
+                DestroyProjectile();
+            }
         }
     }
 

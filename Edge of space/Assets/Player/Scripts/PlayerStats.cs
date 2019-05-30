@@ -48,7 +48,7 @@ public class PlayerStats : MonoBehaviour
             health -= (1 * Time.deltaTime);
             if (health <= 0)
             {
-                Destroy(GameObject.FindWithTag("Player"));
+               // Destroy(GameObject.FindWithTag("Player"));
             }
         } 
         if (water <= 0)
@@ -56,7 +56,7 @@ public class PlayerStats : MonoBehaviour
             health -= (1 * Time.deltaTime);
             if (health <= 0)
             {
-                Destroy(GameObject.FindWithTag("Player"));
+                //Destroy(GameObject.FindWithTag("Player"));
             }
         }
         MoveBars();
@@ -66,7 +66,8 @@ public class PlayerStats : MonoBehaviour
             {
                 playerUI.SetActive(false);
                 Victory.SetActive(true);
-                GameObject.Find("Witch(Clone)").SetActive(false);
+                Object.Destroy(GameObject.Find("Witch(Clone)"));
+                //GameObject.Find("Witch(Clone)").SetActive(false);
                 GameObject.Find("SpawnPoints").GetComponent<waveSystem>().witchSpawned = false;
                 audioS.Stop();
             }
