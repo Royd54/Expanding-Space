@@ -134,6 +134,7 @@ public class Inventory : MonoBehaviour
         craftedRecipe3 = true;
     }
 
+
     public void Craft()
     {
         if (metalAmount >= metalNeeded && stoneAmount >= stoneNeeded && woodAmount >= woodNeeded)

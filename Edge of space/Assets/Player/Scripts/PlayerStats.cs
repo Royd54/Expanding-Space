@@ -48,7 +48,7 @@ public class PlayerStats : MonoBehaviour
             health -= (1 * Time.deltaTime);
             if (health <= 0)
             {
-                Destroy(GameObject.FindWithTag("Player"));
+               // Destroy(GameObject.FindWithTag("Player"));
             }
         } 
         if (water <= 0)
@@ -56,7 +56,7 @@ public class PlayerStats : MonoBehaviour
             health -= (1 * Time.deltaTime);
             if (health <= 0)
             {
-                Destroy(GameObject.FindWithTag("Player"));
+                //Destroy(GameObject.FindWithTag("Player"));
             }
         }
         MoveBars();
