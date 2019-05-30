@@ -78,9 +78,12 @@ public class Gun : MonoBehaviour
                 if(fireRate <= 0)
                 {
                     cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+                    spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                     bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                    spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
                     bulletIns.SendMessage("SetDamage", damage);
                     bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                    audio.Play(0);
                     fireRate = fireRateRestet;
                 }
                 else

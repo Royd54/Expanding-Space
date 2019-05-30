@@ -3897,7 +3897,7 @@ PrefabInstance:
         type: 3}
       propertyPath: infoRecipe2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 799799754}
     - target: {fileID: 4278911566141203057, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: buttons.Array.data[0]
@@ -3908,6 +3908,26 @@ PrefabInstance:
       propertyPath: buttons.Array.data[1]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4278911566141203057, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: infoRecipe3
+      value: 
+      objectReference: {fileID: 1597748238}
+    - target: {fileID: 4278911566141203057, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: infoRecipe4
+      value: 
+      objectReference: {fileID: 177997512}
+    - target: {fileID: 4278911566141203057, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: infoRecipe5
+      value: 
+      objectReference: {fileID: 992254107}
+    - target: {fileID: 4278911566141203057, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: infoRecipe6
+      value: 
+      objectReference: {fileID: 523551267}
     - target: {fileID: 7989099557075623162, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
