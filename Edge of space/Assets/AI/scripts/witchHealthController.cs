@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class witchHealthController : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class witchHealthController : MonoBehaviour
     public Material matWhite;
     SpriteRenderer sr;
     private AudioSource audioS;
+    [SerializeField] private Image Hpbar;
 
 
     private void Start()
@@ -27,7 +30,7 @@ public class witchHealthController : MonoBehaviour
     {
         audioS.Play();
         health -= damage;
-
+        Hpbar.fillAmount = health / 100;
         //if health is below 0 it destroys itself
         if (health <= 0)
         {

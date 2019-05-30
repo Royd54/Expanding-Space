@@ -29,16 +29,15 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject InteractKey;
 
     [SerializeField] private Text RecipeText;
+    [SerializeField] private Text StoneNeededText;
+    [SerializeField] private Text WoodNeededText;
+    [SerializeField] private Text MetalNeededText;
     [SerializeField] private GameObject infoRecipe1;
     [SerializeField] private GameObject infoRecipe2;
     [SerializeField] private GameObject infoRecipe3;
     [SerializeField] private GameObject infoRecipe4;
     [SerializeField] private GameObject infoRecipe5;
     [SerializeField] private GameObject infoRecipe6;
-
-    [SerializeField] private Text woodText;
-    [SerializeField] private Text stoneText;
-    [SerializeField] private Text metalText;
 
     [SerializeField] private bool inInventory = false;
 
@@ -49,9 +48,10 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        woodText.text = "Wood: " + woodAmount;
-        stoneText.text = "Stone: " + stoneAmount;
-        metalText.text = "Metal: " + metalAmount;
+
+        StoneNeededText.text = stoneNeeded + " X" + " (you have "+ stoneAmount + ")";
+        WoodNeededText.text = woodNeeded + " X" + " (you have " + woodAmount + ")"; ;
+        MetalNeededText.text = metalNeeded + " X" + " (you have " + metalAmount + ")"; ;
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
@@ -108,7 +108,6 @@ public class Inventory : MonoBehaviour
         metalNeeded = 70;
         stoneNeeded = 20;
         woodNeeded = 0;
-        RecipeText.text = "Items Needed: " + metalNeeded + " metal/" + stoneNeeded + "stone";
         infoRecipe1.SetActive(true);
         craftedRecipe1 = true;
     }
@@ -116,22 +115,47 @@ public class Inventory : MonoBehaviour
     public void Recipe2()
     {
         CraftReset();
-        metalNeeded = 0;
-        stoneNeeded = 0;
-        woodNeeded = 0;
-        RecipeText.text = "";
+        metalNeeded = 1;
+        stoneNeeded = 1;
+        woodNeeded = 1;
         infoRecipe2.SetActive(true);
         craftedRecipe2 = true;
     }
     public void Recipe3()
     {
         CraftReset();
-        metalNeeded = 0;
-        stoneNeeded = 0;
-        woodNeeded = 0;
-        RecipeText.text = "Recipe3";
+        metalNeeded = 2;
+        stoneNeeded = 2;
+        woodNeeded = 2;
         infoRecipe3.SetActive(true);
         craftedRecipe3 = true;
+    }
+    public void Recipe4()
+    {
+        CraftReset();
+        metalNeeded = 3;
+        stoneNeeded = 3;
+        woodNeeded = 3;
+        infoRecipe4.SetActive(true);
+        craftedRecipe4 = true;
+    }
+    public void Recipe5()
+    {
+        CraftReset();
+        metalNeeded = 4;
+        stoneNeeded = 4;
+        woodNeeded = 4;
+        infoRecipe5.SetActive(true);
+        craftedRecipe5 = true;
+    }
+    public void Recipe6()
+    {
+        CraftReset();
+        metalNeeded = 5;
+        stoneNeeded = 5;
+        woodNeeded = 5;
+        infoRecipe6.SetActive(true);
+        craftedRecipe6 = true;
     }
 
 

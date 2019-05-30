@@ -66,7 +66,8 @@ public class PlayerStats : MonoBehaviour
             {
                 playerUI.SetActive(false);
                 Victory.SetActive(true);
-                GameObject.Find("Witch(Clone)").SetActive(false);
+                Object.Destroy(GameObject.Find("Witch(Clone)"));
+                //GameObject.Find("Witch(Clone)").SetActive(false);
                 GameObject.Find("SpawnPoints").GetComponent<waveSystem>().witchSpawned = false;
                 audioS.Stop();
             }
