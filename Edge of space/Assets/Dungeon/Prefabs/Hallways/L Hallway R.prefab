@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a27d85d9e22d2e4ea568d1ab8910c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sd: 1
+  sd: 0
 --- !u!1 &1694824960416302034
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf84e68d8d060804baacfa1083849b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: 0
+  isRoom: 0
 --- !u!61 &1694824959359831840
 BoxCollider2D:
   m_ObjectHideFlags: 0

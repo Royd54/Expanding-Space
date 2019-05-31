@@ -325,10 +325,14 @@ MonoBehaviour:
   - {fileID: 6811212878258265356, guid: 9ba34237d26ab304a86c404345c66566, type: 3}
   roomLeftEntrys:
   - {fileID: 5458715143153087133, guid: b1dc13b68910660409d8122bca4998e9, type: 3}
-  topBlocker: {fileID: 0}
-  leftBlocker: {fileID: 0}
-  bottomBlocker: {fileID: 0}
-  rightBlocker: {fileID: 0}
+  topBlocker: {fileID: 3592483012028130310, guid: 7a454844d0692de40bdaaf0624ee6ae3,
+    type: 3}
+  leftBlocker: {fileID: 3924030812371084965, guid: 92ae8a380e00e114daa9d5dbe3aae675,
+    type: 3}
+  bottomBlocker: {fileID: 8238391626976557012, guid: 3fee2adc3e21997489071d2ca090cf1d,
+    type: 3}
+  rightBlocker: {fileID: 5551360660163520885, guid: 8c788f6dcf00e2346a2404f60cecd5b3,
+    type: 3}
 --- !u!1 &2276959869969179288
 GameObject:
   m_ObjectHideFlags: 0

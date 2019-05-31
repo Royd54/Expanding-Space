@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnRoom : MonoBehaviour
 {
+    [SerializeField] private float genTime = 10f;
+
     [Header("Hallways")]
     [Tooltip("All Hallways with a top entry point")]
     public GameObject[] hallwayTopEntrys;
@@ -25,4 +27,22 @@ public class SpawnRoom : MonoBehaviour
     public GameObject[] roomLeftEntrys;
     
     public GameObject topBlocker, leftBlocker, bottomBlocker, rightBlocker;
+    public GameObject[] allRooms;
+
+    private void Update()
+    {
+        if (genTime > 0)
+        {
+            genTime -= Time.deltaTime;
+            if (genTime <= 0)
+            {
+                EndGeneration();
+            }
+        }
+    }
+
+    private void EndGeneration()
+    {
+
+    }
 }
