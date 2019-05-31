@@ -23,4 +23,6 @@ public class SpawnRoom : MonoBehaviour
     public GameObject[] roomBottomEntrys;
     [Tooltip("All Room with a left entry point")]
     public GameObject[] roomLeftEntrys;
+    
+    public GameObject topBlocker, leftBlocker, bottomBlocker, rightBlocker;
 }
