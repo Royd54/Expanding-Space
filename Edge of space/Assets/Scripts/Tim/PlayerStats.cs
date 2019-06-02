@@ -60,18 +60,6 @@ public class PlayerStats : MonoBehaviour
             }
         }
         MoveBars();
-        if(GameObject.Find("SpawnPoints").GetComponent<waveSystem>().witchSpawned == true)
-        {
-            if (GameObject.Find("Witch(Clone)").GetComponent<witchHealthController>().health <= 0)
-            {
-                playerUI.SetActive(false);
-                Victory.SetActive(true);
-                Object.Destroy(GameObject.Find("Witch(Clone)"));
-                //GameObject.Find("Witch(Clone)").SetActive(false);
-                GameObject.Find("SpawnPoints").GetComponent<waveSystem>().witchSpawned = false;
-                audioS.Stop();
-            }
-        }
     }
 
     private void TakeDamage(float damage)

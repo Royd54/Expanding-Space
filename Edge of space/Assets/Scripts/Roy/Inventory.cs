@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
 
+    public GameObject Victory;
+
     private bool craftedRecipe1 = false;
     private bool craftedRecipe2 = false;
     private bool craftedRecipe3 = false;
@@ -24,6 +26,7 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private GameObject playerUI;
     [SerializeField] private GameObject inventoryUI;
+    [SerializeField] private GameObject repairWindow;
 
     [SerializeField] private GameObject spaceShip;
     [SerializeField] private GameObject InteractKey;
@@ -39,6 +42,14 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject infoRecipe5;
     [SerializeField] private GameObject infoRecipe6;
 
+    [SerializeField] private Text part1Text;
+    [SerializeField] private Text part2Text;
+    [SerializeField] private Text part3Text;
+
+    private bool part1Collected = false;
+    private bool part2Collected = false;
+    private bool part3Collected = false;
+
     [SerializeField] private bool inInventory = false;
 
     private void Start()
@@ -52,6 +63,21 @@ public class Inventory : MonoBehaviour
         StoneNeededText.text = stoneNeeded + " X" + " (you have "+ stoneAmount + ")";
         WoodNeededText.text = woodNeeded + " X" + " (you have " + woodAmount + ")"; ;
         MetalNeededText.text = metalNeeded + " X" + " (you have " + metalAmount + ")"; ;
+
+        if (part1Collected == true)
+        {
+            part1Text.text = "Collected!";
+        }
+
+        if (part2Collected == true)
+        {
+            part2Text.text = "Collected!";
+        }
+
+        if (part3Collected == true)
+        {
+            part3Text.text = "Collected!";
+        }
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
@@ -158,6 +184,28 @@ public class Inventory : MonoBehaviour
         craftedRecipe6 = true;
     }
 
+    public void RepairWindow()
+    {
+        inventoryUI.SetActive(false);
+        repairWindow.SetActive(true);
+    }
+
+    public void craftWindow()
+    {
+        repairWindow.SetActive(false);
+        inventoryUI.SetActive(true);
+    }
+
+    public void repairShip()
+    {
+        if(part1Collected == true && part2Collected == true && part3Collected == true)
+        {
+            CraftReset();
+            Victory.SetActive(true);
+            GameObject.Find("Player").GetComponent<PlayerStats>().health += 100000;
+        }
+    }
+
 
     public void Craft()
     {
@@ -216,6 +264,7 @@ public class Inventory : MonoBehaviour
     private void Reset()
     {
         inventoryUI.SetActive(false);
+        repairWindow.SetActive(false);
         playerUI.SetActive(true);
         inInventory = false;
         InteractKey.SetActive(false);
