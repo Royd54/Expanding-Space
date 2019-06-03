@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+  anim: {fileID: 0}
 --- !u!95 &1190228575
 Animator:
   serializedVersion: 3
@@ -340,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1275318691
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +585,12 @@ PrefabInstance:
       propertyPath: genTime
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2276959869877894091, guid: 68107757cabba9547ab066ad3bcb20cb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
     - target: {fileID: 2276959869595633103, guid: 68107757cabba9547ab066ad3bcb20cb,
         type: 3}
       propertyPath: m_Sprite

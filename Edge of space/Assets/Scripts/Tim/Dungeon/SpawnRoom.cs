@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpawnRoom : MonoBehaviour
 {
     [SerializeField] private float genTime = 10f;
+    [SerializeField] private GameObject player;
+    private bool spawned = false;
 
     [Header("Hallways")]
     [Tooltip("All Hallways with a top entry point")]
@@ -36,7 +38,8 @@ public class SpawnRoom : MonoBehaviour
             genTime -= Time.deltaTime;
             if (genTime <= 0)
             {
-                
+                if(!spawned)
+                    Instantiate(player, this.transform.position, this.transform.rotation);
             }
         }
     }
