@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthController : MonoBehaviour
+public class cowHealthController : MonoBehaviour
 {
     public float health;
     private float randomHP;
@@ -35,7 +35,6 @@ public class HealthController : MonoBehaviour
         if (health <= 0)
         {
             GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
-            Destroy(gameObject);
         }
     }
 
