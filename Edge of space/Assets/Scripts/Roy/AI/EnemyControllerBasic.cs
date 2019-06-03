@@ -6,7 +6,7 @@ public class EnemyControllerBasic : MonoBehaviour
 {
 
     [SerializeField] private float speed;
-    private float waitTime;
+    [SerializeField] private float waitTime;
     [SerializeField] private float startWaitTime;
 
     private Vector2 moveSpot;
@@ -31,20 +31,17 @@ public class EnemyControllerBasic : MonoBehaviour
     void FixedUpdate()
     {
         //checks if the player is in range of the enemy
-        if (Vector3.Distance(transform.position, player.transform.position) > 10f && waitTime <= 0)
+        if (Vector3.Distance(transform.position, player.transform.position) > 5f)
         {
             //moves towards the movespot
             transform.position = Vector2.MoveTowards(transform.position, moveSpot, speed * Time.deltaTime);
         }
-        //counts down
-        else
+
+        if (Vector3.Distance(transform.position, moveSpot) <= 0)
         {
             waitTime -= Time.deltaTime;
         }
-    }
 
-    private void Update()
-    {
         if (waitTime <= 0)
         {
             //sets a new random movespot after he waited
