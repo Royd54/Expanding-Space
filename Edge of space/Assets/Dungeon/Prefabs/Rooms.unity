@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1198826179
 Transform:
   m_ObjectHideFlags: 0
@@ -1923,11 +1923,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: R Room RBL
-      objectReference: {fileID: 0}
-    - target: {fileID: 4245408498978304712, guid: fdfb56cda51053446b4b8a8c8094b674,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4245408498978304715, guid: fdfb56cda51053446b4b8a8c8094b674,
         type: 3}

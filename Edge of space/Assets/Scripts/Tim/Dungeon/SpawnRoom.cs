@@ -36,13 +36,13 @@ public class SpawnRoom : MonoBehaviour
             genTime -= Time.deltaTime;
             if (genTime <= 0)
             {
-                EndGeneration();
+                
             }
         }
     }
 
-    private void EndGeneration()
+    public float GetGenTime()
     {
-
+        return genTime;
     }
 }
