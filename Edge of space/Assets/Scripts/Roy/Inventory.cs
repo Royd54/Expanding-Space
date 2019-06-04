@@ -46,9 +46,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Text part2Text;
     [SerializeField] private Text part3Text;
 
-    private bool part1Collected = false;
-    private bool part2Collected = false;
-    private bool part3Collected = false;
+    public bool part1Collected = false;
+    public bool part2Collected = false;
+    public bool part3Collected = false;
 
     [SerializeField] private bool inInventory = false;
 
@@ -96,7 +96,7 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        if (Vector2.Distance(transform.position, spaceShip.transform.position) < 10)
+        if (Vector2.Distance(transform.position, spaceShip.transform.position) < 5)
         {
             InteractKey.SetActive(true);
             if (Input.GetKey(KeyCode.E))
@@ -114,7 +114,7 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        if (Vector2.Distance(transform.position, spaceShip.transform.position) > 10)
+        if (Vector2.Distance(transform.position, spaceShip.transform.position) > 7)
         {
             Reset();
             GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
