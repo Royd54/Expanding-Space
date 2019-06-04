@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: -8049286641532836724}
   - component: {fileID: 6066002167630307850}
   m_Layer: 0
-  m_Name: Crawler 1
+  m_Name: Floater
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +91,7 @@ Animator:
   m_GameObject: {fileID: 7686931843826254526}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9437e169eb361da489e92ab5ed651848, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -158,7 +158,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.252538, y: -0.21186364}
@@ -194,7 +194,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1741663520714438477
 MonoBehaviour:
   m_ObjectHideFlags: 0

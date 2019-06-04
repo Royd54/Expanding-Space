@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: R Blocker
       objectReference: {fileID: 0}
+    - target: {fileID: 5551360660163520885, guid: 8c788f6dcf00e2346a2404f60cecd5b3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 957146751627230592, guid: 8c788f6dcf00e2346a2404f60cecd5b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -584,6 +589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: B Room RBL
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811212878258265356, guid: 9ba34237d26ab304a86c404345c66566,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6811212878258265359, guid: 9ba34237d26ab304a86c404345c66566,
         type: 3}
@@ -876,6 +886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L Room RBL
       objectReference: {fileID: 0}
+    - target: {fileID: 5458715143153087133, guid: b1dc13b68910660409d8122bca4998e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5458715143153087134, guid: b1dc13b68910660409d8122bca4998e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -944,6 +959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: B Blocker
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238391626976557012, guid: 3fee2adc3e21997489071d2ca090cf1d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7810513072465966528, guid: 3fee2adc3e21997489071d2ca090cf1d,
         type: 3}
@@ -1438,6 +1458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T Blocker
       objectReference: {fileID: 0}
+    - target: {fileID: 3592483012028130310, guid: 7a454844d0692de40bdaaf0624ee6ae3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4227386020153834928, guid: 7a454844d0692de40bdaaf0624ee6ae3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1685,6 +1710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T Room RBL
       objectReference: {fileID: 0}
+    - target: {fileID: 7400841654311145761, guid: d5c6b6e12f4fcda468c6bcd77bd7e22a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7400841654311145762, guid: d5c6b6e12f4fcda468c6bcd77bd7e22a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1765,6 +1795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L Blocker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924030812371084965, guid: 92ae8a380e00e114daa9d5dbe3aae675,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7827311888352725370, guid: 92ae8a380e00e114daa9d5dbe3aae675,
         type: 3}
@@ -1908,6 +1943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: R Room RBL
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245408498978304712, guid: fdfb56cda51053446b4b8a8c8094b674,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4245408498978304715, guid: fdfb56cda51053446b4b8a8c8094b674,
         type: 3}
