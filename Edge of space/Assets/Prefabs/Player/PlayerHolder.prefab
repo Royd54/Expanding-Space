@@ -133,7 +133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840939680533772729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.88}
+  m_LocalPosition: {x: 0, y: 0, z: -0.72822446}
   m_LocalScale: {x: 0.66349995, y: 0.66349995, z: 0.66349995}
   m_Children:
   - {fileID: 9089460876086009662}
@@ -665,7 +665,6 @@ MonoBehaviour:
   canHarvest: 0
   amountsHarvest: 1
   range: 10
-  ableToFire: 1
 --- !u!1 &4155905783162209064
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +768,7 @@ Transform:
   m_GameObject: {fileID: 5658985591069963211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.93031484, y: -0.39778844, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 840939680533772728}
   - {fileID: 14495272893881649}
@@ -804,7 +803,7 @@ RectTransform:
   m_GameObject: {fileID: 7012872786175569122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.040000003, y: 0.040000003, z: 0.040000003}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 7989099557075623162}
   m_Father: {fileID: 840939680533772728}
@@ -813,8 +812,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 799.99994, y: 499.99997}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!223 &5393275383171479151
 Canvas:
   m_ObjectHideFlags: 0
@@ -824,7 +823,7 @@ Canvas:
   m_GameObject: {fileID: 7012872786175569122}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_Camera: {fileID: 840939680533772709}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1149,37 +1148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1096bdaf244515949aece174f84f97ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodAmount: 60
-  stoneAmount: 20
-  metalAmount: 70
+  wood: 0
+  stone: 0
+  metal: 0
   selectedWindows:
   - {fileID: 1248999323473454033}
   - {fileID: 7052268214280760558}
   - {fileID: 8159295247982313743}
   - {fileID: 9138774533597744736}
-  Victory: {fileID: 0}
-  woodNeeded: 0
-  stoneNeeded: 0
-  metalNeeded: 0
-  playerUI: {fileID: 0}
-  inventoryUI: {fileID: 0}
-  repairWindow: {fileID: 0}
-  spaceShip: {fileID: 0}
-  InteractKey: {fileID: 0}
-  RecipeText: {fileID: 0}
-  StoneNeededText: {fileID: 0}
-  WoodNeededText: {fileID: 0}
-  MetalNeededText: {fileID: 0}
-  infoRecipe1: {fileID: 0}
-  infoRecipe2: {fileID: 0}
-  infoRecipe3: {fileID: 0}
-  infoRecipe4: {fileID: 0}
-  infoRecipe5: {fileID: 0}
-  infoRecipe6: {fileID: 0}
-  part1Text: {fileID: 0}
-  part2Text: {fileID: 0}
-  part3Text: {fileID: 0}
-  inInventory: 0
 --- !u!1 &7989099557075623161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1180,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7989099557075623161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5746628017431436206}
@@ -1213,7 +1189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -151, y: -129.1}
+  m_AnchoredPosition: {x: 0, y: -17.099976}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7989099557097774111

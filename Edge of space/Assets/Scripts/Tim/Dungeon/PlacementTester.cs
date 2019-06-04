@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlacementTester : MonoBehaviour
 {
-    private float halfLife = 0.1f;
+    private float halfLife = 0.3f;
     private SpawnRoom rooms;
     private string name;
     private string[] words;
