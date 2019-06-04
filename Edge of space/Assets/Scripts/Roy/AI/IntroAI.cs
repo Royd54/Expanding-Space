@@ -78,7 +78,7 @@ public class IntroAI : MonoBehaviour
         //he walks towards the player
         else
         { 
-            Debug.Log(Vector3.Distance(transform.position, player.transform.position));
+            //Debug.Log(Vector3.Distance(transform.position, player.transform.position));
             anim.SetBool("isFollowing", true);
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
 

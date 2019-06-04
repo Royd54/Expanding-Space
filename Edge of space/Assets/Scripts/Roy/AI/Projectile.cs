@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.name);
         if (collision.gameObject != GameObject.FindGameObjectWithTag("enemy"))
         {
             //if the projectile collides with the player it deals damage and destroys itself
