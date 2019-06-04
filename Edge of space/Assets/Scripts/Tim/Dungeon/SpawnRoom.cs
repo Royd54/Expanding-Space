@@ -38,7 +38,7 @@ public class SpawnRoom : MonoBehaviour
             genTime -= Time.deltaTime;
             if (genTime <= 0 && !spawned)
             {
-                Instantiate(player, this.transform.position, this.transform.rotation);
+                //Instantiate(player, this.transform.position, this.transform.rotation);
             }
         }
     }

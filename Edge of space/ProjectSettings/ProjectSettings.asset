@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: SpaceCake
   productName: Edge of space
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: d830c09daaf1cce4b9e729db935afb28, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
