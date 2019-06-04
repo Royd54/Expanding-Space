@@ -34,7 +34,7 @@ public class witchHealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
-            //this gets handled in the playerstats script
+            Destroy(this.gameObject);
         }
     }
 
