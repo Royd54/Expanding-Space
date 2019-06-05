@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2626322977973221818}
   - component: {fileID: 2626322977973221813}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: KnockBackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,8 @@ GameObject:
   - component: {fileID: 1741663520714438477}
   - component: {fileID: -8049286641532836724}
   - component: {fileID: 6066002167630307850}
-  m_Layer: 0
+  - component: {fileID: 172666525088998085}
+  m_Layer: 2
   m_Name: Floater
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -161,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.252538, y: -0.21186364}
+  m_Offset: {x: 0.24575698, y: -0.19152062}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -172,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.466227, y: 0.32400817}
+  m_Size: {x: 0.34416866, y: 0.28332213}
   m_EdgeRadius: 0
 --- !u!50 &6093582657206894993
 Rigidbody2D:
@@ -325,3 +326,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &172666525088998085
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7686931843826254526}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.25, y: -0.25}
+  serializedVersion: 2
+  m_Radius: 0.25

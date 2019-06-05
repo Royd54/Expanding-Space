@@ -15,6 +15,8 @@ public class IntroAI : MonoBehaviour
     [SerializeField] private float maxX;
     [SerializeField] private float maxY;
 
+    private float distance = 10f;
+
     private GameObject player;
     private Animator anim;
 
@@ -32,31 +34,51 @@ public class IntroAI : MonoBehaviour
         //moveSpot = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         beginpos = this.gameObject.transform.position;
         speed = 2;
+
+        Physics2D.IgnoreCollision(this.GetComponent<CircleCollider2D>(), this.GetComponent<BoxCollider2D>());
+    }
+
+    private void Update()
+    {
+        RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position);
+        
+        if (hitInfo.collider.name == "Player")
+        {
+            Chase();
+        }
+        else
+        {
+            Debug.DrawLine(this.transform.position, player.transform.position);
+                //moves towards the movespot
+                anim.SetBool("isPatrolling", true);
+                transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //checks if the player is in range of the enemy
-        if (Vector3.Distance(transform.position, player.transform.position) > 10f)
-        {
-            //moves towards the movespot
-            anim.SetBool("isPatrolling", true);
-            transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
-        }
+       // if (Vector3.Distance(transform.position, player.transform.position) > 10f)
+       // {
+       //     //moves towards the movespot
+       //     anim.SetBool("isPatrolling", true);
+       //     transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
+       // }
 
         //if the player is in range the enemy starts moving towards the player (via the chase function)
         if (Vector3.Distance(transform.position, player.transform.position) <= 10f)
         {
             anim.SetBool("isAttacking", false);
             anim.SetBool("isPatrolling", false);
-            Chase();
+            //Chase();
         }
     }
 
     public void Chase()
     {
         speed = 3;
+
         //if the player is in range for melee attack it stops moving and starts damaging the player
         if (Vector3.Distance(transform.position, player.transform.position) <= 1.8f)
         {
