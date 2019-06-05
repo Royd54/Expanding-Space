@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767f3b8c4fe83e3438f70b76a34300c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   genTime: 3.5
   hallwayTopEntrys:
   - {fileID: 5850931511921410518, guid: fb54f87e32d41dd4fbeda7e09a60dd49, type: 3}

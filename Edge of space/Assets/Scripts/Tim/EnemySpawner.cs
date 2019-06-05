@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemys;
+    private GameObject player;
     private SpawnRoom rooms;
     private bool spawned = false;
 
@@ -18,10 +19,15 @@ public class EnemySpawner : MonoBehaviour
     {
         if(rooms.GetGenTime() <= 0f && !spawned)
         {
-            if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 10f)
+            if (!player)
+                player = GameObject.FindWithTag("Player");
+            else
             {
-                Instantiate(enemys[Random.Range(0, enemys.Length)], this.transform.position, this.transform.rotation);
-                spawned = true;
+                if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 10f)
+                {
+                    Instantiate(enemys[Random.Range(0, enemys.Length)], this.transform.position, this.transform.rotation);
+                    spawned = true;
+                }
             }
         }
             

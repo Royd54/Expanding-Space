@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
@@ -34,7 +35,8 @@ public class HealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
-            GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
+            if (SceneManager.GetActiveScene().name != "Generator")
+                GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
             Destroy(gameObject);
         }
     }

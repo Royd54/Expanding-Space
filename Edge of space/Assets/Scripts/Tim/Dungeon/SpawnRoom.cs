@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnRoom : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     private bool spawned = false;
+    [SerializeField] private GameObject nextFloor;
     [SerializeField] private float genTime = 10f;
 
     [Header("Hallways")]
@@ -38,7 +40,10 @@ public class SpawnRoom : MonoBehaviour
             genTime -= Time.deltaTime;
             if (genTime <= 0 && !spawned)
             {
-                //Instantiate(player, this.transform.position, this.transform.rotation);
+                BossRoom(allRooms[allRooms.Count-1]);
+                if (allRooms.Count < 5f)
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                spawned = true;
             }
         }
     }
@@ -46,5 +51,11 @@ public class SpawnRoom : MonoBehaviour
     public float GetGenTime()
     {
         return genTime;
+    }
+
+    private void BossRoom(GameObject room)
+    {
+        Instantiate(nextFloor, allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").position, allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").rotation);
+        Destroy(room.transform.Find("EnemySpawner").gameObject);
     }
 }
