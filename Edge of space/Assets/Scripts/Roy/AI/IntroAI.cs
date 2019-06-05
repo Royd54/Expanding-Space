@@ -9,7 +9,7 @@ public class IntroAI : MonoBehaviour
     private float waitTime;
     [SerializeField] private float startWaitTime;
 
-    private Transform moveSpot;
+    private Vector2 beginpos;
     [SerializeField] private float minX;
     [SerializeField] private float minY;
     [SerializeField] private float maxX;
@@ -29,8 +29,8 @@ public class IntroAI : MonoBehaviour
         player = GameObject.Find("Player");
         waitTime = startWaitTime;
         //sets a random moveposition between the x and the y values
-        moveSpot = GameObject.Find("moveSpot").GetComponent<Transform>();
-
+        //moveSpot = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        beginpos = this.gameObject.transform.position;
         speed = 2;
     }
 
@@ -42,11 +42,11 @@ public class IntroAI : MonoBehaviour
         {
             //moves towards the movespot
             anim.SetBool("isPatrolling", true);
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
         }
 
         //if the player is in range the enemy starts moving towards the player (via the chase function)
-        if (Vector3.Distance(transform.position, player.transform.position) <= 30f)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 10f)
         {
             anim.SetBool("isAttacking", false);
             anim.SetBool("isPatrolling", false);
