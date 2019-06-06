@@ -205,7 +205,7 @@ public class Inventory : MonoBehaviour
         {
             CraftReset();
             Victory.SetActive(true);
-            GameObject.Find("Player").GetComponent<PlayerStats>().health += 100000;
+            GameObject.Find("Player").GetComponent<PlayerStats>().SetHealth(100000, true);
         }
     }
 
@@ -224,7 +224,7 @@ public class Inventory : MonoBehaviour
         }
         if (craftedRecipe2 == true)
         {
-            GameObject.Find("Player").GetComponent<PlayerStats>().health += 35;
+            GameObject.Find("Player").GetComponent<PlayerStats>().SetHealth(GameObject.Find("Player").GetComponent<PlayerStats>().GetHealth() + 35f, false);
         }
         if (craftedRecipe3 == true)
         {

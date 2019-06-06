@@ -516,11 +516,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: R Blocker
       objectReference: {fileID: 0}
-    - target: {fileID: 5551360660163520885, guid: 8c788f6dcf00e2346a2404f60cecd5b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 957146751627230592, guid: 8c788f6dcf00e2346a2404f60cecd5b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -959,11 +954,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: B Blocker
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238391626976557012, guid: 3fee2adc3e21997489071d2ca090cf1d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7810513072465966528, guid: 3fee2adc3e21997489071d2ca090cf1d,
         type: 3}
@@ -1458,11 +1448,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: T Blocker
       objectReference: {fileID: 0}
-    - target: {fileID: 3592483012028130310, guid: 7a454844d0692de40bdaaf0624ee6ae3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4227386020153834928, guid: 7a454844d0692de40bdaaf0624ee6ae3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1795,11 +1780,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L Blocker
-      objectReference: {fileID: 0}
-    - target: {fileID: 3924030812371084965, guid: 92ae8a380e00e114daa9d5dbe3aae675,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7827311888352725370, guid: 92ae8a380e00e114daa9d5dbe3aae675,
         type: 3}

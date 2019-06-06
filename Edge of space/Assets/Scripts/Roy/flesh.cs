@@ -21,7 +21,7 @@ public class flesh : MonoBehaviour
             interactKey.SetActive(true);
             if(Input.GetKey(KeyCode.E))
             {
-                player.GetComponent<PlayerStats>().food += 42;
+                player.GetComponent<PlayerStats>().SetFood(player.GetComponent<PlayerStats>().GetFood() + 43f);
                 Destroy(this.gameObject);
             }
         }

@@ -282,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 2276959869877894089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 2276959871650029053}
   - {fileID: 2276959871498447794}
@@ -301,8 +301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767f3b8c4fe83e3438f70b76a34300c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  genTime: 3.5
+  player: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
+  nextFloor: {fileID: 2341463493314727117, guid: 3ee25f2188b6fb840a2a8fc7623088d4,
+    type: 3}
+  genTime: 4
   hallwayTopEntrys:
   - {fileID: 5850931511921410518, guid: fb54f87e32d41dd4fbeda7e09a60dd49, type: 3}
   - {fileID: 8487210406448081662, guid: ef8a56b461f368e4ba93a8979e7354e1, type: 3}
