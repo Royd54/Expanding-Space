@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -59,65 +60,67 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-
-        StoneNeededText.text = stoneNeeded + " X" + " (you have "+ stoneAmount + ")";
-        WoodNeededText.text = woodNeeded + " X" + " (you have " + woodAmount + ")"; ;
-        MetalNeededText.text = metalNeeded + " X" + " (you have " + metalAmount + ")"; ;
-
-        if (part1Collected == true)
+        if(SceneManager.GetActiveScene().name != "Generator")
         {
-            part1Text.text = "Collected!";
-        }
+            StoneNeededText.text = stoneNeeded + " X" + " (you have " + stoneAmount + ")";
+            WoodNeededText.text = woodNeeded + " X" + " (you have " + woodAmount + ")";
+            MetalNeededText.text = metalNeeded + " X" + " (you have " + metalAmount + ")";
 
-        if (part2Collected == true)
-        {
-            part2Text.text = "Collected!";
-        }
-
-        if (part3Collected == true)
-        {
-            part3Text.text = "Collected!";
-        }
-
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
-        {
-            if(toolSlotIndex != 3)
+            if (part1Collected == true)
             {
-                toolSlotIndex++;
-                ChangeTool();
-            }
-        }
-        if(Input.GetAxis("Mouse ScrollWheel") < 0f)
-        {
-            if (toolSlotIndex != 0)
-            {
-                toolSlotIndex--;
-                ChangeTool();
-            }
-        }
-
-        if (Vector2.Distance(transform.position, spaceShip.transform.position) < 5)
-        {
-            InteractKey.SetActive(true);
-            if (Input.GetKey(KeyCode.E))
-            {
-                playerUI.SetActive(false);
-                inventoryUI.SetActive(true);
-                inInventory = true;
-                GameObject.Find("gun").GetComponent<Gun>().ableToFire = false;
+                part1Text.text = "Collected!";
             }
 
-            if (Input.GetKey(KeyCode.Escape))
+            if (part2Collected == true)
+            {
+                part2Text.text = "Collected!";
+            }
+
+            if (part3Collected == true)
+            {
+                part3Text.text = "Collected!";
+            }
+
+            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+            {
+                if (toolSlotIndex != 3)
+                {
+                    toolSlotIndex++;
+                    ChangeTool();
+                }
+            }
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            {
+                if (toolSlotIndex != 0)
+                {
+                    toolSlotIndex--;
+                    ChangeTool();
+                }
+            }
+
+            if (Vector2.Distance(transform.position, spaceShip.transform.position) < 5)
+            {
+                InteractKey.SetActive(true);
+                if (Input.GetKey(KeyCode.E))
+                {
+                    playerUI.SetActive(false);
+                    inventoryUI.SetActive(true);
+                    inInventory = true;
+                    GameObject.Find("gun").GetComponent<Gun>().ableToFire = false;
+                }
+
+                if (Input.GetKey(KeyCode.Escape))
+                {
+                    Reset();
+                    GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
+                }
+            }
+
+            if (Vector2.Distance(transform.position, spaceShip.transform.position) > 7)
             {
                 Reset();
                 GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
             }
-        }
-
-        if (Vector2.Distance(transform.position, spaceShip.transform.position) > 7)
-        {
-            Reset();
-            GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
         }
     }
 

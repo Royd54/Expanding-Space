@@ -33,7 +33,6 @@ public class PlayerStats : MonoBehaviour
     {
         sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
         matDefault = sr.material;
-
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
     }
 

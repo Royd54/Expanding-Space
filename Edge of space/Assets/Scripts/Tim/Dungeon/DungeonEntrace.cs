@@ -34,6 +34,7 @@ public class DungeonEntrace : MonoBehaviour
                     if (amountOfFloors == toFloor)
                     {
                         toFloor = 0;
+                        SceneManager.LoadScene("PlaytestOverworld");
                     }
                     else
                     {

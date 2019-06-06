@@ -33,9 +33,16 @@ public class Controller2D : MonoBehaviour
     private void Update()
     {
         //turns the pivotPoint to where the cursor is
-        var diraction = Input.mousePosition - Camera.main.WorldToScreenPoint(pivotPoint.position);
-        var angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
-        pivotPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        try
+        {
+            var diraction = Input.mousePosition - Camera.main.WorldToScreenPoint(pivotPoint.position);
+            var angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
+            pivotPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+        catch
+        {
+            Debug.Log("Camera.maim not found");
+        }
 
         #region Player and tool turn
         //moves the gun behind the player when it gets to a certain degree

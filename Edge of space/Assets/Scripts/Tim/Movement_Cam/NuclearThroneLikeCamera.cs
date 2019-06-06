@@ -21,10 +21,14 @@ public class NuclearThroneLikeCamera : MonoBehaviour
     
     void FixedUpdate()
     {
-        mousePos = CaptureMousePos();
-        shakeOffset = UpdateShake();
-        target = UpdateTargetPos();
-        UpdateCameraPosition();
+        try
+        {
+            mousePos = CaptureMousePos();
+            shakeOffset = UpdateShake();
+            target = UpdateTargetPos();
+            UpdateCameraPosition();
+        }
+        catch { Debug.Log("Camera.maim not found"); }
     }
 
     private Vector3 CaptureMousePos()
