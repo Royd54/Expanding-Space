@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemys;
-    private bool bossSpawner = false;
+    public bool bossSpawner = false;
     [SerializeField] private GameObject boss;
     private GameObject player;
     private SpawnRoom rooms;

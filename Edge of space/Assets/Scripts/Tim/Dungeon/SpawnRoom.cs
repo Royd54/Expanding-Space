@@ -39,10 +39,7 @@ public class SpawnRoom : MonoBehaviour
             genTime -= Time.deltaTime;
             if (genTime <= 0 && !spawned)
             {
-                BossRoom(allRooms[allRooms.Count-1]);
-                if (allRooms.Count < 5f)
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                spawned = true;
+                Invoke("BossRoom", 0.5f);
             }
         }
     }
@@ -52,8 +49,11 @@ public class SpawnRoom : MonoBehaviour
         return genTime;
     }
 
-    private void BossRoom(GameObject room)
+    private void BossRoom()
     {
-        room.transform.Find("EnemySpawner").SendMessage("BossSpawner");
+        allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").GetComponent<EnemySpawner>().bossSpawner = true;
+        if (allRooms.Count < 5f)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        spawned = true;
     }
 }
