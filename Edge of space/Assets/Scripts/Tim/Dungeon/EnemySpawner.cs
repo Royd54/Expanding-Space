@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemys;
+    private bool bossSpawner = false;
+    [SerializeField] private GameObject boss;
     private GameObject player;
     private SpawnRoom rooms;
     private bool spawned = false;
@@ -23,13 +25,20 @@ public class EnemySpawner : MonoBehaviour
                 player = GameObject.FindWithTag("Player");
             else
             {
-                if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 10f)
+                if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 15f)
                 {
-                    Instantiate(enemys[Random.Range(0, enemys.Length)], this.transform.position, this.transform.rotation);
+                    if (!bossSpawner)
+                        Instantiate(enemys[Random.Range(0, enemys.Length)], this.transform.position, this.transform.rotation);
+                    else
+                        Instantiate(boss, this.transform.position, this.transform.rotation);
                     spawned = true;
                 }
             }
-        }
-            
+        }  
+    }
+
+    private void BossSpawner()
+    {
+        bossSpawner = true;
     }
 }

@@ -7,7 +7,6 @@ public class SpawnRoom : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     private bool spawned = false;
-    [SerializeField] private GameObject nextFloor;
     [SerializeField] private float genTime = 10f;
 
     [Header("Hallways")]
@@ -55,7 +54,6 @@ public class SpawnRoom : MonoBehaviour
 
     private void BossRoom(GameObject room)
     {
-        Instantiate(nextFloor, allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").position, allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").rotation);
-        Destroy(room.transform.Find("EnemySpawner").gameObject);
+        room.transform.Find("EnemySpawner").SendMessage("BossSpawner");
     }
 }

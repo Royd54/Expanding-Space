@@ -7,6 +7,8 @@ using UnityEngine;
 public class witchHealthController : MonoBehaviour
 {
     [SerializeField] public float health;
+    [SerializeField] private bool boss;
+    [SerializeField] private GameObject nextfloor;
     private Material matDefault;
     public Material matWhite;
     SpriteRenderer sr;
@@ -34,6 +36,8 @@ public class witchHealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
+            if (boss)
+                Instantiate(nextfloor, this.transform.position, this.transform.rotation);
             Destroy(this.gameObject);
         }
     }

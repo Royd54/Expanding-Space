@@ -302,8 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
-  nextFloor: {fileID: 2341463493314727117, guid: 3ee25f2188b6fb840a2a8fc7623088d4,
-    type: 3}
+  boss: {fileID: 7234906926791377479, guid: 9ae8e685abb2989469af8ee9462ec723, type: 3}
   genTime: 4
   hallwayTopEntrys:
   - {fileID: 5850931511921410518, guid: fb54f87e32d41dd4fbeda7e09a60dd49, type: 3}

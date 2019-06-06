@@ -10,10 +10,10 @@ public class PlayerStats : MonoBehaviour
     private static float HEALTH = 33;
     private float health;
     [Range(0, 100)]
-    private static float FOOD;
+    private static float FOOD = 100;
     private float food;
     [Range(0, 100)]
-    private static float WATER;
+    private static float WATER = 100;
     private float water;
     [Header("bars/text")]
     public Image healthBar;
@@ -37,6 +37,9 @@ public class PlayerStats : MonoBehaviour
         sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
         matDefault = sr.material;
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
+        health = HEALTH;
+        food = FOOD;
+        water = WATER;
     }
 
     // Update is called once per frame
