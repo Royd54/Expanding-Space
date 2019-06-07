@@ -33,8 +33,11 @@ public class DungeonEntrace : MonoBehaviour
         }
         if(amountOfFloors == toFloor)
         {
-            Destroy(this.gameObject);
-            Instantiate(SHIPPARTS[partToSpawn], this.transform.position, this.transform.rotation);
+            if (SHIPPARTS[partToSpawn].transform.name != "DONOTDELETE")
+            {
+                Destroy(this.gameObject);
+                Instantiate(SHIPPARTS[partToSpawn], this.transform.position, this.transform.rotation);
+            }
             partToSpawn++;
         }
         player = GameObject.FindWithTag("Player");
@@ -99,10 +102,10 @@ public class DungeonEntrace : MonoBehaviour
     {
         for (int i = 0; i < shipParts.Length; i++)
         {
-            GameObject tmp = shipParts[i];
-            int r = Random.Range(i, shipParts.Length);
-            shipParts[i] = shipParts[r];
-            shipParts[r] = tmp;
+            GameObject _object = shipParts[i];
+            int rnd = Random.Range(i, shipParts.Length);
+            shipParts[i] = shipParts[rnd];
+            shipParts[rnd] = _object;
         }
     }
 }

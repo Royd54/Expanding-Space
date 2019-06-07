@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8080537763700731481}
   - component: {fileID: 8080537763700731462}
-  - component: {fileID: 8080537763700731463}
   - component: {fileID: 4604779593331365033}
   m_Layer: 0
   m_Name: part1
@@ -82,20 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8080537763700731463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8080537763700731460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bde3c7a601b6d6488e752ffc7378edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  interactKey: {fileID: 5971335106605524324}
 --- !u!114 &4604779593331365033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9cd9d7f3bffd48996c77b04ad486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  part: 1
   amountOfFloors: 3
   shipParts: []
 --- !u!1001 &8080537765006933012
@@ -194,12 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94231c4c1866d41409f31f780f653146, type: 3}
---- !u!1 &5971335106605524324 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2521356001628084592, guid: 94231c4c1866d41409f31f780f653146,
-    type: 3}
-  m_PrefabInstance: {fileID: 8080537765006933012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8228483047619555158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 149366406770725698, guid: 94231c4c1866d41409f31f780f653146,

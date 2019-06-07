@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5116466248774454544}
   - component: {fileID: 5116466248774454547}
-  - component: {fileID: 5116466248774454546}
   - component: {fileID: 1498166810865427531}
   m_Layer: 0
   m_Name: part3
@@ -82,20 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5116466248774454546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5116466248774453997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec17e5407a75a734b83d8cd33384d38c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  interactKey: {fileID: 7349013800430708071}
 --- !u!114 &1498166810865427531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9cd9d7f3bffd48996c77b04ad486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  part: 3
   amountOfFloors: 3
   shipParts: []
 --- !u!1001 &5116466248469380119
@@ -120,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 2521356001628084592, guid: 94231c4c1866d41409f31f780f653146,
         type: 3}
       propertyPath: m_Name
-      value: E3
+      value: E
       objectReference: {fileID: 0}
     - target: {fileID: 2521356001628084592, guid: 94231c4c1866d41409f31f780f653146,
         type: 3}
@@ -199,12 +185,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94231c4c1866d41409f31f780f653146, type: 3}
---- !u!1 &7349013800430708071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2521356001628084592, guid: 94231c4c1866d41409f31f780f653146,
-    type: 3}
-  m_PrefabInstance: {fileID: 5116466248469380119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4977587019060932437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 149366406770725698, guid: 94231c4c1866d41409f31f780f653146,
