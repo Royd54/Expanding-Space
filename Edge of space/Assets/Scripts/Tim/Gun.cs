@@ -58,8 +58,8 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         if (!cam) cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
-        else if(!GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>())
         if (!audio) audio = this.GetComponent<AudioSource>();
+
         if (primaryUse && ableToFire == true)
         {
             if (firingType == GunEnum.singleShot)

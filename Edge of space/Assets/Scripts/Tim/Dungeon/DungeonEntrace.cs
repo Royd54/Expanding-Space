@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class DungeonEntrace : MonoBehaviour
 {
+    private enum Part
+    {
+        none,
+        Part1,
+        Part2,
+        Part3
+    }
+    [SerializeField] private Part part = Part.none;
     [SerializeField] private int amountOfFloors = 3;
     private static GameObject[] SHIPPARTS;
     [SerializeField] private GameObject[] shipParts;
@@ -47,6 +55,20 @@ public class DungeonEntrace : MonoBehaviour
                 interactKey.SetActive(true);
                 if (Input.GetKey(KeyCode.E))
                 {
+                    switch(part)
+                    {
+                        case Part.Part1:
+                            GameObject.Find("Player").GetComponent<Inventory>().setPart1();
+                            break;
+                        case Part.Part2:
+                            GameObject.Find("Player").GetComponent<Inventory>().setPart2();
+                            break;
+                        case Part.Part3:
+                            GameObject.Find("Player").GetComponent<Inventory>().setPart3();
+                            break;
+                        default:
+                            break;
+                    }
                     if (amountOfFloors == toFloor)
                     {
                         toFloor = 0;
