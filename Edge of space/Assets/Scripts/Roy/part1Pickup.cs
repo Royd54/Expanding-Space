@@ -21,7 +21,7 @@ public class part1Pickup : MonoBehaviour
             interactKey.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
-                GameObject.Find("Player").GetComponent<Inventory>().part1Collected = true;
+                //GameObject.Find("Player").GetComponent<Inventory>().part1Collected = true;
                 Destroy(this.gameObject);
             }
         }
