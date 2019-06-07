@@ -31,7 +31,10 @@ public class witchHealthController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         audioS.Play();
-        health -= damage;
+        if (boss)
+            health -= damage / 5;
+        else
+            health -= damage;
         Hpbar.fillAmount = health / 100;
         //if health is below 0 it destroys itself
         if (health <= 0)

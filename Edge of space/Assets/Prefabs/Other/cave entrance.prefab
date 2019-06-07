@@ -94,6 +94,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfFloors: 3
+  shipParts:
+  - {fileID: 8080537763700731460, guid: 4c8de0353f050e04bb40e313b7dfbb7c, type: 3}
+  - {fileID: 6318225915819974622, guid: 783a168d6a53447428f6bccd522aea34, type: 3}
+  - {fileID: 5116466248774453997, guid: cf7d32fe70ae09846a28ef9ae7793115, type: 3}
+  - {fileID: 8335264041159902752, guid: d0e92e3a52e5a684fad144572717f405, type: 3}
 --- !u!1001 &2341463492373217649
 PrefabInstance:
   m_ObjectHideFlags: 0

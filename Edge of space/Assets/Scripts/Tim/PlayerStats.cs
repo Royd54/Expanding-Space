@@ -73,6 +73,7 @@ public class PlayerStats : MonoBehaviour
     {
         audioS.Play();
         health -= damage;
+        MoveBars();
         whiteFlash();
         if (health <= 0)
         {
