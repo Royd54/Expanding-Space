@@ -6,9 +6,14 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public static int WoodAmount = 60;
+    public static int StoneAmount = 20;
+    public static int MetalAmount = 70;
+
     public int woodAmount = 60;
     public int stoneAmount = 20;
     public int metalAmount = 70;
+
     public GameObject[] selectedWindows;
     private int toolSlotIndex = 0;
 
@@ -47,9 +52,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Text part2Text;
     [SerializeField] private Text part3Text;
 
-    public bool part1Collected = false;
-    public bool part2Collected = false;
-    public bool part3Collected = false;
+    public static bool part1Collected = false;
+    public static bool part2Collected = false;
+    public static bool part3Collected = false;
 
     [SerializeField] private bool inInventory = false;
 
@@ -293,27 +298,48 @@ public class Inventory : MonoBehaviour
     public void AddWood(int wood)
     {
         this.woodAmount += wood;
+        WoodAmount = woodAmount;
     }
     public void AddStone(int stone)
     {
         this.stoneAmount += stone;
+        StoneAmount = stoneAmount;
     }
     public void AddMetal(int metal)
     {
         this.metalAmount += metal;
+        MetalAmount = stoneAmount;
     }
 
     public void SetWood(int wood)
     {
         this.woodAmount = wood;
+        WoodAmount = woodAmount;
     }
     public void SetStone(int stone)
     {
         this.stoneAmount = stone;
+        StoneAmount = stoneAmount;
     }
     public void SetMetal(int metal)
     {
         this.metalAmount = metal;
+        MetalAmount = metalAmount;
+    }
+
+    public void setPart1()
+    {
+        part1Collected = true;
+    }
+
+    public void setPart2()
+    {
+        part2Collected = true;
+    }
+
+    public void setPart3()
+    {
+        part1Collected = true;
     }
 
     public int GetWood()
