@@ -32,7 +32,7 @@ public class witchHealthController : MonoBehaviour
     {
         audioS.Play();
         if (boss)
-            health -= damage / 5;
+            health -= damage / 10;
         else
             health -= damage;
         Hpbar.fillAmount = health / 100;

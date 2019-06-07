@@ -53,12 +53,13 @@ public class Gun : MonoBehaviour
         fireRateRestet = fireRate;
         fireRate = 0;
         spawner = transform.Find("Spawner");
-        cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
-        audio = this.GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+        if (!cam) cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
+        else if(!GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>())
+        if (!audio) audio = this.GetComponent<AudioSource>();
         if (primaryUse && ableToFire == true)
         {
             if (firingType == GunEnum.singleShot)
