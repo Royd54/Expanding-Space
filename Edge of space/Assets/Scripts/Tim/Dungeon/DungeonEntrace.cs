@@ -5,14 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class DungeonEntrace : MonoBehaviour
 {
-    private enum Part
-    {
-        none,
-        Part1,
-        Part2,
-        Part3
-    }
-    [SerializeField] private Part part = Part.none;
     [SerializeField] private int amountOfFloors = 3;
     private static GameObject[] SHIPPARTS;
     [SerializeField] private GameObject[] shipParts;
@@ -21,17 +13,20 @@ public class DungeonEntrace : MonoBehaviour
     private GameObject player;
     private GameObject interactKey;
     private static int amountOfDungeonsEntered = 0;
-    public static int toFloor = 0;
+    private static int currentFloor = 0;
     
-    private void OnEnable()
+    private void Start()
     {
-        if(!shuffled)
+        player = GameObject.FindWithTag("Player");
+        interactKey = this.transform.Find("E").gameObject;
+        interactKey.SetActive(false);
+        if (!shuffled)
         {
             ShuffleArray(shipParts);
             SHIPPARTS = shipParts;
             shuffled = true;
         }
-        if(amountOfFloors == toFloor)
+        if(amountOfFloors == currentFloor)
         {
             if (SHIPPARTS[partToSpawn].transform.name != "DONOTDELETE")
             {
@@ -40,9 +35,6 @@ public class DungeonEntrace : MonoBehaviour
             }
             partToSpawn++;
         }
-        player = GameObject.FindWithTag("Player");
-        interactKey = this.transform.Find("E").gameObject;
-        interactKey.SetActive(false);
     }
 
     private void Update()
@@ -58,37 +50,12 @@ public class DungeonEntrace : MonoBehaviour
                 interactKey.SetActive(true);
                 if (Input.GetKey(KeyCode.E))
                 {
-                    switch(part)
+                    if (amountOfFloors == currentFloor)
                     {
-                        case Part.Part1:
-                            GameObject.Find("Player").GetComponent<Inventory>().setPart1();
-                            break;
-                        case Part.Part2:
-                            GameObject.Find("Player").GetComponent<Inventory>().setPart2();
-                            break;
-                        case Part.Part3:
-                            GameObject.Find("Player").GetComponent<Inventory>().setPart3();
-                            break;
-                        default:
-                            break;
-                    }
-                    if (amountOfFloors == toFloor)
-                    {
-                        toFloor = 0;
                         SceneManager.LoadScene("PlaytestOverworld");
                     }
-                    else
-                    {
-                        if (toFloor == 0)
-                        {
-                            SceneManager.LoadScene("Generator");
-                        }
-                        else
-                        {
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                        }
-                        toFloor++;
-                    }
+                    SceneManager.LoadScene("Generator");
+                    currentFloor++;
                 }
             }
             else

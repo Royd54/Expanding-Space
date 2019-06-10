@@ -93,7 +93,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9cd9d7f3bffd48996c77b04ad486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  part: 0
   amountOfFloors: 3
   shipParts:
   - {fileID: 8080537763700731460, guid: 4c8de0353f050e04bb40e313b7dfbb7c, type: 3}

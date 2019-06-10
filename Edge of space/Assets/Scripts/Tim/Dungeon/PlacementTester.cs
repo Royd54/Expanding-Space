@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlacementTester : MonoBehaviour
 {
-    private float halfLife = 0.3f;
+    private float halfLife = 0.1f;
     private SpawnRoom rooms;
     private string name;
     private string[] words;
@@ -22,30 +22,6 @@ public class PlacementTester : MonoBehaviour
     {
         if (!spawned)
         {
-            /*if (isRoom)
-            {
-                if(words[0] == "T")
-                {
-                    int rnd = Random.Range(0, rooms.hallwayTopEntrys.Length);
-                    Instantiate(rooms.hallwayTopEntrys[rnd], this.transform.parent.position, this.transform.parent.rotation);
-                }
-                if(words[0] == "L")
-                {
-                    int rnd = Random.Range(0, rooms.hallwayLeftEntrys.Length);
-                    Instantiate(rooms.hallwayLeftEntrys[rnd], this.transform.parent.position, this.transform.parent.rotation);
-                }
-                if(words[0] == "B")
-                {
-                    int rnd = Random.Range(0, rooms.hallwayBottomEntrys.Length);
-                    Instantiate(rooms.hallwayBottomEntrys[rnd], this.transform.parent.position, this.transform.parent.rotation);
-                }
-                if(words[0] == "R")
-                {
-                    int rnd = Random.Range(0, rooms.hallwayRightEntrys.Length);
-                    Instantiate(rooms.hallwayRightEntrys[rnd], this.transform.parent.position, this.transform.parent.rotation);
-                }
-            }*/
-
             switch(words[0])
             {
                 case "T":

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6318225915819974621}
   - component: {fileID: 6318225915819974620}
-  - component: {fileID: 694930356332291464}
+  - component: {fileID: 5334232184569902084}
   m_Layer: 0
   m_Name: part2
   m_TagString: Untagged
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &694930356332291464
+--- !u!114 &5334232184569902084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,12 +90,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6318225915819974622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d9cd9d7f3bffd48996c77b04ad486f, type: 3}
+  m_Script: {fileID: 11500000, guid: 602245014ee23cc4881c38c09c10a1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   part: 2
-  amountOfFloors: 3
-  shipParts: []
 --- !u!1001 &6318225915418761672
 PrefabInstance:
   m_ObjectHideFlags: 0
