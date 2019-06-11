@@ -13,28 +13,38 @@ public class Element : MonoBehaviour
     #region Public Variables
     [Header("Stats")]
     public ElementEnum element = ElementEnum.wood;
-    [Range(0,500)]
+    [Range(0, 500)]
     public int elementAmount = 100;
     #endregion
     #region Private Variables
     private Inventory playerInventory;
+    private Animator anim;
     #endregion
 
     private void Start()
     {
         playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+        anim = this.GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonUp(1))
+        {
+            anim.enabled=false;
+        }
+    }
 
     private void Harvest(int amountsHarvest)
     {
-        elementAmount -= amountsHarvest;
-        if (element == ElementEnum.wood)
-            playerInventory.AddWood(amountsHarvest);
-        if (element == ElementEnum.stone)
-            playerInventory.AddStone(amountsHarvest);
-        if (element == ElementEnum.metal)
-            playerInventory.AddMetal(amountsHarvest);
-
+        anim.enabled = true;
+            anim.SetBool("IsBreaking", true);
+            elementAmount -= amountsHarvest;
+            if (element == ElementEnum.wood && elementAmount > amountsHarvest)
+                playerInventory.AddWood(amountsHarvest);
+            if (element == ElementEnum.stone && elementAmount > amountsHarvest)
+                playerInventory.AddStone(amountsHarvest);
+            if (element == ElementEnum.metal && elementAmount > amountsHarvest)
+                playerInventory.AddMetal(amountsHarvest);
     }
 }

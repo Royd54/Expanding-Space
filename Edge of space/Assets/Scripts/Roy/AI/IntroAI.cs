@@ -40,7 +40,7 @@ public class IntroAI : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position);
+        RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position *1);
         
         if (hitInfo.collider.name == "Player")
         {
