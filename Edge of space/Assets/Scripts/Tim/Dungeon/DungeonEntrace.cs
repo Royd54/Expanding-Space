@@ -34,6 +34,7 @@ public class DungeonEntrace : MonoBehaviour
                 Instantiate(SHIPPARTS[partToSpawn], this.transform.position, this.transform.rotation);
             }
             partToSpawn++;
+            currentFloor = 0;
         }
     }
 
