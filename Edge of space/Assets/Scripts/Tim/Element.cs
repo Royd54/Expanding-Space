@@ -25,6 +25,7 @@ public class Element : MonoBehaviour
         playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
+
     private void Harvest(int amountsHarvest)
     {
         elementAmount -= amountsHarvest;
