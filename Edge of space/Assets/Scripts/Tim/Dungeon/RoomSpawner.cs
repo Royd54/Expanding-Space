@@ -24,7 +24,7 @@ public class RoomSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("Spawn", 0.2f);
+        Invoke("Spawn", 0.6f);
     }
 
     private void Spawn()
