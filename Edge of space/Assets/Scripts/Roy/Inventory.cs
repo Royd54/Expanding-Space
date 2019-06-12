@@ -339,7 +339,7 @@ public class Inventory : MonoBehaviour
 
     public void setPart3()
     {
-        part1Collected = true;
+        part3Collected = true;
     }
 
     public int GetWood()
