@@ -54,10 +54,12 @@ public class Gun : MonoBehaviour
         fireRateRestet = fireRate;
         fireRate = 0;
         spawner = transform.Find("Spawner");
+        lineRenderer = this.gameObject.GetComponent<LineRenderer>();
     }
 
     private void Update()
     {
+        lineRenderer.enabled = false;
         if (!cam) cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
         if (!audio) audio = this.GetComponent<AudioSource>();
 
@@ -105,14 +107,16 @@ public class Gun : MonoBehaviour
 
         if(secondaryUse && canHarvest)
         {
-            RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right);
-            lineRenderer.SetPosition(0, this.transform.position);
-            lineRenderer.SetPosition(1, hit.point);
+            RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right, 10f);
+
             if (hit.collider != null && hit.collider.tag != "player")
             {
                 if (hit.collider.tag == "harvertable")
                 {
                     hit.transform.SendMessage("Harvest", amountsHarvest);
+                    lineRenderer.enabled = true;
+                    lineRenderer.SetPosition(0, GameObject.Find("Spawner").GetComponent<Transform>().position);
+                    lineRenderer.SetPosition(1, hit.transform.position);
                 }
             }
         }

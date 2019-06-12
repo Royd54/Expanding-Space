@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: ea1edb7b6d80f7f4dbd5bd21d91b6a42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8347646490930322107
+    second: boom space yuhhhh break spritesheet_0
+  - first:
+      213: -5148393710400650082
+    second: boom space yuhhhh break spritesheet_1
+  - first:
+      213: -2555454964012060484
+    second: boom space yuhhhh break spritesheet_2
+  - first:
+      213: 137297547212941228
+    second: boom space yuhhhh break spritesheet_3
+  - first:
+      213: -2857902656160431559
+    second: boom space yuhhhh break spritesheet_4
+  - first:
+      213: -4072549680413750106
+    second: boom space yuhhhh break spritesheet_5
+  - first:
+      213: 5007019447905423825
+    second: boom space yuhhhh break spritesheet_6
+  - first:
+      213: -7521274833474747013
+    second: boom space yuhhhh break spritesheet_7
+  - first:
+      213: 5928516925020314196
+    second: boom space yuhhhh break spritesheet_8
+  - first:
+      213: 2723467869253188835
+    second: boom space yuhhhh break spritesheet_9
+  - first:
+      213: -3721722956000119310
+    second: boom space yuhhhh break spritesheet_10
+  - first:
+      213: -1829202363312237479
+    second: boom space yuhhhh break spritesheet_11
+  - first:
+      213: 7976049192088859532
+    second: boom space yuhhhh break spritesheet_12
+  - first:
+      213: 1446631010638217700
+    second: boom space yuhhhh break spritesheet_13
+  - first:
+      213: -2805458748099424076
+    second: boom space yuhhhh break spritesheet_14
+  - first:
+      213: 2840037837779552349
+    second: boom space yuhhhh break spritesheet_15
+  - first:
+      213: -3217592709642076647
+    second: boom space yuhhhh break spritesheet_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.2835961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77f9412624127b4c939c20226e845a3
+      internalID: 8347646490930322107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818485, y: 0.2763248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae155fe02d02414b9a2f19f79126734
+      internalID: -5148393710400650082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.48545685, y: 0.26730686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c2eb2604cd1f341bb48b14c6a3ad61
+      internalID: -2555454964012060484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.2600352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c675bfaee10a824ba67a7743807e5eb
+      internalID: 137297547212941228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.2690528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc08acd578a1760478a5f1e0b17a3917
+      internalID: -2857902656160431559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.4854565, y: 0.25450948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874f07fde4f20d342a27ee956885b4ff
+      internalID: -4072549680413750106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818518, y: 0.26178116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707e5dc1315b9a1429735a945ed2681d
+      internalID: 5007019447905423825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.25450948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe10a4227e3ffe46bfe4b1439415707
+      internalID: -7521274833474747013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47091335, y: 0.2690528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df758ddd1a2465f4a8b5e88da8f83219
+      internalID: 5928516925020314196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.4854565, y: 0.27632445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7004e3ccf064e4b41b9d14ff4e66b10d
+      internalID: 2723467869253188835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47091353, y: 0.2690528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0df7c689b716d4c90b315051ac575c
+      internalID: -3721722956000119310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.25727183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c69debb89ae64042ab0f55a097886db
+      internalID: -1829202363312237479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47091335, y: 0.2527632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc2e9b8ca82fac43802255edf51428a
+      internalID: 7976049192088859532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818485, y: 0.2673065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7113fae7805c51c4e8d9bb0909f628c4
+      internalID: 1446631010638217700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 90
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818518, y: 0.27457818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5baa55de3522af4584a8abe0b358ce0
+      internalID: -2805458748099424076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 90
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.2673065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6142769e876bb4f43be12d28d0cf779d
+      internalID: 2840037837779552349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boom space yuhhhh break spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.47818503, y: 0.2673067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f082fa2826dc94a99d4a911b882e85
+      internalID: -3217592709642076647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e2e2e658668acd64ea21624b9eb65d76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
