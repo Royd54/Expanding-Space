@@ -32,7 +32,6 @@ public class EnemyControllerBasic : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //checks if the player is in range of the enemy
         if (Vector3.Distance(transform.position, moveSpot) > 0f)
         {
             //moves towards the movespot

@@ -67,7 +67,7 @@ public class waveSystem : MonoBehaviour
                 enemyCount += 10;
                 int SpawnPointIndex = Random.Range(0, spawnpoints.Length);
 
-                Instantiate(witch, spawnpoints[SpawnPointIndex].position, spawnpoints[SpawnPointIndex].rotation);
+                Instantiate(witch, spawnpoints[SpawnPointIndex].position, Quaternion.identity);
                 witchSpawned = true;
                 //Here i start the sequence of the enemy scinametic
                 camera2 = GameObject.Find("Camera2").GetComponent<Camera>();
