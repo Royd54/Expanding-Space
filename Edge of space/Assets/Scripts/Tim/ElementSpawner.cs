@@ -12,6 +12,6 @@ public class ElementSpawner : MonoBehaviour
         if (Random.Range(0, 100) > max)
             Instantiate(tree, this.transform.position, this.transform.rotation);
         else
-            Instantiate(tree, this.transform.position, this.transform.rotation);
+            Instantiate(rock, this.transform.position, this.transform.rotation);
     }
 }
