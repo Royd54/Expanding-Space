@@ -12,6 +12,8 @@ TagManager:
   - RoomSpawner
   - Rooms
   - PlacementTest
+  - WallBack
+  - WallFront
   layers:
   - Default
   - TransparentFX
