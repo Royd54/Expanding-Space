@@ -31,7 +31,7 @@ public class Element : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(1))
         {
-            anim.enabled=false;
+            anim.enabled = false;
         }
     }
 

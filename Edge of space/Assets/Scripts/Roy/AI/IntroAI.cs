@@ -40,19 +40,23 @@ public class IntroAI : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position *1);
+        RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position * 1);
         
-        if (hitInfo.collider.name == "Player")
+        if(hitInfo.collider != null)
         {
-            Chase();
+            if (hitInfo.collider.name == "Player")
+            {
+                Chase();
+            }
+            else
+            {
+                Debug.DrawLine(this.transform.position, player.transform.position);
+                    //moves towards the movespot
+                    anim.SetBool("isPatrolling", true);
+                    transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
+            }
         }
-        else
-        {
-            Debug.DrawLine(this.transform.position, player.transform.position);
-                //moves towards the movespot
-                anim.SetBool("isPatrolling", true);
-                transform.position = Vector2.MoveTowards(transform.position, beginpos, speed * Time.deltaTime);
-        }
+        
     }
 
     // Update is called once per frame

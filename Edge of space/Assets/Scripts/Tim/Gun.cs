@@ -60,8 +60,28 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         lineRenderer.enabled = false;
-        if (!cam) cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
-        if (!audio) audio = this.GetComponent<AudioSource>();
+        if (!cam)
+        {
+            try
+            {
+                cam = GameObject.FindWithTag("MainCamera").GetComponent<NuclearThroneLikeCamera>();
+            }
+            catch
+            {
+                //does nothing
+            }
+        }
+        if (!audio)
+        {
+            try
+            {
+                audio = this.GetComponent<AudioSource>();
+            }
+            catch
+            {
+                //does nothing
+            }
+        }
 
         if (primaryUse && ableToFire == true)
         {
