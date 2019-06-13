@@ -22,6 +22,8 @@ public class waveSystem : MonoBehaviour
     [SerializeField] private Camera camera3;
     [SerializeField] private Camera camera2;
 
+    public bool canSpawn;
+
     private float speed = 5f;
     [SerializeField] private Transform witchTrans;
 
@@ -38,7 +40,10 @@ public class waveSystem : MonoBehaviour
         //counts down with time.deltatime, because of framerate
         spawnTime -= Time.deltaTime;
         bossTimer -= Time.deltaTime;
-        Spawn();
+        if (canSpawn == true)
+        {
+            Spawn();
+        }
     }
 
     void Spawn()
@@ -61,7 +66,7 @@ public class waveSystem : MonoBehaviour
         //Because of this the little enemy's won't spawn anymore
         if (bossTimer <= 0)
         {
-            spawnCap = 0;
+            spawnCap = 1;
             if (enemyCount <= 0 && witchSpawned == false)
             {
                 enemyCount += 10;
@@ -71,7 +76,8 @@ public class waveSystem : MonoBehaviour
                 witchSpawned = true;
                 //Here i start the sequence of the enemy scinametic
                 camera2 = GameObject.Find("Camera2").GetComponent<Camera>();
-                StartCoroutine(theSequence());
+                canSpawn = false;
+                //StartCoroutine(theSequence()); 
             }
         }
 
@@ -85,6 +91,5 @@ public class waveSystem : MonoBehaviour
         yield return new WaitForSeconds(1);
         camera.enabled = true;
         camera2.enabled = false;
-
     }
 }
