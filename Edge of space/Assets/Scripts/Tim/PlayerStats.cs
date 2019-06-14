@@ -20,6 +20,7 @@ public class PlayerStats : MonoBehaviour
     public Image foodBar;
     public Image waterBar;
 
+    private bool godMode = false;
     private AudioSource audioS;
 
     public GameObject playerUI;
@@ -45,6 +46,14 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            if (!godMode)
+                godMode = true;
+            else
+                godMode = false;
+            Debug.Log("GodMode: " + godMode);
+        }
         SetStats();
 
         food -= (0.05f * Time.deltaTime);
@@ -72,7 +81,8 @@ public class PlayerStats : MonoBehaviour
     private void TakeDamage(float damage)
     {
         audioS.Play();
-        health -= damage;
+        if(!godMode)
+            health -= damage;
         MoveBars();
         whiteFlash();
         if (health <= 0)

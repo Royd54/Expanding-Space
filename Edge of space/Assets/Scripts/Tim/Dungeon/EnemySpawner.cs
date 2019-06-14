@@ -19,13 +19,26 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.B) && bossSpawner)
+        {
+            player.transform.position = this.transform.position;
+        }
         if(rooms.GetGenTime() <= 0f && !spawned)
         {
             if (!player)
-                player = GameObject.FindWithTag("Player");
+            {
+                try
+                {
+                    player = GameObject.FindWithTag("Player");
+                }
+                catch
+                {
+
+                }
+            }
             else
             {
-                if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 15f)
+                if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, this.transform.position) < 25f)
                 {
                     if (!bossSpawner)
                         Instantiate(enemys[Random.Range(0, enemys.Length)], this.transform.position, this.transform.rotation);

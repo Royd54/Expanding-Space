@@ -28,8 +28,10 @@ public class SpawnRoom : MonoBehaviour
     public GameObject[] roomBottomEntrys;
     [Tooltip("All Room with a left entry point")]
     public GameObject[] roomLeftEntrys;
-    
-    public GameObject topBlocker, leftBlocker, bottomBlocker, rightBlocker;
+
+    [Header("Blockers")]
+    public GameObject topBlocker;
+    public GameObject leftBlocker, bottomBlocker, rightBlocker;
     public List<GameObject> allRooms = new List<GameObject>();
 
     private void Update()
@@ -51,9 +53,9 @@ public class SpawnRoom : MonoBehaviour
 
     private void BossRoom()
     {
-        allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").GetComponent<EnemySpawner>().bossSpawner = true;
-        if (allRooms.Count < 5f)
+        if (allRooms.Count < 5f || allRooms == null)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").GetComponent<EnemySpawner>().bossSpawner = true;
         spawned = true;
     }
 }
