@@ -10,10 +10,7 @@ public class waveAI : MonoBehaviour
     [SerializeField] private float minY;
     [SerializeField] private float maxX;
     [SerializeField] private float maxY;
-
-    [SerializeField] private bool spotted = false;
-
-    private float distance = 10f;
+    [SerializeField] private float stoppingDistance;
 
     [SerializeField] private GameObject player;
     private Animator anim;
@@ -35,39 +32,29 @@ public class waveAI : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-            Chase();
-    }
-
-    public void Chase()
-    { 
+        Debug.Log(Vector3.Distance(transform.position, player.transform.position));
         speed = 3;
-        spotted = true;
         //if the player is in range for melee attack it stops moving and starts damaging the player
-        if (Vector3.Distance(transform.position, player.transform.position) <= 2.5f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 3f)
         {
-            anim.SetBool("isFollowing", false);
-            anim.SetBool("isAttacking", true);
-            //anim.SetBool("isPatrolling", false);
             transform.position = this.transform.position;
 
             if (Time.time > nextFire)
             {
-                //does damage if the timer is 0
+                //Damage per a couple seconds
                 nextFire = Time.time + fireRate;
-                player.GetComponent<Rigidbody2D>().AddForce(this.transform.Find("KnockBackPoint").right * (damage * 10));
+                anim.SetBool("isAttacking", true);
+                anim.SetBool("isFollowing", false);
+                //player.GetComponent<Rigidbody2D>().AddForce(KnockBackPoint.right * 30000);
                 player.SendMessage("TakeDamage", damage);
             }
-
-             //transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
-        //he walks towards the player
+        //if the distance is larger than the stopping distance it moves towards the player
         else
-        { 
-            //Debug.Log(Vector3.Distance(transform.position, player.transform.position));
+        {
+            anim.SetBool("isAttacking", false);
             anim.SetBool("isFollowing", true);
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-
         }
-
     }
 }

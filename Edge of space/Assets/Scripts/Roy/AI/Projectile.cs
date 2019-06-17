@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     private Transform player;
     private Vector2 target;
     [SerializeField] private float damage = 50;
+    private GameObject Trail;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,6 @@ public class Projectile : MonoBehaviour
     {
         //travels straight ahead after instatiation of the object
         transform.position += transform.right * speed * Time.deltaTime;
-
         //if the porjectile is to far away from the player it destroys itself to safe memory
         if (Vector2.Distance(transform.position, player.position) > 30)
         {

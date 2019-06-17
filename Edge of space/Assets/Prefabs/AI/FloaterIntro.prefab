@@ -162,10 +162,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.24575698, y: -0.19152062}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.5, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -319,7 +319,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25, y: -0.25}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
 --- !u!114 &6512117017101676837
@@ -339,6 +339,8 @@ MonoBehaviour:
   minY: 0
   maxX: 30
   maxY: 30
+  stoppingDistance: 2
   spotted: 0
+  player: {fileID: 0}
   damage: 35
   fireRate: 1

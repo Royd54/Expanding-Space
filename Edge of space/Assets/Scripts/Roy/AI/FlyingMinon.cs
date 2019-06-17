@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlyingMinon : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float stoppingDistance;
+    [SerializeField] private float stoppingDistance = 3f;
 
     private GameObject player;
     private Vector2 target;

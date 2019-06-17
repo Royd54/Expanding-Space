@@ -84,7 +84,7 @@ public class IntroAI : MonoBehaviour
         speed = 3;
 
         //if the player is in range for melee attack it stops moving and starts damaging the player
-        if (Vector3.Distance(transform.position, player.transform.position) <= 1.8f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 3f)
         {
             anim.SetBool("isFollowing", false);
             anim.SetBool("isAttacking", true);

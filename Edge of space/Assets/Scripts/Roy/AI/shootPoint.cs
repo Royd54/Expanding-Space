@@ -30,6 +30,7 @@ public class shootPoint : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private GameObject projectitle;
     [SerializeField] private GameObject minion;
+    private GameObject Trail;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,8 @@ public class shootPoint : MonoBehaviour
         timeBetweenShots = startTimeBetweenShots;
 
         target = GameObject.Find("Player");
+
+        Trail = GameObject.Find("Trail");
     }
 
     // Update is called once per frame
@@ -63,7 +66,7 @@ public class shootPoint : MonoBehaviour
             anim.SetBool("isFollowing", false);
             anim.SetBool("isAttacking", true);
         }
-
+        
         //spawns the minions
         MinionSpawn();
 
