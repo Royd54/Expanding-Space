@@ -59,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -220,6 +221,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.9449999
       objectReference: {fileID: 0}
+    - target: {fileID: 8070171769146984993, guid: 94231c4c1866d41409f31f780f653146,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94231c4c1866d41409f31f780f653146, type: 3}
 --- !u!4 &6835860339164645419 stripped

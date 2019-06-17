@@ -7,7 +7,7 @@ public class waveSystem : MonoBehaviour
     [SerializeField]private GameObject crawler;
     [SerializeField] private GameObject witch;
 
-    [SerializeField] private float spawnTime = 3f;
+    [SerializeField] private static float spawnTime = 3f;
     private float startTime;
     [SerializeField] private float bossTimer = 1f;
     private float scinameticTimer = 1f;
@@ -71,7 +71,7 @@ public class waveSystem : MonoBehaviour
             {
                 enemyCount += 10;
                 int SpawnPointIndex = Random.Range(0, spawnpoints.Length);
-
+                spawnTime = 100f;
                 Instantiate(witch, spawnpoints[SpawnPointIndex].position, Quaternion.identity);
                 witchSpawned = true;
                 //Here i start the sequence of the enemy scinametic
