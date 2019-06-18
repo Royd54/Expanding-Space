@@ -43,8 +43,12 @@ public class Element : MonoBehaviour
             if (element == ElementEnum.wood && elementAmount > amountsHarvest)
                 playerInventory.AddWood(amountsHarvest);
             if (element == ElementEnum.stone && elementAmount > amountsHarvest)
-                playerInventory.AddStone(amountsHarvest);
-            if (element == ElementEnum.metal && elementAmount > amountsHarvest)
+        {
+            playerInventory.AddStone(amountsHarvest);
+            playerInventory.AddMetal(amountsHarvest);
+        }
+
+        if (element == ElementEnum.metal && elementAmount > amountsHarvest)
                 playerInventory.AddMetal(amountsHarvest);
     }
 }

@@ -308,7 +308,7 @@ public class Inventory : MonoBehaviour
     public void AddMetal(int metal)
     {
         this.metalAmount += metal;
-        MetalAmount = stoneAmount;
+        MetalAmount = metalAmount / 2;
     }
 
     public void SetWood(int wood)
