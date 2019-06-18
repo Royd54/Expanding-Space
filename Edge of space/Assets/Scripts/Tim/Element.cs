@@ -38,17 +38,24 @@ public class Element : MonoBehaviour
     private void Harvest(int amountsHarvest)
     {
         anim.enabled = true;
-            anim.SetBool("IsBreaking", true);
-            elementAmount -= amountsHarvest;
-            if (element == ElementEnum.wood && elementAmount > amountsHarvest)
-                playerInventory.AddWood(amountsHarvest);
-            if (element == ElementEnum.stone && elementAmount > amountsHarvest)
+        anim.SetBool("IsBreaking", true);
+        elementAmount -= amountsHarvest;
+        if (element == ElementEnum.wood && elementAmount > amountsHarvest)
+            playerInventory.AddWood(amountsHarvest);
+        if (element == ElementEnum.stone && elementAmount > amountsHarvest)
         {
             playerInventory.AddStone(amountsHarvest);
             playerInventory.AddMetal(amountsHarvest);
         }
 
         if (element == ElementEnum.metal && elementAmount > amountsHarvest)
-                playerInventory.AddMetal(amountsHarvest);
+            playerInventory.AddMetal(amountsHarvest);
+    }
+
+    public void TurnOffColliders()
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        try { this.GetComponent<BoxCollider2D>().enabled = false; }
+        catch { }
     }
 }

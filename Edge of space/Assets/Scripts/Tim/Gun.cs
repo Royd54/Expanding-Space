@@ -161,7 +161,6 @@ public class Gun : MonoBehaviour
 
     public void SetShotgun()
     {
-        Debug.Log("hey");
         this.fireMode = 2;
         damage = 10;
         spread = 10;

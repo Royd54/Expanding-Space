@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: ElementSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d05862211c95be40b384e0a9d18c216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tree: {fileID: 0}
-  rock: {fileID: 0}
+  tree: {fileID: 5473242568631216746, guid: 1336bc3ab51bacd45adec14ac8f812e1, type: 3}
+  rock: {fileID: 8365048259991343619, guid: dbeb5aa6aa73f61408ee5750e69dae56, type: 3}
   max: 50

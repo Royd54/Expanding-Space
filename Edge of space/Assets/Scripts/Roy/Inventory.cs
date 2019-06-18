@@ -110,7 +110,7 @@ public class Inventory : MonoBehaviour
                 }
             }
 
-            if (Vector2.Distance(transform.position, spaceShip.transform.position) < 5)
+            if (Vector2.Distance(transform.position, spaceShip.transform.position) < 9)
             {
                 InteractKey.SetActive(true);
                 if (Input.GetKey(KeyCode.E))
