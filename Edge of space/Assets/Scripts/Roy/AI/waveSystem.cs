@@ -75,9 +75,9 @@ public class waveSystem : MonoBehaviour
                 Instantiate(witch, spawnpoints[SpawnPointIndex].position, Quaternion.identity);
                 witchSpawned = true;
                 //Here i start the sequence of the enemy scinametic
-                camera2 = GameObject.Find("Camera2").GetComponent<Camera>();
+                //camera2 = GameObject.Find("Camera2").GetComponent<Camera>();
                 canSpawn = false;
-                //StartCoroutine(theSequence()); 
+                StartCoroutine(theSequence()); 
             }
         }
 
@@ -86,10 +86,11 @@ public class waveSystem : MonoBehaviour
     //here is aneble and disable the cameras over time (the scinametic is made with animations)
     IEnumerator theSequence()
     {
-        camera2.enabled = true;
-        camera.enabled = false;
+        GameObject.Find("Main Camera").GetComponent<NuclearThroneLikeCamera>().player = GameObject.Find("firstBoss(Clone)").GetComponent<Transform>();
+        GameObject.Find("Player").GetComponent<PlayerStats>().SetGodmode(true);
         yield return new WaitForSeconds(1);
-        camera.enabled = true;
-        camera2.enabled = false;
+        GameObject.Find("Main Camera").GetComponent<NuclearThroneLikeCamera>().player = GameObject.Find("Player").GetComponent<Transform>();
+        yield return new WaitForSeconds(2);
+        GameObject.Find("Player").GetComponent<PlayerStats>().SetGodmode(false);
     }
 }

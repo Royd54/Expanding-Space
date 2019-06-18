@@ -154,4 +154,17 @@ public class PlayerStats : MonoBehaviour
         FOOD = food;
         WATER = water;
     }
+
+    public void SetGodmode(bool setGodmode)
+    {
+        if (setGodmode == true)
+        {
+            godMode = true;
+        }
+        else
+        {
+            godMode = false;
+        }
+    }
+
 }
