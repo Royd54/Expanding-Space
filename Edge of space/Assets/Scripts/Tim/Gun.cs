@@ -4,25 +4,10 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public enum GunEnum
-    {
-        singleShot,
-        semiAutomatic,
-        Shotgun,
-    }
-    public enum AmmoEnum
-    {
-        arrow,
-        pistolBullets,
-        rifelAmmo,
-        shotgunShell,
-        granade,
-        lazerCartridge
-    }
     #region Variables
     [Header("Gun Specs")]
-    [SerializeField] private GunEnum firingType = GunEnum.singleShot;
-    [SerializeField] private AmmoEnum ammoType = AmmoEnum.arrow;
+    [SerializeField] private static int FIREMODE = 0; //0 = single; 1 = auto; 2 = shotgun; 3 = lazer;
+    [SerializeField] private int fireMode = 0; //0 = single; 1 = auto; 2 = shotgun; 3 = lazer;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
@@ -85,47 +70,64 @@ public class Gun : MonoBehaviour
 
         if (primaryUse && ableToFire == true)
         {
-            if (firingType == GunEnum.singleShot)
+            switch (fireMode)
             {
-                //when the gunenum is set to singleshot 
-                cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
-                spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
-                bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
-                spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
-                bulletIns.SendMessage("SetDamage", damage);
-                bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                audio.Play(0);
-                primaryUse = false;
-            }
-            if (firingType == GunEnum.semiAutomatic)
-            {
-                if(fireRate <= 0)
-                {
+                case 0://single shot
                     cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+
                     spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                     bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                     spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+
                     bulletIns.SendMessage("SetDamage", damage);
                     bulletIns.SendMessage("SetSpeed", bulletVelocity);
                     audio.Play(0);
-                    fireRate = fireRateRestet;
-                }
-                else
-                {
-                    fireRate -= Time.deltaTime;
-                }
+                    primaryUse = false;
+                    break;
+                case 1:
+                    if (fireRate <= 0)
+                    {
+                        cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+
+                        spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                        bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                        spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+
+                        bulletIns.SendMessage("SetDamage", damage);
+                        bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                        audio.Play(0);
+                        fireRate = fireRateRestet;
+                    }
+                    else
+                    {
+                        fireRate -= Time.deltaTime;
+                    }
+                    break;
+                case 2:
+                    cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+
+                    for(int i = 0; i < 4; i++)
+                    {
+                        spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                        bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                        spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+                        bulletIns.SendMessage("SetDamage", damage);
+                        bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                    }
+                    audio.Play(0);
+                    primaryUse = false;
+                    break;
+                case 3:
+                    //lazer;
+                    break;
+                default:
+                    fireMode = 0;
+                    break;
             }
-            if (firingType == GunEnum.Shotgun)
-            {
-                cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
-                bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
-                bulletIns.SendMessage("SetDamage", damage);
-                bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                primaryUse = false;
-            }
+
         }
 
-        if(secondaryUse && canHarvest)
+        if (secondaryUse && canHarvest)
         {
             RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right, 10f);
 
@@ -150,21 +152,28 @@ public class Gun : MonoBehaviour
     {
         this.secondaryUse = secondaryUse;
     }
-
+    
     public void automaticFire()
     {
-        this.firingType = GunEnum.semiAutomatic;
+        this.fireMode = 1;
         fireRateRestet = 0.2f;
     }
 
     public void SetShotgun()
     {
-        this.firingType = GunEnum.Shotgun;
+        Debug.Log("hey");
+        this.fireMode = 2;
+        damage = 10;
+        spread = 10;
     }
+    
 
     public void setDamage()
     {
-        damage += 10;
+        if (fireMode == 3)
+            damage += 5;
+        else
+            damage += 10;
     }
 
     public void setVelocity()

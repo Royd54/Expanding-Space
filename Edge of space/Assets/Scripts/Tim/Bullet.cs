@@ -22,8 +22,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag != "Player")
+        Debug.Log(collision.gameObject.name);
+        if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "bullet")
             Destroy(this.gameObject);
+
         //if the bullets hits an object with the tag enemy it will look for the function TakeDamage 
         if (collision.gameObject.tag == "enemy")
         {

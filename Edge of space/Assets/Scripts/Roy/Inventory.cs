@@ -65,6 +65,13 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            woodAmount = 1000;
+            stoneAmount = 1000;
+            metalAmount = 1000;
+        }
+
         if(SceneManager.GetActiveScene().name != "Generator")
         {
             StoneNeededText.text = stoneNeeded + " X" + " (you have " + stoneAmount + ")";
