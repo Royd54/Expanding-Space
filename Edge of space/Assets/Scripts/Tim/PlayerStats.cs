@@ -33,6 +33,8 @@ public class PlayerStats : MonoBehaviour
     public Material matWhite;
     private SpriteRenderer sr;
 
+    private float maxHealth;
+
     private void Start()
     {
         sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
@@ -118,7 +120,7 @@ public class PlayerStats : MonoBehaviour
     {
         if(health + this.health > 100 && !godMode)
         {
-            this.health = 100f;
+            this.health = health;
         }
         else
         {
@@ -127,7 +129,7 @@ public class PlayerStats : MonoBehaviour
     }
     public float GetHealth()
     {
-        return FOOD;
+        return HEALTH;
     }
 
     public void SetFood(float food)

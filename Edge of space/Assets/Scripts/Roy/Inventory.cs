@@ -139,8 +139,8 @@ public class Inventory : MonoBehaviour
     public void Recipe1()
     {
         CraftReset();
-        metalNeeded = 70;
-        stoneNeeded = 20;
+        metalNeeded = 1200;
+        stoneNeeded = 500;
         woodNeeded = 0;
         infoRecipe1.SetActive(true);
         craftedRecipe1 = true;
@@ -150,7 +150,7 @@ public class Inventory : MonoBehaviour
     {
         CraftReset();
         metalNeeded = 1;
-        stoneNeeded = 1;
+        stoneNeeded = 0;
         woodNeeded = 1;
         infoRecipe2.SetActive(true);
         craftedRecipe2 = true;
