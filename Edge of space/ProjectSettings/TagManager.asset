@@ -14,6 +14,7 @@ TagManager:
   - PlacementTest
   - WallBack
   - WallFront
+  - bullet
   layers:
   - Default
   - TransparentFX

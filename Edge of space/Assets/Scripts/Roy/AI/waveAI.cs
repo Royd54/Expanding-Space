@@ -32,7 +32,7 @@ public class waveAI : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        Debug.Log(Vector3.Distance(transform.position, player.transform.position));
+
         speed = 3;
         //if the player is in range for melee attack it stops moving and starts damaging the player
         if (Vector3.Distance(transform.position, player.transform.position) < 3f)
