@@ -149,45 +149,45 @@ public class Inventory : MonoBehaviour
     public void Recipe2()
     {
         CraftReset();
-        metalNeeded = 1;
+        metalNeeded = 640;
         stoneNeeded = 0;
-        woodNeeded = 1;
+        woodNeeded = 720;
         infoRecipe2.SetActive(true);
         craftedRecipe2 = true;
     }
     public void Recipe3()
     {
         CraftReset();
-        metalNeeded = 2;
-        stoneNeeded = 2;
-        woodNeeded = 2;
+        metalNeeded = 1200;
+        stoneNeeded = 700;
+        woodNeeded = 250;
         infoRecipe3.SetActive(true);
         craftedRecipe3 = true;
     }
     public void Recipe4()
     {
         CraftReset();
-        metalNeeded = 3;
-        stoneNeeded = 3;
-        woodNeeded = 3;
+        metalNeeded = 700;
+        stoneNeeded = 800;
+        woodNeeded = 300;
         infoRecipe4.SetActive(true);
         craftedRecipe4 = true;
     }
     public void Recipe5()
     {
         CraftReset();
-        metalNeeded = 4;
-        stoneNeeded = 4;
-        woodNeeded = 4;
+        metalNeeded = 400;
+        stoneNeeded = 1200;
+        woodNeeded = 300;
         infoRecipe5.SetActive(true);
         craftedRecipe5 = true;
     }
     public void Recipe6()
     {
         CraftReset();
-        metalNeeded = 5;
-        stoneNeeded = 5;
-        woodNeeded = 5;
+        metalNeeded = 1200;
+        stoneNeeded = 1300;
+        woodNeeded = 900;
         infoRecipe6.SetActive(true);
         craftedRecipe6 = true;
     }
