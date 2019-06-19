@@ -159,6 +159,22 @@ public class PlayerStats : MonoBehaviour
         return FOOD;
     }
 
+    public void SetWater(float water)
+    {
+        if (water + this.water > 100)
+        {
+            this.water = 100f;
+        }
+        else
+        {
+            this.water = water;
+        }
+    }
+    public float GetWater()
+    {
+        return WATER;
+    }
+
     private void SetStats()
     {
         HEALTH = health;
