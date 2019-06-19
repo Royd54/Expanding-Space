@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flesh : MonoBehaviour
+public class water : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject interactKey;
@@ -16,13 +16,12 @@ public class flesh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.transform.position) < 2)
+        if (Vector2.Distance(transform.position, player.transform.position) < 5)
         {
             interactKey.SetActive(true);
-            if(Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
-                player.GetComponent<PlayerStats>().SetFood(player.GetComponent<PlayerStats>().GetFood() + 43f);
-                Destroy(this.gameObject);
+                player.GetComponent<PlayerStats>().SetWater(player.GetComponent<PlayerStats>().GetWater() + 25f);
             }
         }
         else
