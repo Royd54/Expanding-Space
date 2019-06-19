@@ -62,15 +62,15 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        woodIndex.text = WoodAmount.ToString();
-        stoneIndex.text = StoneAmount.ToString();
-        metalIndex.text = MetalAmount.ToString();
+        woodIndex.text = woodAmount.ToString();
+        stoneIndex.text = stoneAmount.ToString();
+        metalIndex.text = metalAmount.ToString();
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            WoodAmount = 1000;
-            StoneAmount = 1000;
-            MetalAmount = 1000;
+            woodAmount += 1000;
+            stoneAmount += 1000;
+            metalAmount += 1000;
         }
 
         if(SceneManager.GetActiveScene().name != "Generator")
@@ -206,30 +206,31 @@ public class Inventory : MonoBehaviour
             metalAmount -= metalNeeded;
             stoneAmount -= stoneNeeded;
             woodAmount -= woodNeeded;
-        }
-        if (craftedRecipe1 == true)
-        {
-            GameObject.Find("gun").GetComponent<Gun>().automaticFire();
-        }
-        if (craftedRecipe2 == true)
-        {
-            GameObject.Find("Player").GetComponent<PlayerStats>().SetHealth(GameObject.Find("Player").GetComponent<PlayerStats>().GetHealth() + 35f, false);
-        }
-        if (craftedRecipe3 == true)
-        {
-            GameObject.Find("gun").GetComponent<Gun>().setDamage();
-        }
-        if (craftedRecipe4 == true)
-        {
-            GameObject.Find("gun").GetComponent<Gun>().SetShotgun();
-        }
-        if (craftedRecipe5 == true)
-        {
-            GameObject.Find("gun").GetComponent<Gun>().setVelocity();
-        }
-        if (craftedRecipe6 == true)
-        {
-            GameObject.Find("gun").GetComponent<Gun>().setDamage();
+
+            if (craftedRecipe1 == true)
+            {
+                GameObject.Find("gun").GetComponent<Gun>().automaticFire();
+            }
+            if (craftedRecipe2 == true)
+            {
+                GameObject.Find("Player").GetComponent<PlayerStats>().SetHealth(GameObject.Find("Player").GetComponent<PlayerStats>().GetHealth() + 35f, false);
+            }
+            if (craftedRecipe3 == true)
+            {
+                GameObject.Find("gun").GetComponent<Gun>().setDamage();
+            }
+            if (craftedRecipe4 == true)
+            {
+                GameObject.Find("gun").GetComponent<Gun>().SetShotgun();
+            }
+            if (craftedRecipe5 == true)
+            {
+                GameObject.Find("gun").GetComponent<Gun>().setVelocity();
+            }
+            if (craftedRecipe6 == true)
+            {
+                GameObject.Find("gun").GetComponent<Gun>().setDamage();
+            }
         }
     }
 
