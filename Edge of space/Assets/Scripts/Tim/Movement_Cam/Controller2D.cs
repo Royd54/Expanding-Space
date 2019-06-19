@@ -47,9 +47,9 @@ public class Controller2D : MonoBehaviour
         #region Player and tool turn
         //moves the gun behind the player when it gets to a certain degree
         if (pivotPoint.eulerAngles.z >= 10 && pivotPoint.eulerAngles.z <= 150)
-            tool.GetComponent<SpriteRenderer>().sortingOrder = 0;
+            tool.GetComponent<SpriteRenderer>().sortingOrder = this.GetComponent<SpriteRenderer>().sortingOrder - 1;
         else
-            tool.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            tool.GetComponent<SpriteRenderer>().sortingOrder = this.GetComponent<SpriteRenderer>().sortingOrder + 1;
         //turns the gun and the player around when it gets to a certain degree
         if (pivotPoint.eulerAngles.z >= 90 && pivotPoint.eulerAngles.z <= 270)
         {

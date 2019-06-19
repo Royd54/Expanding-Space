@@ -32,8 +32,7 @@ public class PlayerStats : MonoBehaviour
     private Material matDefault;
     public Material matWhite;
     private SpriteRenderer sr;
-
-    private float maxHealth;
+    private float damageCoolDown = 1f;
 
     private void Start()
     {
@@ -58,23 +57,35 @@ public class PlayerStats : MonoBehaviour
         }
         SetStats();
 
-        food -= (0.05f * Time.deltaTime);
-        water -= (0.1f * Time.deltaTime);
+        food -= (0.25f * Time.deltaTime);
+        water -= (0.5f * Time.deltaTime);
         
         if (food <= 0)
         {
             health -= (1 * Time.deltaTime);
             if (health <= 0)
             {
-               // Destroy(GameObject.FindWithTag("Player"));
+                if (damageCoolDown <= 0)
+                {
+                    TakeDamage(1f);
+                    damageCoolDown = 1f;
+                }
+                else
+                {
+                    damageCoolDown -= Time.deltaTime;
+                }
             }
         } 
         if (water <= 0)
         {
-            health -= (1 * Time.deltaTime);
-            if (health <= 0)
+            if (damageCoolDown <= 0)
             {
-                //Destroy(GameObject.FindWithTag("Player"));
+                TakeDamage(1f);
+                damageCoolDown = 1f;
+            }
+            else
+            {
+                damageCoolDown -= Time.deltaTime;
             }
         }
         MoveBars();
