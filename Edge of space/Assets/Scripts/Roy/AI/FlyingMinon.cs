@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FlyingMinon : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
+
     [SerializeField] private float speed;
     [SerializeField] private float stoppingDistance = 3f;
 
@@ -32,6 +34,11 @@ public class FlyingMinon : MonoBehaviour
     
     void FixedUpdate()
     {
+        if (this.gameObject.GetComponent<HealthController>().health <= 0)
+        {
+            Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+        }
+
         //checks the distance between the player and the minion
         if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance)
         {

@@ -34,7 +34,7 @@ public class cowHealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
-            GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
+            GameObject.Find("cowSpawnpoints").GetComponent<cowSpawner>().SpawnCow();
         }
     }
 

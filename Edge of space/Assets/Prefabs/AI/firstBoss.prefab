@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83fec0bdf791bbd4cb16f1a2e958b027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 9074795649152225874, guid: da3a799230e58ca4aa79cb8ba8b9c397, type: 3}
   health: 1000
   boss: 0
   nextfloor: {fileID: 2341463493314727117, guid: 3ee25f2188b6fb840a2a8fc7623088d4,
@@ -339,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd3a691898dbf74fb0c4af0c19cdd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 9074795649152225874, guid: da3a799230e58ca4aa79cb8ba8b9c397, type: 3}
   speed: 4
   stoppingDistance: 25
   retreatDistance: 10

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6647418387681871771}
   - component: {fileID: 6647418387681871764}
   - component: {fileID: 6647418387681871765}
-  - component: {fileID: 6647418387681871766}
   - component: {fileID: 6647418387681871767}
   - component: {fileID: 6647418387681871769}
   - component: {fileID: 6647418387681871768}
@@ -128,33 +127,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!68 &6647418387681871766
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647418387681871760}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2.4667861, y: 0.43145612}
-  - {x: -1.9038264, y: 1.6321919}
-  - {x: -1.01918, y: 1.7063233}
-  - {x: -0.5931331, y: 1.4494753}
-  - {x: 2.3868012, y: 0.8981839}
-  - {x: 2.583507, y: -0.23551631}
-  - {x: 2.6423335, y: -1.0290904}
-  - {x: 2.0976667, y: -2.2039213}
-  - {x: -0.9326825, y: -2.3428988}
-  - {x: -2.1864004, y: -0.7812978}
-  - {x: -2.448845, y: 0.43145692}
 --- !u!58 &6647418387681871767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,7 +187,7 @@ MonoBehaviour:
   speed: 10
   waitTime: 0
   startWaitTime: 10
-  minX: 0
-  minY: 0
-  maxX: 10
-  maxY: 10
+  minX: -90
+  minY: -22
+  maxX: -14
+  maxY: 70

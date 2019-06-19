@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IntroAI : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
 
     [SerializeField] private float speed;
     private float waitTime;
@@ -40,6 +41,11 @@ public class IntroAI : MonoBehaviour
 
     private void Update()
     {
+        if (this.gameObject.GetComponent<HealthController>().health <= 0)
+        {
+            Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+        }
+
         RaycastHit2D hitInfo = Physics2D.Linecast(this.transform.position, player.transform.position * 1);
         
         if(hitInfo.collider != null)

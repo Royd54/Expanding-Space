@@ -93,8 +93,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 84c5f75b81c81b441beb2e5d2aa1537a, type: 2}
-  - {fileID: 2100000, guid: 84c5f75b81c81b441beb2e5d2aa1537a, type: 2}
+  - {fileID: 2100000, guid: f155629047488ba44aac338d397f9778, type: 2}
+  - {fileID: 2100000, guid: f155629047488ba44aac338d397f9778, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -841,7 +841,7 @@ ParticleSystem:
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
     alignToDirection: 0
-    m_Texture: {fileID: 2800000, guid: 109eb9879148abe46bb324b1d3b690f4, type: 3}
+    m_Texture: {fileID: 0}
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0

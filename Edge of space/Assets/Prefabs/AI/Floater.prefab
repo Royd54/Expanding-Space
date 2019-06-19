@@ -209,6 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf5baac115e2c2419161b8f334c0142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 7675416508565121347, guid: 6fada1be2b1c6bd449ebbfa82ca989c7, type: 3}
+  miniCorpse: {fileID: 6098813298985031708, guid: 45d80add959f73a489dcfae5e6079576,
+    type: 3}
   health: 100
   matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
 --- !u!114 &-8049286641532836724
@@ -223,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4ca71daaf0ad3488427dfe5008033b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 7675416508565121347, guid: 6fada1be2b1c6bd449ebbfa82ca989c7, type: 3}
   speed: 5
   startWaitTime: 1
   minX: 0

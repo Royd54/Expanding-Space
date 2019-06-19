@@ -179,6 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf5baac115e2c2419161b8f334c0142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 7675416508565121347, guid: 6fada1be2b1c6bd449ebbfa82ca989c7, type: 3}
+  miniCorpse: {fileID: 6098813298985031708, guid: 45d80add959f73a489dcfae5e6079576,
+    type: 3}
   health: 10
   matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
 --- !u!114 &59438931348259983
@@ -193,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0438b362b18170a4bb6f31a4d464f171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpse: {fileID: 6098813298985031708, guid: 45d80add959f73a489dcfae5e6079576, type: 3}
   speed: 7
   stoppingDistance: 2
   damage: 10

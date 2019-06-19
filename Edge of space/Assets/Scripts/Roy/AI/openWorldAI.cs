@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class openWorldAI : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
 
     [SerializeField] private float speed;
 
@@ -45,6 +46,11 @@ public class openWorldAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (this.gameObject.GetComponent<HealthController>().health <= 0)
+        {
+            Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+        }
+
         if (spotted == false) { 
         if (Vector3.Distance(transform.position, moveSpot) > 0f)
         {

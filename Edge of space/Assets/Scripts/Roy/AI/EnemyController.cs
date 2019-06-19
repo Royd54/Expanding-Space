@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
+
     [SerializeField] private float speed;
     [SerializeField] private float stoppingDistance;
     [SerializeField] private float retreatDistance;
@@ -23,6 +25,11 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (this.gameObject.GetComponent<witchHealthController>().health <= 0)
+        {
+            Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+        }
+
         anim.SetBool("isFollowing", true);
         //if the player is in range the enemy chases him
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)

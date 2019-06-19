@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
+    [SerializeField] private GameObject miniCorpse;
+
     public float health;
     private float randomHP;
 
@@ -35,6 +38,15 @@ public class HealthController : MonoBehaviour
         //if health is below 0 it destroys itself
         if (health <= 0)
         {
+            if (this.gameObject.name.StartsWith("FloaterMinion"))
+            {
+                Instantiate(miniCorpse, this.gameObject.transform.position, Quaternion.identity);
+            }
+            else
+            {
+               Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+            }
+            
             if (SceneManager.GetActiveScene().name != "Generator")
                 GameObject.Find("SpawnPoints").GetComponent<waveSystem>().enemyCount--;
             Destroy(gameObject);

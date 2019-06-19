@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class waveAI : MonoBehaviour
 {
+    [SerializeField] private GameObject corpse;
+
     [SerializeField] private float speed;
 
     [SerializeField] private float minX;
@@ -32,6 +34,10 @@ public class waveAI : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if (this.gameObject.GetComponent<HealthController>().health <= 0)
+        {
+            Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
+        }
 
         speed = 3;
         //if the player is in range for melee attack it stops moving and starts damaging the player
