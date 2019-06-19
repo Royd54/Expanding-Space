@@ -6,8 +6,8 @@ public class Gun : MonoBehaviour
 {
     #region Variables
     [Header("Gun Specs")]
-    [SerializeField] private static int FIREMODE = 0; //0 = single; 1 = auto; 2 = shotgun; 3 = lazer;
-    [SerializeField] private int fireMode = 0; //0 = single; 1 = auto; 2 = shotgun; 3 = lazer;
+    [SerializeField] private static int FIREMODE = 0; //0 = single; 1 = shotgun;
+    [SerializeField] private int fireMode = 0; //0 = single; 1 = shotgun;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
@@ -111,7 +111,7 @@ public class Gun : MonoBehaviour
                         spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                         bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                         spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
-                        bulletIns.SendMessage("SetDamage", damage);
+                        bulletIns.SendMessage("SetDamage", damage / 3);
                         bulletIns.SendMessage("SetSpeed", bulletVelocity);
                     }
                     audio.Play(0);
@@ -162,7 +162,6 @@ public class Gun : MonoBehaviour
     public void SetShotgun()
     {
         this.fireMode = 2;
-        damage = 10;
         spread = 10;
     }
     
