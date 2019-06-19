@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using TMPro;
 
 public class Inventory : MonoBehaviour
 {
@@ -10,12 +11,13 @@ public class Inventory : MonoBehaviour
     public static int StoneAmount = 20;
     public static int MetalAmount = 70;
 
+    [SerializeField] private TextMeshProUGUI woodIndex;
+    [SerializeField] private TextMeshProUGUI stoneIndex;
+    [SerializeField] private TextMeshProUGUI metalIndex;
+
     public int woodAmount = 60;
     public int stoneAmount = 20;
     public int metalAmount = 70;
-
-    public GameObject[] selectedWindows;
-    private int toolSlotIndex = 0;
 
     public GameObject Victory;
 
@@ -58,18 +60,17 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private bool inInventory = false;
 
-    private void Start()
-    {
-        ChangeTool();
-    }
-
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        woodIndex.text = WoodAmount.ToString();
+        stoneIndex.text = StoneAmount.ToString();
+        metalIndex.text = MetalAmount.ToString();
+
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            woodAmount = 1000;
-            stoneAmount = 1000;
-            metalAmount = 1000;
+            WoodAmount = 1000;
+            StoneAmount = 1000;
+            MetalAmount = 1000;
         }
 
         if(SceneManager.GetActiveScene().name != "Generator")
@@ -92,24 +93,7 @@ public class Inventory : MonoBehaviour
             {
                 part3Text.text = "Collected!";
             }
-
-            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
-            {
-                if (toolSlotIndex != 3)
-                {
-                    toolSlotIndex++;
-                    ChangeTool();
-                }
-            }
-            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
-            {
-                if (toolSlotIndex != 0)
-                {
-                    toolSlotIndex--;
-                    ChangeTool();
-                }
-            }
-
+            
             if (Vector2.Distance(transform.position, spaceShip.transform.position) < 9)
             {
                 InteractKey.SetActive(true);
@@ -134,13 +118,6 @@ public class Inventory : MonoBehaviour
                 GameObject.Find("gun").GetComponent<Gun>().ableToFire = true;
             }
         }
-    }
-
-    private void ChangeTool()
-    {
-        foreach (GameObject toolSlot in selectedWindows)
-            toolSlot.SetActive(false);
-        selectedWindows[toolSlotIndex].SetActive(true);
     }
 
     public void Recipe1()
