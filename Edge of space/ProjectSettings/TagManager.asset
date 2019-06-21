@@ -16,6 +16,9 @@ TagManager:
   - WallFront
   - bullet
   - LevelLoader
+  - LoadingScrene
+  - bar
+  - Menu
   layers:
   - Default
   - TransparentFX
