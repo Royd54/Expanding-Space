@@ -15,6 +15,7 @@ TagManager:
   - WallBack
   - WallFront
   - bullet
+  - LevelLoader
   layers:
   - Default
   - TransparentFX

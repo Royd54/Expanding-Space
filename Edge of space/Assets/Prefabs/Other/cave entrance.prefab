@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b9e5e655ef45646bbc8d6e9f078194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDungeon: 1
 --- !u!60 &2673162652651843234
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74,9 +75,9 @@ PolygonCollider2D:
       - {x: -0.26076832, y: 1.1872506}
       - {x: -0.97192687, y: 0.76951784}
       - {x: -1.5067922, y: 0.30031}
-      - {x: -1.6450049, y: -0.0014335177}
-      - {x: -1.6870879, y: -0.3171462}
-      - {x: -1.5732924, y: -0.4975934}
+      - {x: -1.5845214, y: -0.0014335177}
+      - {x: -1.5560405, y: -0.21638975}
+      - {x: -1.4422449, y: -0.37668577}
       - {x: -1.0884326, y: -0.37301186}
       - {x: -0.34672955, y: 0.2027876}
       - {x: -0.2950769, y: 0.14241968}
@@ -96,6 +97,7 @@ GameObject:
   - component: {fileID: 2341463493314727114}
   - component: {fileID: 2341463493314727115}
   - component: {fileID: 2341463493314727116}
+  - component: {fileID: 1092619126}
   m_Layer: 0
   m_Name: cave entrance
   m_TagString: Untagged
@@ -157,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7d1dee0628182c148867212d901bbb6c, type: 3}
   m_Color: {r: 0.7924528, g: 0.54847354, b: 0.3999644, a: 1}
   m_FlipX: 0
@@ -187,6 +189,28 @@ MonoBehaviour:
   - {fileID: 6318225915819974622, guid: 783a168d6a53447428f6bccd522aea34, type: 3}
   - {fileID: 5116466248774453997, guid: cf7d32fe70ae09846a28ef9ae7793115, type: 3}
   - {fileID: 5411225337871000829, guid: b3c5317650cb886438381f643c82e05e, type: 3}
+--- !u!68 &1092619126
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341463493314727117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.6027899, y: 0.11083202}
+  - {x: -1.6337551, y: -0.057798564}
+  - {x: -1.5974569, y: -0.25649655}
+  - {x: 0.0323494, y: -0.95983475}
+  - {x: 1.9942467, y: -1.0261806}
+  - {x: 1.5927492, y: 0.100756735}
 --- !u!1 &3908565702849083522
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b9e5e655ef45646bbc8d6e9f078194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDungeon: 1
 --- !u!60 &7344650112020611168
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -262,9 +287,9 @@ PolygonCollider2D:
       - {x: -0.9784491, y: -0.29362246}
       - {x: -1.5465294, y: -0.5442209}
       - {x: -1.6622323, y: -0.66082424}
-      - {x: -1.6612705, y: -0.9975991}
-      - {x: -1.5854632, y: -1.1508007}
-      - {x: -1.3518507, y: -1.3133485}
+      - {x: -1.530223, y: -1.0177504}
+      - {x: -1.5249797, y: -1.1004226}
+      - {x: -1.2812868, y: -1.242819}
       - {x: -0.6464605, y: -1.4273618}
       - {x: -0.55168563, y: -1.4317687}
       - {x: -0.36598915, y: -1.5290301}
@@ -354,6 +379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070171769146984993, guid: 94231c4c1866d41409f31f780f653146,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94231c4c1866d41409f31f780f653146, type: 3}

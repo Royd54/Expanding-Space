@@ -6,12 +6,17 @@ public class Gun : MonoBehaviour
 {
     #region Variables
     [Header("Gun Specs")]
-    [SerializeField] private static int FIREMODE = 0; //0 = single; 1 = shotgun;
-    [SerializeField] private int fireMode = 0; //0 = single; 1 = shotgun;
+    [SerializeField] private bool fullAuto = false;
+    private static bool FULLAUTO = false;
+    [SerializeField] private bool shotgun = false;
+    private static bool SHOTGUN = false;
+    [SerializeField] private bool lazer = false;
+    private static bool LAZER = false;
     [SerializeField] private float bulletVelocity;
     [SerializeField] private int damage;
     [Tooltip("The amount of time between shots(this only apply to autometic weapons)")]
     [SerializeField] public float fireRate;
+    private static float FIRERATE;
     [Range(0, 10)]
     [SerializeField] private float spread = 0;
     [SerializeField] private GameObject bullet;
@@ -30,13 +35,16 @@ public class Gun : MonoBehaviour
     private bool primaryUse = false;
     private bool secondaryUse = false;
     private NuclearThroneLikeCamera cam;
-    private float fireRateRestet;
     public bool ableToFire = true;
     #endregion
 
     private void Start()
     {
-        fireRateRestet = fireRate;
+        fireRate = FIRERATE;
+        fullAuto = FULLAUTO;
+        shotgun = SHOTGUN;
+        lazer = LAZER;
+
         fireRate = 0;
         spawner = transform.Find("Spawner");
         lineRenderer = this.gameObject.GetComponent<LineRenderer>();
@@ -44,6 +52,9 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
+        if (fireRate > 0)
+            fireRate -= Time.deltaTime;
+
         lineRenderer.enabled = false;
         if (!cam)
         {
@@ -70,25 +81,84 @@ public class Gun : MonoBehaviour
 
         if (primaryUse && ableToFire == true)
         {
-            switch (fireMode)
+            if (fullAuto)
             {
-                case 0://single shot
+                if (fireRate <= 0)
+                {
                     cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
-
-                    spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
-                    bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
-                    spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
-
-                    bulletIns.SendMessage("SetDamage", damage);
-                    bulletIns.SendMessage("SetSpeed", bulletVelocity);
-                    audio.Play(0);
-                    primaryUse = false;
-                    break;
-                case 1:
-                    if (fireRate <= 0)
+                    if (lazer)
                     {
-                        cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+                        if (shotgun)
+                        {
+                            for (int i = 0; i < 4; i++)
+                            {
+                                spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                                bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                                spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+                                bulletIns.SendMessage("SetDamage", damage / 3);
+                                bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                            }
+                            audio.Play(0);
+                        }
+                        else
+                        {
+                            spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                            bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                            spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
 
+                            bulletIns.SendMessage("SetDamage", damage);
+                            bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                            audio.Play(0);
+                        }
+                    }
+                    else
+                    {
+                        if (shotgun)
+                        {
+                            for (int i = 0; i < 4; i++)
+                            {
+                                spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                                bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                                spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+                                bulletIns.SendMessage("SetDamage", damage / 3);
+                                bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                            }
+                            audio.Play(0);
+                        }
+                        else
+                        {
+                            spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                            bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                            spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+
+                            bulletIns.SendMessage("SetDamage", damage);
+                            bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                            audio.Play(0);
+                        }
+                    }
+                    fireRate = FIRERATE;
+                }
+
+            }
+            else
+            {
+                cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
+                if (lazer)
+                {
+                    if (shotgun)
+                    {
+                        for (int i = 0; i < 4; i++)
+                        {
+                            spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                            bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                            spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+                            bulletIns.SendMessage("SetDamage", damage / 3);
+                            bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                        }
+                        audio.Play(0);
+                    }
+                    else
+                    {
                         spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                         bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                         spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
@@ -96,37 +166,39 @@ public class Gun : MonoBehaviour
                         bulletIns.SendMessage("SetDamage", damage);
                         bulletIns.SendMessage("SetSpeed", bulletVelocity);
                         audio.Play(0);
-                        fireRate = fireRateRestet;
+                    }
+                }
+                else
+                {
+                    if (shotgun)
+                    {
+                        for (int i = 0; i < 4; i++)
+                        {
+                            spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
+                            bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
+                            spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
+                            bulletIns.SendMessage("SetDamage", damage / 3);
+                            bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                        }
+                        audio.Play(0);
                     }
                     else
                     {
-                        fireRate -= Time.deltaTime;
-                    }
-                    break;
-                case 2:
-                    cam.Shake((this.transform.position - spawner.position).normalized, 3f, 0.05f);
-
-                    for(int i = 0; i < 4; i++)
-                    {
+                        Debug.Log("1");
                         spawner.localRotation = Quaternion.AngleAxis(Random.Range(-spread, spread), spawner.forward);
                         bulletIns = Instantiate(bullet, spawner.position, spawner.rotation);
                         spawner.localRotation = Quaternion.AngleAxis(0, spawner.forward);
-                        bulletIns.SendMessage("SetDamage", damage / 3);
+
+                        bulletIns.SendMessage("SetDamage", damage);
                         bulletIns.SendMessage("SetSpeed", bulletVelocity);
+                        audio.Play(0);
                     }
-                    audio.Play(0);
-                    primaryUse = false;
-                    break;
-                case 3:
-                    //lazer;
-                    break;
-                default:
-                    fireMode = 0;
-                    break;
+                }
+                primaryUse = false;
             }
-
         }
-
+            
+           
         if (secondaryUse && canHarvest)
         {
             RaycastHit2D hit = Physics2D.Raycast(spawner.position, spawner.right, 10f);
@@ -155,20 +227,22 @@ public class Gun : MonoBehaviour
     
     public void automaticFire()
     {
-        this.fireMode = 1;
-        fireRateRestet = 0.2f;
+        fullAuto = true;
+        FULLAUTO = true;
+        fireRate = 0.2f;
+        FIRERATE = 0.2f;
     }
 
     public void SetShotgun()
     {
-        this.fireMode = 2;
-        spread = 10;
+        shotgun = true;
+        SHOTGUN = true;
+        spread = 15;
     }
-    
 
     public void setDamage()
     {
-        if (fireMode == 3)
+        if (shotgun)
             damage += 5;
         else
             damage += 10;
@@ -177,5 +251,11 @@ public class Gun : MonoBehaviour
     public void setVelocity()
     {
         bulletVelocity = 80;
+    }
+
+    public void SetLazer()
+    {
+        lazer = true;
+        LAZER = true;
     }
 }

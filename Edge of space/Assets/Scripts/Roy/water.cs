@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class water : MonoBehaviour
+public class Water : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
-    [SerializeField] private GameObject interactKey;
+    private GameObject player;
+    private GameObject interactKey;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        interactKey = this.transform.Find("E").gameObject;
     }
 
     // Update is called once per frame
