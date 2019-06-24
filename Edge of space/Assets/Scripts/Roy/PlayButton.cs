@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
@@ -15,6 +16,8 @@ public class PlayButton : MonoBehaviour
     {
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
         loadingScrene = GameObject.FindWithTag("LoadingScrene");
+        if (loadingScrene != null)
+            Debug.Log("fakka");
         loadingBar = GameObject.FindWithTag("bar");
         menu = GameObject.FindWithTag("Menu");
         loadingScrene.SetActive(false);
@@ -48,17 +51,18 @@ public class PlayButton : MonoBehaviour
     
     public void LoadLevelByName(string sceneName)
     {
-        StartCoroutine(LoadAsynchronouslyByName(sceneName));
         menu.SetActive(false);
         loadingScrene.SetActive(true);
+        StartCoroutine(LoadAsynchronouslyByName(sceneName));
     }
     IEnumerator LoadAsynchronouslyByName(string sceneName)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         while (!operation.isDone)
         {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+
+            loadingBar.GetComponent<Image>().fillAmount = progress;
             yield return null;
         }
     }

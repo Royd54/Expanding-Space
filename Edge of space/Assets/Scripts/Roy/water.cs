@@ -17,17 +17,24 @@ public class Water : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.transform.position) < 5)
+        try
         {
-            interactKey.SetActive(true);
-            if (Input.GetKey(KeyCode.E))
+            if (Vector2.Distance(transform.position, player.transform.position) < 5)
             {
-                player.GetComponent<PlayerStats>().SetWater(player.GetComponent<PlayerStats>().GetWater() + 25f);
+                interactKey.SetActive(true);
+                if (Input.GetKey(KeyCode.E))
+                {
+                    player.GetComponent<PlayerStats>().SetWater(player.GetComponent<PlayerStats>().GetWater() + 25f);
+                }
+            }
+            else
+            {
+                interactKey.SetActive(false);
             }
         }
-        else
+        catch
         {
-            interactKey.SetActive(false);
+            //do nothing
         }
     }
 }

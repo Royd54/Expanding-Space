@@ -41,26 +41,33 @@ public class waveAI : MonoBehaviour
 
         speed = 3;
         //if the player is in range for melee attack it stops moving and starts damaging the player
-        if (Vector3.Distance(transform.position, player.transform.position) < 3f)
+        try
         {
-            transform.position = this.transform.position;
-
-            if (Time.time > nextFire)
+            if (Vector3.Distance(transform.position, player.transform.position) < 3f)
             {
-                //Damage per a couple seconds
-                nextFire = Time.time + fireRate;
-                anim.SetBool("isAttacking", true);
-                anim.SetBool("isFollowing", false);
-                //player.GetComponent<Rigidbody2D>().AddForce(KnockBackPoint.right * 30000);
-                player.SendMessage("TakeDamage", damage);
+                transform.position = this.transform.position;
+
+                if (Time.time > nextFire)
+                {
+                    //Damage per a couple seconds
+                    nextFire = Time.time + fireRate;
+                    anim.SetBool("isAttacking", true);
+                    anim.SetBool("isFollowing", false);
+                    //player.GetComponent<Rigidbody2D>().AddForce(KnockBackPoint.right * 30000);
+                    player.SendMessage("TakeDamage", damage);
+                }
+            }
+            //if the distance is larger than the stopping distance it moves towards the player
+            else
+            {
+                anim.SetBool("isAttacking", false);
+                anim.SetBool("isFollowing", true);
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             }
         }
-        //if the distance is larger than the stopping distance it moves towards the player
-        else
+        catch
         {
-            anim.SetBool("isAttacking", false);
-            anim.SetBool("isFollowing", true);
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            //do nothing
         }
     }
 }
