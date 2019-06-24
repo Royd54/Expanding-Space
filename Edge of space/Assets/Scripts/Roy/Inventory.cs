@@ -193,7 +193,7 @@ public class Inventory : MonoBehaviour
         if(part1Collected == true && part2Collected == true && part3Collected == true)
         {
             CraftReset();
-            Victory.SetActive(true);
+            SceneManager.LoadScene("EndingScene");
             GameObject.Find("Player").GetComponent<PlayerStats>().SetHealth(100000, true);
         }
     }

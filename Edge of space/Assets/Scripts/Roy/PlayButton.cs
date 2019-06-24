@@ -51,7 +51,14 @@ public class PlayButton : MonoBehaviour
     
     public void LoadLevelByName(string sceneName)
     {
-        menu.SetActive(false);
+        try
+        {
+            menu.SetActive(false);
+        }
+        catch
+        {
+            //do nothing
+        }
         loadingScrene.SetActive(true);
         StartCoroutine(LoadAsynchronouslyByName(sceneName));
     }
