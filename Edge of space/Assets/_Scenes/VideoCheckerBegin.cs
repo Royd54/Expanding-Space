@@ -56,8 +56,9 @@ public class VideoCheckerBegin : MonoBehaviour
 
     IEnumerator Victory()
     {
-        yield return new WaitForSeconds(27);
-        VP.GetComponent<VideoPlayer>().Pause();
+        yield return new WaitForSeconds(24);
         VictoryUI.SetActive(true);
+        VP.GetComponent<VideoPlayer>().Pause();
+        
     }
 }

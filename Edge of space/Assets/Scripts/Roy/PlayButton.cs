@@ -28,7 +28,7 @@ public class PlayButton : MonoBehaviour
 
     public void PlayGame()
     {
-        LoadLevelByName("PlaytestOverworld");
+        LoadLevelByName("BeginScene");
     }
 
     public void Retry()
@@ -57,7 +57,7 @@ public class PlayButton : MonoBehaviour
         {
             //do nothing
         }
-        loadingScrene.SetActive(true);
+        //loadingScrene.SetActive(true);
         StartCoroutine(LoadAsynchronouslyByName(sceneName));
     }
     IEnumerator LoadAsynchronouslyByName(string sceneName)
