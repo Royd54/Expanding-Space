@@ -786,6 +786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExtraUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5538013081198823005, guid: be995af9ce84570439a034cefad7a6e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5538013081198823006, guid: be995af9ce84570439a034cefad7a6e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,6 +1020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665744585900992304, guid: ede56b3f753c6124abe0ce8f30933084,
+        type: 3}
+      propertyPath: genTime
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 367979396420135962, guid: ede56b3f753c6124abe0ce8f30933084,
         type: 3}

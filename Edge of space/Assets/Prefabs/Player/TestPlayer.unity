@@ -351,7 +351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240.8, y: -85}
+  m_AnchoredPosition: {x: 240.8, y: -190}
   m_SizeDelta: {x: 323.06, y: 192.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2004477133
@@ -424,9 +424,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textOutput: {fileID: 1114582722}
-  tutorial_1: 
+  tutorial_1: 'Hello I am your ship''s AI i will be helping you to get home. your
+    crash may have '
   tutorial_2: 
   tutorial_3: 
+  tutorial_4: 
+  tutorial_5: 
+  tutorial_6: 
+  tutorial_7: 
+  tutorial_8: 
 --- !u!1001 &7989099558699649908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,6 +440,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2086680401696217106, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_Name
@@ -499,11 +510,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 2086680401696217106, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f048f171fb5a6df458ca27cc7b89faa7, type: 3}
 --- !u!224 &7989099558699649909 stripped

@@ -359,7 +359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &682644708
 Transform:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ Transform:
   - {fileID: 1798233062}
   - {fileID: 1673102515}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &737615840
 PrefabInstance:
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6177505, g: 0.5943396, b: 0.7924528, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -775,7 +775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1260318506
 Transform:
   m_ObjectHideFlags: 0
@@ -792,7 +792,7 @@ Transform:
   - {fileID: 2962524582119753895}
   - {fileID: 1694518211546490186}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521374046
 GameObject:
@@ -834,7 +834,7 @@ Transform:
   - {fileID: 1115687478}
   - {fileID: 1854929124}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1635621082
 PrefabInstance:
@@ -1316,6 +1316,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: B Room LRT
       objectReference: {fileID: 0}
+    - target: {fileID: 1253551554733523553, guid: 0d5ff040b6a9ae345afef9f19da80dec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1253551554733523554, guid: 0d5ff040b6a9ae345afef9f19da80dec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,6 +1385,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2086680403487026447, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086680401696217106, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5658985591069963211, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_Name
@@ -1718,6 +1733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: T Room LRB
       objectReference: {fileID: 0}
+    - target: {fileID: 9216945818625869569, guid: c54e72f0c4ab69a4483d0a166c5c94a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9216945818625869570, guid: c54e72f0c4ab69a4483d0a166c5c94a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1786,6 +1806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L Room RTB
+      objectReference: {fileID: 0}
+    - target: {fileID: 6528113051115710108, guid: 41ef4c3c888010146aedc7772ec3b1c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6528113051115710111, guid: 41ef4c3c888010146aedc7772ec3b1c0,
         type: 3}
