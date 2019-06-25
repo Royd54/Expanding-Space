@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   corpse: {fileID: 9074795649152225874, guid: da3a799230e58ca4aa79cb8ba8b9c397, type: 3}
   health: 1000
-  boss: 0
+  boss: 1
   nextfloor: {fileID: 2341463493314727117, guid: 3ee25f2188b6fb840a2a8fc7623088d4,
     type: 3}
   matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}

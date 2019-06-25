@@ -16,8 +16,6 @@ public class PlayButton : MonoBehaviour
     {
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
         loadingScrene = GameObject.FindWithTag("LoadingScrene");
-        if (loadingScrene != null)
-            Debug.Log("fakka");
         loadingBar = GameObject.FindWithTag("bar");
         menu = GameObject.FindWithTag("Menu");
         loadingScrene.SetActive(false);

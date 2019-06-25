@@ -457,7 +457,7 @@ MonoBehaviour:
   corpse: {fileID: 9074795649152225874, guid: da3a799230e58ca4aa79cb8ba8b9c397, type: 3}
   health: 1000
   boss: 1
-  nextfloor: {fileID: 2341463493314727117, guid: 3ee25f2188b6fb840a2a8fc7623088d4,
+  nextfloor: {fileID: 2563110640327530067, guid: b922c25d97de0294d9621fbb353a2145,
     type: 3}
   matWhite: {fileID: 2100000, guid: 41909533fb263634c9fefafae379ef0f, type: 2}
   Hpbar: {fileID: 473488231217045457}

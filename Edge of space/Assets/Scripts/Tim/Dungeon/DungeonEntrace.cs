@@ -14,6 +14,7 @@ public class DungeonEntrace : MonoBehaviour
     private GameObject interactKey;
     private static int amountOfDungeonsEntered = 0;
     private static int currentFloor = 0;
+    [SerializeField] private GameObject insideEntrance;
     
     private void Start()
     {
@@ -26,14 +27,10 @@ public class DungeonEntrace : MonoBehaviour
             SHIPPARTS = shipParts;
             shuffled = true;
         }
-        if(amountOfFloors == currentFloor)
+        if (amountOfFloors == currentFloor)
         {
-            if (SHIPPARTS[partToSpawn].transform.name != "DONOTDELETE")
-            {
-                Destroy(this.gameObject);
-                Instantiate(SHIPPARTS[partToSpawn], this.transform.position, this.transform.rotation);
-            }
-            partToSpawn++;
+            Instantiate(SHIPPARTS[partToSpawn], this.transform.position, this.transform.rotation);
+            Destroy(this.gameObject);
             currentFloor = 0;
         }
     }
@@ -51,12 +48,8 @@ public class DungeonEntrace : MonoBehaviour
                 interactKey.SetActive(true);
                 if (Input.GetKey(KeyCode.E))
                 {
-                    if (amountOfFloors == currentFloor)
-                    {
-                        SceneManager.LoadScene("PlaytestOverworld");
-                    }
-                    SceneManager.LoadScene("Generator");
                     currentFloor++;
+                    SceneManager.LoadScene("Generator");
                 }
             }
             else

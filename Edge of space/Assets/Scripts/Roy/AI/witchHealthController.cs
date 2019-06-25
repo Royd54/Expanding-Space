@@ -17,6 +17,8 @@ public class witchHealthController : MonoBehaviour
     private AudioSource audioS;
     [SerializeField] private Image Hpbar;
 
+    private Vector3 spawnPoint;
+
 
     private void Start()
     {
@@ -27,6 +29,9 @@ public class witchHealthController : MonoBehaviour
         matDefault = sr.material;
 
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
+        if (boss)
+            spawnPoint = this.transform.position;
+
     }
 
     //this function can be called to cause damage to the object it is on
@@ -43,7 +48,7 @@ public class witchHealthController : MonoBehaviour
         {
             Instantiate(corpse, this.gameObject.transform.position, Quaternion.identity);
             if (boss)
-                Instantiate(nextfloor, this.transform.position, this.transform.rotation);
+                Instantiate(nextfloor, spawnPoint, this.transform.rotation);
             Destroy(this.gameObject);
         }
     }
