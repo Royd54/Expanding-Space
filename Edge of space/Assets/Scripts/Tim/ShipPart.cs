@@ -42,6 +42,9 @@ public class ShipPart : MonoBehaviour
                 {
                     switch (part)
                     {
+                        case Part.none:
+                            levelLoader.LoadLevelByName("EndingScene");
+                            break;
                         case Part.Part1:
                             GameObject.Find("Player").GetComponent<Inventory>().setPart1();
                             levelLoader.LoadLevelByName("EndingScene");

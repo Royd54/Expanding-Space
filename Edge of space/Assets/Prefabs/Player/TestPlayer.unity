@@ -177,7 +177,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: fakka neef
+  m_text: You seem to have landed on an alien planet. you will need to survive here
+    so beter start looking for WATER and FOOD. you can also find resources to UPGRADE
+    your WEAPON and HEALTH. you will need to do this to beat the enemys in the DUNGEON
+    where you will find your SHIPPARTS but make sure to be full on food and water
+    those things are like a maze and it might be a while before you get out.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a143ddea6d364ec45b7e4839a47ece32, type: 2}
   m_sharedMaterial: {fileID: 3689958970784695769, guid: a143ddea6d364ec45b7e4839a47ece32,
@@ -247,12 +251,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -92.062225, w: -26.534147}
   m_textInfo:
     textComponent: {fileID: 1114582722}
-    characterCount: 10
+    characterCount: 389
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 78
+    wordCount: 79
     linkCount: 0
-    lineCount: 1
+    lineCount: 10
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -423,16 +427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076c4795db9711d48aba3caf323ed712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textOutput: {fileID: 1114582722}
-  tutorial_1: 'Hello I am your ship''s AI i will be helping you to get home. your
-    crash may have '
-  tutorial_2: 
-  tutorial_3: 
-  tutorial_4: 
-  tutorial_5: 
-  tutorial_6: 
-  tutorial_7: 
-  tutorial_8: 
 --- !u!1001 &7989099558699649908
 PrefabInstance:
   m_ObjectHideFlags: 0

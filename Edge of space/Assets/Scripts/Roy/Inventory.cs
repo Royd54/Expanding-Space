@@ -60,6 +60,12 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private bool inInventory = false;
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "Main Menu") ;
+        ResetStats();
+    }
+
     void Update()
     {
         woodIndex.text = woodAmount.ToString();
@@ -338,5 +344,12 @@ public class Inventory : MonoBehaviour
     public int GetMetal()
     {
         return metalAmount;
+    }
+
+    private void ResetStats()
+    {
+        SetWood(70);
+        SetStone(80);
+        SetMetal(75);
     }
 }

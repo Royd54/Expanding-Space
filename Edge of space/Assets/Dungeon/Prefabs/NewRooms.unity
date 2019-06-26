@@ -878,11 +878,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: L Hallway B
       objectReference: {fileID: 0}
-    - target: {fileID: 477668948848655113, guid: a825cd3f14da7d1478a7c8f7ef849b43,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 477668948848655112, guid: a825cd3f14da7d1478a7c8f7ef849b43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1514,6 +1509,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1448362286430841217, guid: f048f171fb5a6df458ca27cc7b89faa7,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 840939680533772728, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1543,11 +1543,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448362286430841217, guid: f048f171fb5a6df458ca27cc7b89faa7,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5852536063777003622, guid: f048f171fb5a6df458ca27cc7b89faa7,
         type: 3}

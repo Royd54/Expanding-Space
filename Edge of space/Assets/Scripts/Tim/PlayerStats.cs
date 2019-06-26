@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
@@ -36,6 +37,8 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Main Menu") ;
+            ResetStats();
         sr = GameObject.Find("Player").GetComponent<SpriteRenderer>();
         matDefault = sr.material;
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
@@ -56,8 +59,8 @@ public class PlayerStats : MonoBehaviour
         }
         SetStats();
 
-        food -= (0.25f * Time.deltaTime);
-        water -= (0.5f * Time.deltaTime);
+        food -= (0.125f * Time.deltaTime);
+        water -= (0.25f * Time.deltaTime);
         
         if (food <= 0)
         {
@@ -198,6 +201,13 @@ public class PlayerStats : MonoBehaviour
         {
             godMode = false;
         }
+    }
+
+    private void ResetStats()
+    {
+        HEALTH = 33;
+        FOOD = 100;
+        WATER = 100;
     }
 
 }
