@@ -16,13 +16,12 @@ public class Bullet : MonoBehaviour
     private void Update()
     {
         transform.position += transform.right * speed * Time.deltaTime;//moves the bullet to the right
-        if (Vector3.Distance(this.transform.position, player.transform.position) > 20.0f)
+        if (Vector3.Distance(this.transform.position, player.transform.position) > 30.0f)
             Destroy(this.gameObject);//if the bullet is more than 50 units away it will be destroyed
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         if(collision.gameObject.tag != "Player" && collision.gameObject.tag != "bullet")
             Destroy(this.gameObject);
 

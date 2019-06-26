@@ -53,7 +53,6 @@ public class PlayerStats : MonoBehaviour
                 godMode = true;
             else
                 godMode = false;
-            Debug.Log("GodMode: " + godMode);
         }
         SetStats();
 

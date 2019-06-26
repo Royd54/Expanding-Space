@@ -183,7 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9cd9d7f3bffd48996c77b04ad486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfFloors: 3
+  Cave: 0
+  amountOfFloors: 1
   shipParts:
   - {fileID: 8080537763700731460, guid: 4c8de0353f050e04bb40e313b7dfbb7c, type: 3}
   - {fileID: 6318225915819974622, guid: 783a168d6a53447428f6bccd522aea34, type: 3}
@@ -191,6 +192,7 @@ MonoBehaviour:
   - {fileID: 8939968489820937018, guid: ae3688e41ea96d34eb8447b2449779ef, type: 3}
   insideEntrance: {fileID: 2563110640327530067, guid: b922c25d97de0294d9621fbb353a2145,
     type: 3}
+  closed: {fileID: 0}
 --- !u!68 &1092619126
 EdgeCollider2D:
   m_ObjectHideFlags: 0

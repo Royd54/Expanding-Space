@@ -30,6 +30,7 @@ public class VideoCheckerBegin : MonoBehaviour
         vp.playbackSpeed = vp.playbackSpeed / 10.0F;
         if (SceneManager.GetActiveScene().name == "BeginScene")
         {
+            Debug.Log("load");
             LoadLevelByName("PlaytestOverworld");
         }
     }

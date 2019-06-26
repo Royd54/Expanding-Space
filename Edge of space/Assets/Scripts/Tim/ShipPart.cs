@@ -19,6 +19,7 @@ public class ShipPart : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("shipPart");
         levelLoader = GameObject.FindWithTag("ButtonHendler").GetComponent<PlayButton>();
         player = GameObject.FindWithTag("Player");
         interactKey = this.transform.Find("E").gameObject;
@@ -52,7 +53,12 @@ public class ShipPart : MonoBehaviour
                         default:
                             break;
                     }
-                    levelLoader.LoadLevelByName("PlaytestOverworld");
+                    if (SceneManager.GetActiveScene().name != "PlaytestOverworld")
+                    {
+                        levelLoader.LoadLevelByName("PlaytestOverworld");
+                        Debug.Log("load1");
+                    }
+                        
                 }
             }
             else
