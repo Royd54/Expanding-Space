@@ -32,7 +32,7 @@ public class PlayButton : MonoBehaviour
 
     public void Retry()
     {
-        Debug.Log("load");
+        Debug.Log("load2");
         LoadLevelByName("PlaytestOverworld");
     }
 
