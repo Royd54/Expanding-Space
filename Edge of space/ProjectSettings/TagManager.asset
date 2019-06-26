@@ -19,6 +19,7 @@ TagManager:
   - LoadingScrene
   - bar
   - Menu
+  - ButtonHendler
   layers:
   - Default
   - TransparentFX

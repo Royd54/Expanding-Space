@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class LoadingScreen : MonoBehaviour
 {
-    private GameObject loadingCam;
+    [SerializeField] private GameObject loadingCam;
     private GameObject spawnRoom;
+    private PlayButton levelLoader;
     [SerializeField] private GameObject player;
 
     private void Start()
     {
+        levelLoader = GameObject.FindWithTag("ButtonHendler").GetComponent<PlayButton>();
         loadingCam = this.transform.parent.transform.parent.gameObject;
         spawnRoom = GameObject.FindWithTag("Rooms");
     }
@@ -17,6 +19,11 @@ public class LoadingScreen : MonoBehaviour
     private void DoneLoading()
     {
         Destroy(loadingCam);
-        Instantiate(player, spawnRoom.transform.position, spawnRoom.transform.rotation);
+        player.SetActive(true);
+    }
+
+    private void LoadingFailed()
+    {
+        levelLoader.LoadLevelByName("Generator");
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SpawnRoom : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     private bool spawned = false;
     [SerializeField] private float genTime = 10f;
 
@@ -33,6 +32,7 @@ public class SpawnRoom : MonoBehaviour
     public GameObject topBlocker;
     public GameObject leftBlocker, bottomBlocker, rightBlocker;
     public List<GameObject> allRooms = new List<GameObject>();
+    [SerializeField] private Animator anim;
 
     private void Update()
     {
@@ -54,7 +54,7 @@ public class SpawnRoom : MonoBehaviour
     private void BossRoom()
     {
         if (allRooms.Count < 5f || allRooms == null)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            anim.Play("ResetAnim");
         allRooms[allRooms.Count - 1].transform.Find("EnemySpawner").GetComponent<EnemySpawner>().bossSpawner = true;
         spawned = true;
     }

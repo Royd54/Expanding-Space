@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &60956570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1297525084, guid: be995af9ce84570439a034cefad7a6e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1390159163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &296054181
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VP: {fileID: 0}
+  loadingScrene: {fileID: 60956570}
   VictoryUI: {fileID: 5538013080844839721}
 --- !u!114 &546553990 stripped
 MonoBehaviour:
@@ -212,6 +219,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b785138dd7363af42851cfb5803ac9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &556676527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5090656888102487968, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_Name
+      value: audioHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4759831
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1657498
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.917124
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090656888102487974, guid: 073a4652d224bc3469b519b97bf62b7f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 073a4652d224bc3469b519b97bf62b7f, type: 3}
 --- !u!1001 &1390159163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,11 +403,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5538013080755749807, guid: be995af9ce84570439a034cefad7a6e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5538013081065901852, guid: be995af9ce84570439a034cefad7a6e0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 102
       objectReference: {fileID: 0}
+    - target: {fileID: 5538013080755749793, guid: be995af9ce84570439a034cefad7a6e0,
+        type: 3}
+      propertyPath: loadingScrene
+      value: 
+      objectReference: {fileID: 60956570}
     - target: {fileID: 5538013082231836180, guid: be995af9ce84570439a034cefad7a6e0,
         type: 3}
       propertyPath: m_Enabled
@@ -362,6 +448,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: buttonHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 8460936298964419807, guid: 95b0e7336cf34e94db5d58eb9a3132af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460936298964419806, guid: 95b0e7336cf34e94db5d58eb9a3132af,
+        type: 3}
+      propertyPath: loadingScrene
+      value: 
+      objectReference: {fileID: 60956570}
     - target: {fileID: 8460936298964419805, guid: 95b0e7336cf34e94db5d58eb9a3132af,
         type: 3}
       propertyPath: m_LocalPosition.x

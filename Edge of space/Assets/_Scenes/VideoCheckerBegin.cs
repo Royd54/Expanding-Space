@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class VideoCheckerBegin : MonoBehaviour
 {
     public GameObject VP;
-    private GameObject loadingScrene;
+    [SerializeField] private GameObject loadingScrene;
     private GameObject loadingBar;
     public GameObject VictoryUI;
 
@@ -16,9 +16,6 @@ public class VideoCheckerBegin : MonoBehaviour
     {
         VP = GameObject.Find("Intro");
         VP.GetComponent<VideoPlayer>().loopPointReached += EndReached;
-        loadingScrene = GameObject.FindWithTag("LoadingScrene");
-        if (loadingScrene != null)
-            Debug.Log("fakka");
         loadingBar = GameObject.FindWithTag("bar");
         loadingScrene.SetActive(false);
         if (SceneManager.GetActiveScene().name == "EndingScene")

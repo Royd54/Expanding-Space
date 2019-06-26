@@ -109,9 +109,16 @@ public class PlayerStats : MonoBehaviour
     //sets all the bars and the text in them to the corect value
     private void MoveBars()
     {
-        healthBar.fillAmount = health / 100;
-        foodBar.fillAmount = food / 100;
-        waterBar.fillAmount = water / 100;
+        try
+        {
+            healthBar.fillAmount = health / 100;
+            foodBar.fillAmount = food / 100;
+            waterBar.fillAmount = water / 100;
+        }
+        catch
+        {
+            //do nothing
+        }
     }
 
     //sets the object its color to white

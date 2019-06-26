@@ -7,15 +7,14 @@ using UnityEngine.SceneManagement;
 public class PlayButton : MonoBehaviour
 {
     private AudioSource audioS;
-    [SerializeField]private AudioClip hoverFX;
-    private GameObject loadingScrene;
+    [SerializeField] private AudioClip hoverFX;
+    [SerializeField] private GameObject loadingScrene;
     private GameObject loadingBar;
     private GameObject menu;
 
     private void Start()
     {
         audioS = GameObject.Find("audioHandler").GetComponent<AudioSource>();
-        loadingScrene = GameObject.FindWithTag("LoadingScrene");
         loadingBar = GameObject.FindWithTag("bar");
         menu = GameObject.FindWithTag("Menu");
         loadingScrene.SetActive(false);
@@ -57,7 +56,7 @@ public class PlayButton : MonoBehaviour
         {
             //do nothing
         }
-        //loadingScrene.SetActive(true);
+        loadingScrene.SetActive(true);
         StartCoroutine(LoadAsynchronouslyByName(sceneName));
     }
     IEnumerator LoadAsynchronouslyByName(string sceneName)

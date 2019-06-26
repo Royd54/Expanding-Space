@@ -15,9 +15,11 @@ public class ShipPart : MonoBehaviour
     [SerializeField] private Part part = Part.none;
     private GameObject player;
     private GameObject interactKey;
+    private PlayButton levelLoader;
 
     private void Start()
     {
+        levelLoader = GameObject.FindWithTag("ButtonHendler").GetComponent<PlayButton>();
         player = GameObject.FindWithTag("Player");
         interactKey = this.transform.Find("E").gameObject;
         interactKey.SetActive(false);
@@ -50,7 +52,7 @@ public class ShipPart : MonoBehaviour
                         default:
                             break;
                     }
-                    SceneManager.LoadScene("PlaytestOverworld");
+                    levelLoader.LoadLevelByName("PlaytestOverworld");
                 }
             }
             else

@@ -15,9 +15,11 @@ public class DungeonEntrace : MonoBehaviour
     private static int amountOfDungeonsEntered = 0;
     private static int currentFloor = 0;
     [SerializeField] private GameObject insideEntrance;
+    private PlayButton levelLoader;
     
     private void Start()
     {
+        levelLoader = GameObject.FindWithTag("ButtonHendler").GetComponent<PlayButton>();
         player = GameObject.FindWithTag("Player");
         interactKey = this.transform.Find("E").gameObject;
         interactKey.SetActive(false);
@@ -49,7 +51,8 @@ public class DungeonEntrace : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     currentFloor++;
-                    SceneManager.LoadScene("Generator");
+                    levelLoader.LoadLevelByName("Generator");
+                    Destroy(GameObject.Find("PlayerUI"));
                 }
             }
             else
