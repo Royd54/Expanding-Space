@@ -44,21 +44,18 @@ public class ShipPart : MonoBehaviour
                     {
                         case Part.Part1:
                             GameObject.Find("Player").GetComponent<Inventory>().setPart1();
+                            levelLoader.LoadLevelByName("EndingScene");
                             break;
                         case Part.Part2:
                             GameObject.Find("Player").GetComponent<Inventory>().setPart2();
+                            levelLoader.LoadLevelByName("EndingScene");
                             break;
                         case Part.Part3:
                             GameObject.Find("Player").GetComponent<Inventory>().setPart3();
+                            levelLoader.LoadLevelByName("EndingScene");
                             break;
                         default:
                             break;
-                    }
-                    if (SceneManager.GetActiveScene().name != "PlaytestOverworld" && !done)
-                    {
-                        levelLoader.LoadLevelByName("PlaytestOverworld");
-                        Debug.Log("load1");
-                        done = false;
                     }
                         
                 }
