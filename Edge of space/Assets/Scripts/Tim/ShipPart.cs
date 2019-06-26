@@ -16,6 +16,7 @@ public class ShipPart : MonoBehaviour
     private GameObject player;
     private GameObject interactKey;
     private PlayButton levelLoader;
+    private bool done = false;
 
     private void Start()
     {
@@ -53,10 +54,11 @@ public class ShipPart : MonoBehaviour
                         default:
                             break;
                     }
-                    if (SceneManager.GetActiveScene().name != "PlaytestOverworld")
+                    if (SceneManager.GetActiveScene().name != "PlaytestOverworld" && !done)
                     {
                         levelLoader.LoadLevelByName("PlaytestOverworld");
                         Debug.Log("load1");
+                        done = false;
                     }
                         
                 }
